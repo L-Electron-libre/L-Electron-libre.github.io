@@ -12,6 +12,13 @@ On peut alors écrire des paragraphes en utilisant <p> </p>.
 
 
 #Syntaxe pour insérer un lien dans une page HTML
+Il y a différentes manière d'ajouter un lien: on peut lier le lien à un mot avec la commande suivante :
+<a href="https://l-electron-libre.github.io/joindre.html" >   LIEN </a> 
+Il s'agit alors de cliquer sur lien pour être directement dirigé. 
+
+On peut aussi uniquement donner le lien à cliquer en utilisant à voir
+
+<a></a>
 
 #Procédure pour ajouter des images et du texte aux différentes pages
 Dans le template qui a été importé en css style file,dans la classe .image on peut regarder toutes 

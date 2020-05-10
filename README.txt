@@ -1,9 +1,13 @@
 # journal_electron_libre
 
 #Syntaxe général du HTML dans les fichiers
-Au lieu d'utiliser { } pour fermer un segment de code, on utilise plutôt pour ouvrir <> et fermer </>. On commence en général par séparé notre page en différentes section que l'on nomme avec la commande :	<section id="One" class="wrapper style3">, la classe wrapper style3 ? à déterminé.
+Au lieu d'utiliser { } pour fermer un segment de code, on utilise plutôt pour ouvrir <> et fermer </>. 
+On commence en général par séparé notre page en différentes section que l'on nomme avec la commande :	<section id="One" class="wrapper style3">, la classe wrapper style3 ? à déterminé.
   
-Afin d'écrire dans le fichier, il y a différente manière de le faire. Pour créer un titre on utilise la fonction <header>, il existe 5 types de header qui vont fonctionner avec tous les navigateurs de différentes grandeurs que l'on peut accéder avec : <h1> - <h5>, en les fermant et ouvrant avec la manière décrite précédemment.On peut alors écrire des paragraphes en utilisant <p> </p>. 
+Afin d'écrire dans le fichier, il y a différente manière de le faire. Pour créer un titre on utilise la fonction <header>,
+il existe 5 types de header qui vont fonctionner avec tous les navigateurs de différentes grandeurs.
+On peut y accéder avec : <h1> - <h5>, en les fermant et ouvrant avec la manière décrite précédemment.
+On peut alors écrire des paragraphes en utilisant <p> </p>. 
 
 
 #Syntaxe pour insérer un lien dans une page HTML

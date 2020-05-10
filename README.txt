@@ -27,7 +27,8 @@ où we_want_you.jpg est une image ajouté sur github au dossier images.
   
 Alt: représente le mot qui s'affichera si la vitesse de l'internet n'est pas assez grande pour téléchargé l'image.
 Style: défini la taille de l'image en nombre de pixel, la position de l'image étant définie par notre classe image.right.
-On doit ensuite refermé la classe div à moins que l'on veut ajouter d'autres images à la suite de l'autre. Pour ce faire on ajoute simplement la commande : </div>
+On doit ensuite refermé la classe div à moins que l'on veut ajouter d'autres images à la suite de l'autre. 
+Pour ce faire on ajoute simplement la commande : </div>
 
 La majorité de tout ce qui est dit est tiré de ce site web: https://www.w3schools.com/tags/default.asp
 

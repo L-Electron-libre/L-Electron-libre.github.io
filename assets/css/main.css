@@ -1653,10 +1653,12 @@
 
 	a {
 		text-decoration: underline;
+		color:blue;
 	}
 
 		a:hover {
 			text-decoration: none;
+			color:blue;
 		}
 
 	strong, b {
@@ -1699,7 +1701,7 @@
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: blue;
 			text-decoration: none;
 		}
 
@@ -3930,6 +3932,7 @@
 						line-height: 3.5rem;
 						text-decoration: none;
 						text-transform: uppercase;
+
 					}
 
 						#menu > ul.links > li > a:not(.button):hover {
@@ -4025,7 +4028,7 @@
 		}
 
 		.banner a {
-			color: #ffffff;
+
 		}
 
 		.banner strong, .banner b {

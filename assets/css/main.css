@@ -20,14 +20,15 @@
 
 	}
 
-	iframe{
-		margin: 0;
+	iframe {
+		margin-left: 100;
+  	margin-right: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
 
-		object-position: 50% 50%;
+
   }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;

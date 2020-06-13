@@ -25,6 +25,7 @@ https://pixabay.com
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	</head>
 	<body>
 
@@ -34,19 +35,17 @@ https://pixabay.com
 				<a href="#menu">Menu</a>
 			</header>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="presentation.html">Présentation</a></li>
-					<li><a href="calendrier.html">Événements</a></li>
-					<li><a href="actualite.html">Actualité</a></li>
-					<li><a href="litterature.html">Littérature</a></li>
-					<li><a href="ressources.html">Ressources</a></li>
-					<li><a href="vulgarisation.html">Vulgarisation</a></li>
-					<li><a href="joindre.html">Nous joindre</a></li>
-				</ul>
-			</nav>
+			<!--Navigation bar-->
+		<div id="nav-placeholder">
+
+		</div>
+
+		<script>
+		$(function(){
+		  $("#nav-placeholder").load("menu.html");
+		});
+		</script>
+		<!--end of Navigation bar-->
 
 		<!-- Banner -->
 			<section class="banner full">

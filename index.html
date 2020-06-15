@@ -25,13 +25,8 @@ https://pixabay.com
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<script>
-	$(function(){
-		$("#nav-placeholder").load("menu.html");
-	});
-	</script>
+		<script src="imports.js"> </script>
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
@@ -44,16 +39,13 @@ https://pixabay.com
 </script>
 
 	</head>
+
+
+
+
 	<body>
-
-
-
 			<!--Navigation bar-->
-		<div id="nav-placeholder">	</div>
-
-
-
-
+		<script> HTMLImporter.import("menu.html");</script>
 		<!--end of Navigation bar-->
 
 		<!-- Banner -->

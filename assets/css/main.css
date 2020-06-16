@@ -3693,7 +3693,7 @@ div.scrollmenu a:hover {
 /* Header */
 
 	body.subpage {
-		padding-top: 3.25em;
+		padding-top: 0em;
 	}
 
 	@-moz-keyframes reveal-header {
@@ -3877,7 +3877,7 @@ div.scrollmenu a:hover {
 	@media screen and (max-width: 980px) {
 
 		body.subpage {
-			padding-top: 44px;
+			padding-top:0px;
 		}
 
 		#header {

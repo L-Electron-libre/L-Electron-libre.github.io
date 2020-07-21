@@ -1,0 +1,14 @@
+/*
+Template pour textes
+*/
+
+/* Paragraphe pour texte normal*/
+p.main {
+  text-indent:50px;
+  text-align: justify;
+}
+
+/* Paragraphe pour POEME */
+p.poem {
+  text-align: center;
+}

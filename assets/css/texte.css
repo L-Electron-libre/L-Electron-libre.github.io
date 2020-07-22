@@ -25,6 +25,14 @@ p.titre {
   font-size:25px;
 }
 
+/*Paragraphe pour un texte de littérature avec indentation */
+p.litt-indent{
+  text-indent:50px;
+  text-align: justify;
+  color:black;
+  font-size:18px
+}
+
 div
 .column {
   float: left;

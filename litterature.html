@@ -1,4 +1,3 @@
-import assets
 <!DOCTYPE HTML>
 <!--
 	Hielo by TEMPLATED
@@ -6,12 +5,27 @@ import assets
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+	
+	
+<html>
 	<head>
 		<title>Littérature - L'électron Libre</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
+		<link rel="stylesheet" href="assets/css/texte.css" />
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
 <script>
@@ -57,6 +71,22 @@ import assets
 				</header>
 			</div>
 		</section>
+
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						
+						<button onclick="myFunction()";text-align: center;>Description de la section</button>
+
+						<div id="myDIV">
+							<p class="main">
+L'idée de cette section est de permettre aux gens d'exprimer leur créativité que ce soit par des poèmes, des nouvelles etc.
+</p>
+</div>
+					
+				</div>
+				</div>
 
 		<!-- Two -->
 <!--			<section id="two" class="wrapper style2">
@@ -128,6 +158,18 @@ import assets
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myDIV");
+			  if (x.style.display === "none") {
+			    x.style.display = "block";
+			  } else {
+			    x.style.display = "none";
+			  }
+			}
+			</script>
+
 
 	</body>
 </html></html>

@@ -4,16 +4,35 @@ Template pour textes
 
 /* Paragraphe pour texte normal*/
 p.main {
-  text-indent:50px;
+  /*text-indent:50px;*/
   text-align: justify;
-
+  color:black;
+  font-size:18px
 }
 
 /* Paragraphe pour POEME */
 p.poem {
   text-align: center;
+  font-size:18px;
+  color:black;
 }
 
-p.text {
-  text-align: justify;
+/*Paragraphe pour un titre */
+p.titre {
+  /*text-indent:50px;*/
+  text-align: center;
+  color:black;
+  font-size:25px;
+}
+
+div
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }

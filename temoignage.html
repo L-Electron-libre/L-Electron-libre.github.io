@@ -5,12 +5,25 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<html>
 	<head>
 		<title>Témoignages - L'électron Libre</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
+		<link rel="stylesheet" href="assets/css/texte.css" />
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
 <script>
@@ -59,16 +72,15 @@
 			</section>
 
 		<!-- Two -->
-  			<section id="two" class="wrapper style2">
-  				<div class="inner">
-  					<div class="box">
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						
+						<button onclick="myFunction()";>Description de la section</button>
 
-  						<div class="content">
-  							<header class="align-center">
-  								<h2>Description de la section</h2>
-  							</header>
-
-							<p style="text-align:justify;font-size:18px;color:black;">
+						<div id="myDIV">
+							<p class="main">
 
 							Dans le but de créer un espace où les récits les moins entendus prennent de la visibilité, de créer un espace de partage où on s'encourage à être à l'écoute de l'autre, à bâtir des liens et à rendre la vie étudiante sécuritaire et agréable, la section « Témoignages » s'offre à vous.
 							<br>
@@ -91,6 +103,7 @@
 							Nous reconnaissons le niveau de vulnérabilité, et donc le courage que ça peut prendre pour participer à cette initiative, et nous tenons à te dire: Merci!!!
 
 
+</p>
 
 
 
@@ -111,6 +124,16 @@
 					&copy; Untitled. All rights reserved.
 				</div>
 			</footer>
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myDIV");
+			  if (x.style.display === "none") {
+			    x.style.display = "block";
+			  } else {
+			    x.style.display = "none";
+			  }
+			}
+			</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

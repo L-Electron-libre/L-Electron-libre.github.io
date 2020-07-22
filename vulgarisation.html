@@ -24,28 +24,9 @@
 	</head>
 	<body class="subpage">
 
-				<!--Navigation bar-->
-					<header id="header" class="alt">
-				    <div class="logo"><a href="index.html">  <img src="images/logo_blanc.png" alt="photo auteur(e)/sujet"   style="width:200px;height:100px"> <span>L'Électron Libre</span></a></div>
-				    <a href="#menu"> Menu </a>
-				  </header>
-
-
-
-			<!-- Nav -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="presentation.html">Présentation</a></li>
-							<li><a href="temoignage.html">Témoignages</a></li>
-							<li><a href="litterature.html">Littérature</a></li>
-							<li><a href="ressources.html">Ressources</a></li>
-							<li><a href="vulgarisation.html">Vulgarisation</a></li>
-							<li><a href="evenements.html">Événements</a></li>
-							<li><a href="archive.html">Archives</a></li>
-							<li><a href="joindre.html">Nous joindre</a></li>
-						</ul>
-					</nav>
+		<!-- Navigation bar -->
+		<div id="nav-placeholder">
+		</div>
 			<!--end of Navigation bar-->
 
 		<!-- One -->
@@ -159,19 +140,11 @@ Il reste encore de nombreux défis à relever. Par exemple, nous n’avons toujo
   				</div>
 
   			</section>
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
 
-						<li><a href="https://www.facebook.com/PHYSUMelectronlibre/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href=" mailto:  electron.libre.physum@outlook.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. All rights reserved.
-				</div>
-			</footer>
+			<!-- Footer bar -->
+			<div id="footer-placeholder">
+			</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -180,5 +153,18 @@ Il reste encore de nombreux défis à relever. Par exemple, nous n’avons toujo
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<!--Navigation Bar -->
+			<script>
+					$.get("L-Electron-Libre.github.io/template/sidenavbar.html", function(data){
+							$("#nav-placeholder").replaceWith(data);
+					});
+			</script>
+			<!-- Footer -->
+			<script>
+					$.get("L-Electron-Libre.github.io/template/footer.html", function(data){
+							$("#footer-placeholder").replaceWith(data);
+					});
+			</script>
+			
 	</body>
 </html>

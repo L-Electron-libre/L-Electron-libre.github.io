@@ -82,5 +82,18 @@ sous la forme d'un header. Le texte de l'article doit être compris entre des ca
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<!--Navigation Bar -->
+			<script>
+					$.get("template/sidenavbar.html", function(data){
+							$("#nav-placeholder").replaceWith(data);
+					});
+			</script>
+			<!-- Footer -->
+			<script>
+					$.get("template/footer.html", function(data){
+							$("#footer-placeholder").replaceWith(data);
+					});
+			</script>
+
 	</body>
 </html></html>

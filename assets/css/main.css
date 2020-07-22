@@ -2408,6 +2408,25 @@ div.scrollmenu a:hover {
 				width: 100%;
 			}
 
+		.ca-img {
+			left: 0px;
+			top: 0px;
+			}
+
+		.img-thumbnail-ca {
+			display: inline-block;
+			max-width: 100%;
+			height: auto;
+			padding: 4px;
+			line-height: 1.42857143;
+			background-color: #000000;
+			border: 1px solid #000000;
+			border-radius: 4px;
+			-webkit-transition: all .2s ease-in-out;
+			-o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+			}
+
 /* List */
 
 	ol {
@@ -2448,7 +2467,8 @@ div.scrollmenu a:hover {
 		ul.icons {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
+		/*	padding-left: 0;-->*/
+		  margin-left: auto!important;
 		}
 
 			ul.icons li {

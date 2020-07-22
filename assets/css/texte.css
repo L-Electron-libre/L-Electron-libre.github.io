@@ -6,9 +6,14 @@ Template pour textes
 p.main {
   text-indent:50px;
   text-align: justify;
+
 }
 
 /* Paragraphe pour POEME */
 p.poem {
   text-align: center;
+}
+
+p.text {
+  text-align: justify;
 }

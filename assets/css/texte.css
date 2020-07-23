@@ -19,7 +19,7 @@ p.poem {
 
 /*Paragraphe pour un titre */
 p.titre {
-  /*text-indent:50px;*/
+
   text-align: center;
   color:black;
   font-size:25px;

@@ -9,22 +9,44 @@
 		<title>Présentation - L'électron Libre</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" >
+
+		<!-- Links -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/texte.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<!--Navigation Bar -->
+		<script>
+				$.get("template/sidenavbar.html", function(data){
+						$("#nav-placeholder").replaceWith(data);
+				});
+		</script>
+		<!-- Footer -->
+		<script>
+				$.get("template/footer.html", function(data){
+						$("#footer-placeholder").replaceWith(data);
+				});
+		</script>
+
 
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+	<!--	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
 		  gtag('config', 'UA-169295343-1');
-		</script>
+		</script> -->
 
 	</head>
 
@@ -32,224 +54,199 @@
 
 
 		<!-- Navigation bar -->
-		<div id="nav-placeholder">
-		</div>
+		<div id="nav-placeholder"></div>
 			<!--end of Navigation bar-->
 
 		<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Journal étudiant de la PHYSUM</p>
-						<h2>Grande Ouverture!</h2>
-					</header>
-				</div>
-			</section>
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>Journal étudiant de la PHYSUM</p>
+					<h2>Grande Ouverture!</h2>
+				</header>
+			</div>
+		</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="container text-center">
-					<div class="inner">
-						<div class="box">
-							<div class="content">
-								<!--	<p style="font-size:30px;color:black">
-									Message de présentation </p> -->
-									<p class="titre">Qu'est-ce qu'un électron libre?</p>
-								<header></header>
-								<p  class="main">
-									<br/>
-									Un électron libre n'appartient à aucun noyau.
-									Un être libre n'appartient à aucun dogme.
-									Agité, ni l'un ni l'autre ne peut rester en place.
-									Ils se déplacent dans une direction fixe, jusqu'à ce qu'une collision,
-									un choc des idées, les dévient de leur trajectoire.
-									Mus par un potentiel, leurs semblables se
-									rassemblent dans un même sens. Ils créent des courants
-									électriques ou de pensées. En fait, peut-être que les deux ne
-									sont qu'un...
-								<br>
-								<br>
+		<section id="two" class="wrapper style2">
+			<div class="container text-center">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<!--	<p style="font-size:30px;color:black">
+								Message de présentation </p> -->
+							<p class="titre">Qu'est-ce qu'un électron libre?</p>
+							<header></header>
+							<p  class="main">
+								<br/>
+								Un électron libre n'appartient à aucun noyau.
+								Un être libre n'appartient à aucun dogme.
+								Agité, ni l'un ni l'autre ne peut rester en place.
+								Ils se déplacent dans une direction fixe, jusqu'à ce qu'une collision,
+								un choc des idées, les dévient de leur trajectoire.
+								Mus par un potentiel, leurs semblables se
+								rassemblent dans un même sens. Ils créent des courants
+								électriques ou de pensées. En fait, peut-être que les deux ne
+								sont qu'un...
+							<br/>
+							<br/>
 
-									L'Électron Libre est le journal de l'association étudiante
-									du département de physique de l'Université de Montréal (PHYSUM).
-									Ses mandats sont multiples. En bref, ils consistent à s'exprimer
-									et à informer.
+								L'Électron Libre est le journal de l'association étudiante
+								du département de physique de l'Université de Montréal (PHYSUM).
+								Ses mandats sont multiples. En bref, ils consistent à s'exprimer
+								et à informer.
 
-								<br>
-								<br>
+							<br/>
+							<br/>
 
-								  	D'abord, l'Électron Libre offre une
-									plateforme où les étudiants et les étudiantes peuvent mettre
-									en valeur leur créativité. Que ce soit la littérature, la poésie,
-									le dessin ou la photographie, l'Électron Libre se fait un devoir
-									de promouvoir les talents artistiques. Aussi, le journal
-									étudiant encourage le partage d'idées sous forme de
-									chroniques ou d'éditoriaux.
-								<br>
-								<br>
+							  	D'abord, l'Électron Libre offre une
+								plateforme où les étudiants et les étudiantes peuvent mettre
+								en valeur leur créativité. Que ce soit la littérature, la poésie,
+								le dessin ou la photographie, l'Électron Libre se fait un devoir
+								de promouvoir les talents artistiques. Aussi, le journal
+								étudiant encourage le partage d'idées sous forme de
+								chroniques ou d'éditoriaux.
+							<br/>
+							<br/>
 
-									Ensuite, l'Électron Libre est une source d'information autant
-									pour les membres de l'association étudiante que pour la communauté.
-									Les articles de vulgarisation scientifique servent à faciliter
-									l'accès et la diffusion des connaissances.
-									D'autres onglets servent d'outils aux membres pour trouver des
-									ressources utiles à leur parcours académique.
-								<br>
-								<br>
+								Ensuite, l'Électron Libre est une source d'information autant
+								pour les membres de l'association étudiante que pour la communauté.
+								Les articles de vulgarisation scientifique servent à faciliter
+								l'accès et la diffusion des connaissances.
+								D'autres onglets servent d'outils aux membres pour trouver des
+								ressources utiles à leur parcours académique.
+							<br/>
+							<br/>
 
-									Nous espérons que l'Électron Libre saura répondre à vos besoins.
-										Nous sommes très ouverts aux suggestions, alors n'hésitez pas
-										à consulter l'onglet « Nous joindre » pour nous faire parvenir vos
-										commentaires.
-								<br>
-								<br>
+								Nous espérons que l'Électron Libre saura répondre à vos besoins.
+									Nous sommes très ouverts aux suggestions, alors n'hésitez pas
+									à consulter l'onglet « Nous joindre » pour nous faire parvenir vos
+									commentaires.
+							<br/>
+							<br/>
 
-									Bonne lecture!
-								<br>
-								<br>
+								Bonne lecture!
+							<br/>
+							<br/>
 
-							    - Comité de l'Électron Libre
-								</p>
-							</div>
+						    - Comité de l'Électron Libre
+							</p>
 						</div>
 					</div>
 				</div>
-			</section>
-
-<!-- Présentation du comité -->
-      <section id="votre_comite" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<h2>Votre comité</h2>
-					</header>
-				</div>
-			</section>
-
-			<section id="presentation_comite">
-				<div class="container text-center">
-
-
-					<br /><br/>
-
-					<div class="row">
-								<!-- Ève Campeau-Poirier -->
-							<div class="col-sm-2">
-									<img class="img-thumbnail-ca"  src="images/membres_comite/Eve_Midsommar_resize2.jpg" alt="Ève Campeau-Poirier" style="width:100%" >
-									<p>
-										<ul class="icons">
-					              <li><a href=" mailto:  eve.campeau-poirier@umontreal.ca" class="icon fa-envelope-o"></a></li>
-										</ul>
-									</p>
-							</div>
-							<div class="col-sm-10" >
-
-									<p class="main" >
-										Appelez-moi cheffe, diminutif de cheffe d’orchestre. En effet, ma contribution se résume à orchestrer : dénicher des membres au comité, les réunir pour définir les objectifs de l’Électron Libre et distribuer les rôles. Bref, avoir la vision d’ensemble sur la symphonie.<br/>
-										La littérature, je suis tombée dedans que j’étais petite. Engloutie par les pages, submergée de phrases, noyée de récits. J’ai essayé d’inspirer, mais je n’ai réussi qu’à avaler les mots. Il faut bien recracher quelque part.<br/>
-										La communication scientifique, c’est mon nouveau défi. À quoi bon s’enorgueillir de contribuer aux connaissances de l’humanité si on la laisse dans l’ignorance?
-											<br/><br/>
-											<b>Ève Campeau-Poirier - Responsable du comité</b>
-									</p>
-										<br/><br/>
-							 </div>
-					 </div>
-
-
-					<div class="row">
-								<!-- Vincent Gousy-Leblanc -->
-							<div class="col-sm-2">
-									<img class="img-thumbnail-ca"  src="images/membres_comite/mine_vincent_resize2.jpg" alt="Vincent Gousy-Leblanc" style="width:100%" >
-									<p>
-										<ul class="icons">
-												<li><a href=" mailto:  vincent.gousy-leblanc@umontreal.ca" class="icon fa-envelope-o"></a></li>
-										</ul>
-									</p>
-							</div>
-							<div class="col-sm-10" >
-
-									<p class="text" >
-										Bonjour, gens qui lisent cette section. Je me présente, tel un mauvais écrivain qui essaie constamment d’écrire en s’améliorant, passionné de lecture, d’écriture, de cinématographie et de physique étonnamment ? Grand idéaliste naïf, j’écris des textes dans un peu toutes les sections pour amener des ressources aux nouveaux physiciens et physiciennes, favoriser les discussions, vulgariser la physique dans laquelle je travaille, etc. J’ai l’espoir fou que l’E-L puisse devenir une plateforme pour que les gens puissent s’exprimer, avoir un meilleur accès à ce qui se fait dans le monde de la recherche à l’Université et au Canada et permettre de faire découvrir ce qu’une carrière en physique peut donner.J'ai aussi un talent pour faire des phrases beaucoup trop longues je m'en excuses d'avance !
-									</p>
-									<p class="main">
-										Pour des idées de sections à ajouter, des textes à soumettre sur n’importe quoi ou presque, pour des conseils sur le baccalauréat, sur la recherche ou finalement pour n’importe quelle raison, n’hésitez pas à me contacter.
-									<br/><br/>
-										<b>Vincent Gousy-Leblanc - ?</b>
-									</p>
-										<br/><br/>
-							 </div>
-					 </div>
-
-					 <div class="row">
-								 <!-- Jacinthe Pilette -->
-							 <div class="col-sm-2">
-									 <img class="img-thumbnail-ca"  src="images/membres_comite/Quidditch_Jacinthe_resize.jpg" alt="Jacinthe Pilette" style="width:100%" >
-									 <p>
-										 <ul class="icons">
-											 <li><a href="https://www.facebook.com/jacinthe.pilette.1" class="icon fa-facebook"></a></li>
-	                 		<li><a href=" mailto:  jacinthe.pilette@umontreal.ca" class="icon fa-envelope-o"></a></li>
-										</ul>
-									 </p>
-							 </div>
-							 <div class="col-sm-10">
-								 <p class="main">
-								 Est-ce que j’aime écrire à propos de moi ? Non. <br/><br/>
-								 Est-ce que je vais le faire pour le bien commun de notre super équipe ? Oui!<br/><br/>
-								  Donc voici les trois faits à savoir sur moi : j’aime la physique, la communication scientifique et tout ce qui touche à la diffusion du savoir ! Tu vois, on est faits pour s’entendre ! Si tu as une nouvelle scientifique que tu aimerais partager, un texte sur un projet de stage ou sur tes études supérieures, un concept de physique ou d’une autre discipline que tu souhaites communiquer aux Physumiens et Physumiennes, contacte-moi et on te publiera avec grand plaisir!
-								 <br/><br/>
-							   <b>Jacinthe Pilette - Responsable de la section Vulgarisation</b>
-								 </p>
-										 <br/><br/>
-								</div>
-						</div>
-
-						<div class="row">
-									<!-- Manuel Bender -->
-								<div class="col-sm-2">
-										<img class="img-thumbnail-ca"  src="images/membres_comite/Crocodile_Manu_resize2.jpg" alt="Manuel Bender" style="width:100%" >
-										<p>
-											<ul class="icons">
-												<li><a href=" mailto:  manuelbender@hotmail.fr" class="icon fa-envelope-o"></a></li>
-				                <li><a href="tell:5794923033" class="fa fa-phone" style="font-size:20px"></a></li>
-											</ul>
-										</p>
-								</div>
-								<div class="col-sm-10">
-									<p class="main">
-			              Qui suis-je? Ce n’est pas important. Ai-je déjà travaillé dans un journal? Jamais. Suis-je compétent? Qui sait? Mais une chose est certaine, c’est que je suis motivé à donner mon 103,141592654% ! Mon objectif est de couvrir de manière intéressante et divertissante les différents événements qui ravageront le séjour des étudiants et étudiantes de Physique lors de leurs épopées épiques dans les méandres du Campus MIL. Si vous êtes intéressés à écrire un article, qu’il soit sérieux ou humoristique, sur un quelconque aspect de la vie étudiante, n’hésitez pas à me contacter!
-			              <br/><br/>
-			              <b>Manuel Bender - Responsable de la section Événements</b>
-			            </p>
-											<br/><br/>
-								 </div>
-						 </div>
-				</div>
-		  </div>
+			</div>
 		</section>
 
-
-			<!-- Footer bar -->
-			<div id="footer-placeholder">
+<!-- Présentation du comité -->
+    <section id="votre_comite" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<h2>Votre comité</h2>
+				</header>
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<section id="presentation_comite">
+			<div class="container text-center">
+				<br /><br/>
 
-			<!--Navigation Bar -->
-			<script>
-					$.get("template/sidenavbar.html", function(data){
-							$("#nav-placeholder").replaceWith(data);
-					});
-			</script>
-			<!-- Footer -->
-			<script>
-					$.get("template/footer.html", function(data){
-							$("#footer-placeholder").replaceWith(data);
-					});
-			</script>
+				<div class="row">
+							<!-- Ève Campeau-Poirier -->
+						<div class="col-sm-2">
+								<img class="img-thumbnail-ca"  src="images/membres_comite/Eve_Midsommar_resize2.jpg" alt="Ève Campeau-Poirier" style="width:100%" >
+								<p>
+									<ul class="icons">
+				              <li><a href=" mailto:  eve.campeau-poirier@umontreal.ca" class="icon fa-envelope-o"></a></li>
+									</ul>
+								</p>
+						</div>
+						<div class="col-sm-10" >
+
+								<p class="main" >
+									Appelez-moi cheffe, diminutif de cheffe d’orchestre. En effet, ma contribution se résume à orchestrer : dénicher des membres au comité, les réunir pour définir les objectifs de l’Électron Libre et distribuer les rôles. Bref, avoir la vision d’ensemble sur la symphonie.<br/>
+									La littérature, je suis tombée dedans que j’étais petite. Engloutie par les pages, submergée de phrases, noyée de récits. J’ai essayé d’inspirer, mais je n’ai réussi qu’à avaler les mots. Il faut bien recracher quelque part.<br/>
+									La communication scientifique, c’est mon nouveau défi. À quoi bon s’enorgueillir de contribuer aux connaissances de l’humanité si on la laisse dans l’ignorance?
+										<br/><br/>
+										<b>Ève Campeau-Poirier - Responsable du comité</b>
+								</p>
+									<br/><br/>
+						 </div>
+				 </div>
+
+
+				<div class="row">
+							<!-- Vincent Gousy-Leblanc -->
+						<div class="col-sm-2">
+								<img class="img-thumbnail-ca"  src="images/membres_comite/mine_vincent_resize2.jpg" alt="Vincent Gousy-Leblanc" style="width:100%" >
+								<p>
+									<ul class="icons">
+											<li><a href=" mailto:  vincent.gousy-leblanc@umontreal.ca" class="icon fa-envelope-o"></a></li>
+									</ul>
+								</p>
+						</div>
+						<div class="col-sm-10" >
+
+								<p class="main" >
+									Bonjour, gens qui lisent cette section. Je me présente, tel un mauvais écrivain qui essaie constamment d’écrire en s’améliorant, passionné de lecture, d’écriture, de cinématographie et de physique étonnamment ? Grand idéaliste naïf, j’écris des textes dans un peu toutes les sections pour amener des ressources aux nouveaux physiciens et physiciennes, favoriser les discussions, vulgariser la physique dans laquelle je travaille, etc. J’ai l’espoir fou que l’E-L puisse devenir une plateforme pour que les gens puissent s’exprimer, avoir un meilleur accès à ce qui se fait dans le monde de la recherche à l’Université et au Canada et permettre de faire découvrir ce qu’une carrière en physique peut donner.J'ai aussi un talent pour faire des phrases beaucoup trop longues je m'en excuses d'avance !
+								</p>
+								<p class="main">
+									Pour des idées de sections à ajouter, des textes à soumettre sur n’importe quoi ou presque, pour des conseils sur le baccalauréat, sur la recherche ou finalement pour n’importe quelle raison, n’hésitez pas à me contacter.
+								<br/><br/>
+									<b>Vincent Gousy-Leblanc - ?</b>
+								</p>
+									<br/><br/>
+						 </div>
+				 </div>
+
+				 <div class="row">
+							 <!-- Jacinthe Pilette -->
+						 <div class="col-sm-2">
+								 <img class="img-thumbnail-ca"  src="images/membres_comite/Quidditch_Jacinthe_resize.jpg" alt="Jacinthe Pilette" style="width:100%" >
+								 <p>
+									 <ul class="icons">
+										 <li><a href="https://www.facebook.com/jacinthe.pilette.1" class="icon fa-facebook"></a></li>
+                 		<li><a href=" mailto:  jacinthe.pilette@umontreal.ca" class="icon fa-envelope-o"></a></li>
+									</ul>
+								 </p>
+						 </div>
+						 <div class="col-sm-10">
+							 <p class="main">
+							 Est-ce que j’aime écrire à propos de moi ? Non. <br/><br/>
+							 Est-ce que je vais le faire pour le bien commun de notre super équipe ? Oui!<br/><br/>
+							  Donc voici les trois faits à savoir sur moi : j’aime la physique, la communication scientifique et tout ce qui touche à la diffusion du savoir ! Tu vois, on est faits pour s’entendre ! Si tu as une nouvelle scientifique que tu aimerais partager, un texte sur un projet de stage ou sur tes études supérieures, un concept de physique ou d’une autre discipline que tu souhaites communiquer aux Physumiens et Physumiennes, contacte-moi et on te publiera avec grand plaisir!
+							 <br/><br/>
+						   <b>Jacinthe Pilette - Responsable de la section Vulgarisation</b>
+							 </p>
+									 <br/><br/>
+							</div>
+					</div>
+
+					<div class="row">
+								<!-- Manuel Bender -->
+							<div class="col-sm-2">
+									<img class="img-thumbnail-ca"  src="images/membres_comite/Crocodile_Manu_resize2.jpg" alt="Manuel Bender" style="width:100%" >
+									<p>
+										<ul class="icons">
+											<li><a href=" mailto:  manuelbender@hotmail.fr" class="icon fa-envelope-o"></a></li>
+			                <li><a href="tell:5794923033" class="fa fa-phone" style="font-size:20px"></a></li>
+										</ul>
+									</p>
+							</div>
+							<div class="col-sm-10">
+								<p class="main">
+		              Qui suis-je? Ce n’est pas important. Ai-je déjà travaillé dans un journal? Jamais. Suis-je compétent? Qui sait? Mais une chose est certaine, c’est que je suis motivé à donner mon 103,141592654% ! Mon objectif est de couvrir de manière intéressante et divertissante les différents événements qui ravageront le séjour des étudiants et étudiantes de Physique lors de leurs épopées épiques dans les méandres du Campus MIL. Si vous êtes intéressés à écrire un article, qu’il soit sérieux ou humoristique, sur un quelconque aspect de la vie étudiante, n’hésitez pas à me contacter!
+		              <br/><br/>
+		              <b>Manuel Bender - Responsable de la section Événements</b>
+		            </p>
+										<br/><br/>
+							 </div>
+					 </div>
+				 </div>
+	  	</div>
+		</section>
+
+		<!-- Footer bar -->
+		<div id="footer-placeholder"></div>
 
 	</body>
 </html>

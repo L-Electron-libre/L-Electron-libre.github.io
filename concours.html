@@ -14,21 +14,43 @@ base d'un code html
 <!-- La section suivante est nécessaire pour la mise en page de l'en-tête du site -->
 <html>
 	<head>
-		<title>L'électron libre,PHYSUM</title>
+		<title>Concours - L'électron Libre</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Links -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/texte.css" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-  gtag('config', 'UA-169295343-1');
-</script>
+		<!--Navigation Bar -->
+		<script>
+				$.get("template/sidenavbar.html", function(data){
+						$("#nav-placeholder").replaceWith(data);
+				});
+		</script>
+		<!-- Footer -->
+		<script>
+				$.get("template/footer.html", function(data){
+						$("#footer-placeholder").replaceWith(data);
+				});
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-169295343-1');
+		</script>
 
 	</head>
 	<body class="subpage">
@@ -36,77 +58,59 @@ base d'un code html
 		<!-- Navigation bar -->
 		<div id="nav-placeholder">
 		</div>
-			<!--end of Navigation bar-->
+		<!--end of Navigation bar-->
 
 <!--============================================================================== -->
 <!--Après le Header, le code html est divisé en section. Chaque section possède une classe et peut posséder un Titre
 sous la forme d'un header. Le texte de l'article doit être compris entre des caractères tel que <p>, <a>, <b>, etc qui détermine le style du texte (bold,etc)-->
 		<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Galerie d'image des logos</p>
-					</header>
-				</div>
-			</section>
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p class="titre">Galerie d'image des logos</p>
+				</header>
+			</div>
+		</section>
 
 		<!-- Two -->
 		<section id="two" class="wrapper style2">
 			<div class="inner">
 				<div class="box">
 
+					<div class="row">
+			  		<div class="column">
+			    		<img src="images/6d.jpg" alt="Cinque Terre"  style="width:100%">
+						</div>
+		     		<div class="column">
+							<img src="images/5b.jpg"  style="width:100%">
+						</div>
+		     		<div class="column">
+							<img src="images/6a.jpg"  style="width:100%">
+						</div>
+					</div>
 
-		<div class="row">
-		  <div class="column">
-		    <img src="images/6d.jpg" alt="Cinque Terre"  style="width:100%"></div>
-	     <div class="column">
-		<img src="images/5b.jpg"  style="width:100%"></div>
-	     <div class="column">
-
-		<img src="images/6a.jpg"  style="width:100%"> </div>
-
-		</div>
-
-		<div class="row">
-		  <div class="column">
-		    <img src="images/3.jpg" alt="Cinque Terre"  style="width:100%"></div>
-	     <div class="column">
-
-		<img src="images/logo.png"  style="width:125%"></div>
-	     <div class="column">
-		<img src="images/0.jpg"  style="width:100%"></div>
-		</div>
-		 <img src="images/4.jpg"  width="500" height="300">
-	 	</div>
-		</div>
-	   </div>
+					<div class="row">
+			  		<div class="column">
+			    		<img src="images/3.jpg" alt="Cinque Terre"  style="width:100%">
+						</div>
+		     		<div class="column">
+							<img src="images/logo.png"  style="width:125%">
+						</div>
+		     		<div class="column">
+							<img src="images/0.jpg"  style="width:100%">
+						</div>
+					</div>
+					<div class="row">
+			 			<img src="images/4.jpg"  width="500" height="300">
+		 			</div>
+				</div>
+	   	</div>
 		</section>
 
 	<!-- Cette section, tel que l'en tête de la page web, ne doit pas être changer et est commun à chaque page du site web-->
-			<!-- Footer bar -->
-			<div id="footer-placeholder">
-			</div>
-
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-			<!--Navigation Bar -->
-			<script>
-					$.get("template/sidenavbar.html", function(data){
-							$("#nav-placeholder").replaceWith(data);
-					});
-			</script>
-			<!-- Footer -->
-			<script>
-					$.get("template/footer.html", function(data){
-							$("#footer-placeholder").replaceWith(data);
-					});
-			</script>
+		<!-- Footer bar -->
+		<div id="footer-placeholder">
+		</div>
 
 	</body>
-</html></html>
+</html>

@@ -17,7 +17,30 @@ base d'un code html
 		<title>L'électron libre,PHYSUM</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Links -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/texte.css" />
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!--Navigation Bar -->
+		<script>
+				$.get("template/sidenavbar.html", function(data){
+						$("#nav-placeholder").replaceWith(data);
+				});
+		</script>
+		<!-- Footer -->
+		<script>
+				$.get("template/footer.html", function(data){
+						$("#footer-placeholder").replaceWith(data);
+				});
+		</script>
 	</head>
 	<body class="subpage">
 
@@ -83,25 +106,5 @@ sous la forme d'un header. Le texte de l'article doit être compris entre des ca
 			<div id="footer-placeholder">
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-			<!--Navigation Bar -->
-			<script>
-					$.get("template/sidenavbar.html", function(data){
-							$("#nav-placeholder").replaceWith(data);
-					});
-			</script>
-			<!-- Footer -->
-			<script>
-					$.get("template/footer.html", function(data){
-							$("#footer-placeholder").replaceWith(data);
-					});
-			</script>
-
-	</body>
-</html></html>
+		</body>
+</html>

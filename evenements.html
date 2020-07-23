@@ -9,78 +9,78 @@
 		<title>Événements - L'électron Libre</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Links -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/texte.css" />
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
+		<!--Navigation Bar -->
+		<script>
+				$.get("template/sidenavbar.html", function(data){
+						$("#nav-placeholder").replaceWith(data);
+				});
+		</script>
+		<!-- Footer -->
+		<script>
+				$.get("template/footer.html", function(data){
+						$("#footer-placeholder").replaceWith(data);
+				});
+		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
-  gtag('config', 'UA-169295343-1');
-</script>
+		  gtag('config', 'UA-169295343-1');
+		</script>
 
 	</head>
-	<body class="subpage">
 
-				<!-- Navigation bar -->
-				<div id="nav-placeholder">
-				</div>
-			<!--end of Navigation bar-->
+	<body class="subpage">
+		<!-- Navigation bar -->
+		<div id="nav-placeholder">
+		</div>
+	<!--end of Navigation bar-->
 
 		<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Journal étudiant de la PHYSUM</p>
-						<h2>Événements</h2>
-					</header>
-				</div>
-			</section>
-
-      <!-- Two -->
-      <section id="two" class="wrapper style2">
-				<div class="inner">
-					<header class="align-center">
-						<p class="special"></h2>
-					</header>
-					<div class="gallery">
-						<div>
-							<div class="image fit">
-								<p style="text-align:center;color:black"><b>Renaissance - Manuel Bender</b>
-								<br>
-								<a href="texte/evenements/renaissance_manuelbender.html"><img src="images/phoenix-5212019_1280.png" alt="" /></a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<!-- Footer bar -->
-			<div id="footer-placeholder">
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>Journal étudiant de la PHYSUM</p>
+					<h2>Événements</h2>
+				</header>
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- Two -->
+    <section id="two" class="wrapper style2">
+			<div class="inner">
+				<header class="align-center">
+					<p class="special"></h2>
+				</header>
+				<div class="gallery">
+					<div>
+						<div class="image fit">
+							<p style="text-align:center;color:black"><b>Renaissance - Manuel Bender</b>
+							<br>
+							<a href="texte/evenements/renaissance_manuelbender.html"><img src="images/phoenix-5212019_1280.png" alt="" /></a>
+						</div>
+					</div>
 
-			<!--Navigation Bar -->
-			<script>
-					$.get("template/sidenavbar.html", function(data){
-							$("#nav-placeholder").replaceWith(data);
-					});
-			</script>
-			<!-- Footer -->
-			<script>
-					$.get("template/footer.html", function(data){
-							$("#footer-placeholder").replaceWith(data);
-					});
-			</script>
+				</div>
+			</div>
+		</section>
 
+		<!-- Footer bar -->
+		<div id="footer-placeholder">
+		</div>
 	</body>
-</html></html>
+</html>

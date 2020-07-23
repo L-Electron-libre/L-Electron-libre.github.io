@@ -4,43 +4,62 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-<html>
-	<head>
-		<title>Événements - L'électron Libre</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../../assets/css/main.css" />
-    <link rel="stylesheet" href="../../assets/css/texte.css">
+	<html>
+		<head>
+			<title>Événements - L'électron Libre</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+			<!-- Links -->
+			<link rel="stylesheet" href="../../assets/css/main.css" />
+	    <link rel="stylesheet" href="../../assets/css/texte.css">
 
-  gtag('config', 'UA-169295343-1');
-</script>
+			<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/skel.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
 
-	</head>
-	<body class="subpage">
+			<!--Navigation Bar -->
+			<script>
+					$.get("../../template/sidenavbar.html", function(data){
+							$("#nav-placeholder").replaceWith(data);
+					});
+			</script>
+			<!-- Footer -->
+			<script>
+					$.get("../../template/footer.html", function(data){
+							$("#footer-placeholder").replaceWith(data);
+					});
+			</script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
 
-		<!-- Navigation bar -->
-		<div id="nav-placeholder">
-		</div>
-			<!--end of Navigation bar-->
+			  gtag('config', 'UA-169295343-1');
+			</script>
 
-		<!-- One -->
-    <section id="One" class="wrapper style3">
-      <div class="inner">
-        <header class="align-center">
-          <p>Journal étudiant de la PHYSUM</p>
-          <h2>Événements</h2>
-        </header>
-      </div>
-    </section>
+		</head>
+		<body class="subpage">
 
-		<!-- Two -->
+			<!-- Navigation bar -->
+			<div id="nav-placeholder"></div>
+
+			<!-- One -->
+	    <section id="One" class="wrapper style3">
+	      <div class="inner">
+	        <header class="align-center">
+	          <p>Journal étudiant de la PHYSUM</p>
+	          <h2>Événements</h2>
+	        </header>
+	      </div>
+	    </section>
+
+			<!-- Two -->
 			<section id="two" class="wrapper style2">
 				<div class="inner">
 					<div class="box">
@@ -61,27 +80,6 @@
 			</section>
 
 			<!-- Footer bar -->
-			<div id="footer-placeholder">
-			</div>
-
-		<!-- Scripts -->
-			<script src="../../assets/js/jquery.min.js"></script>
-			<script src="../../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../../assets/js/skel.min.js"></script>
-			<script src="../../assets/js/util.js"></script>
-			<script src="../../assets/js/main.js"></script>
-
-			<!--Navigation Bar -->
-			<script>
-					$.get("../../template/sidenavbar.html", function(data){
-							$("#nav-placeholder").replaceWith(data);
-					});
-			</script>
-			<!-- Footer -->
-			<script>
-					$.get("../../template/footer.html", function(data){
-							$("#footer-placeholder").replaceWith(data);
-					});
-			</script>
-	</body>
-</html></html>
+			<div id="footer-placeholder"></div>
+		</body>
+	</html>

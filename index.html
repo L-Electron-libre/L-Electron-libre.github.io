@@ -24,235 +24,231 @@ https://pixabay.com
 		<title>L'Électron Libre</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Links -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/texte.css" />
 
-
+		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!--Navigation Bar -->
+		<script>
+				$.get("template/sidenavbar.html", function(data){
+						$("#nav-placeholder").replaceWith(data);
+				});
+		</script>
+		<!-- Footer -->
+		<script>
+				$.get("template/footer.html", function(data){
+						$("#footer-placeholder").replaceWith(data);
+				});
+		</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+
 	</head>
 
-
-
-
 	<body>
-		  <!-- Navigation bar -->
-			<div id="nav-placeholder">
-			</div>
+	  <!-- Navigation bar -->
+		<div id="nav-placeholder">
+		</div>
 
 		<!-- Banner -->
-			<section class="banner full">
-				<article>
-					<img src="images/newton_2.jpg"  alt="Pendule de Newton" />
-					<div class="inner">
-						<header>
-							<p style="font-size:50px;color:white"> Bienvenue sur le site de l'électron-libre</p>
+		<section class="banner full">
+			<article>
+				<img src="images/newton_2.jpg"  alt="Pendule de Newton" />
+				<div class="inner">
+					<header>
+						<p style="font-size:50px;color:white"> Bienvenue sur le site de l'électron-libre</p>
+					</header>
+				</div>
+			</article>
+			<article>
+				<img src="images/archive.jpg" alt="" />
+				<div class="inner">
+					<header>
+					<p style="font-size:50px;color:black"><a href=archive.html> Les archives du journal!</a></p>
+					</header>
+				</div>
+			</article>
 
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/archive.jpg" alt="" />
-					<div class="inner">
-						<header>
-						<p style="font-size:50px;color:black"><a href=archive.html> Les archives du journal!</a></p>
-						</header>
-					</div>
-				</article>
+			<article>
+			<img src="images/nasa_space.jpg" alt="" />
+				<div class="inner">
+					<header>
+						<p style="font-size:30px;color:white">Voici l'image du jour de la NASA, pour en voir d'autre Cliquer <a href="https://apod.nasa.gov/apod/astropix.html" >ICI  </a> </p>
+					</header>
+				</div>
+			</article>
 
-				<article>
-				<img src="images/nasa_space.jpg" alt="" />
-					<div class="inner">
-						<header>
-							<p style="font-size:30px;color:white">Voici l'image du jour de la NASA, pour en voir d'autre Cliquer <a href="https://apod.nasa.gov/apod/astropix.html" >ICI  </a> </p>
-						</header>
-					</div>
-				</article>
-
-			</section>
+		</section>
 
 		<!-- One -->
-			<section id="one" class="wrapper style2">
-				<div class="inner">
-					<div class="grid-style">
+		<section id="one" class="wrapper style2">
+			<div class="inner">
+				<div class="grid-style">
 
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="https://cdn.pixabay.com/photo/2018/02/04/09/09/brushes-3129361_960_720.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<h1>Vous voulez voir les autres logos de l'électron libre ?</h1>
-									</header>
+					<div>
+						<div class="box">
+							<div class="image fit">
+								<img src="https://cdn.pixabay.com/photo/2018/02/04/09/09/brushes-3129361_960_720.jpg" alt="" />
+							</div>
+							<div class="content">
+								<header class="align-center">
+									<h1>Vous voulez voir les autres logos de l'électron libre ?</h1>
+								</header>
 
-									<footer class="align-center">
-										<a href="concours.html" class="button alt">Cliquer ICI</a>
-									</footer>
-								</div>
+								<footer class="align-center">
+									<a href="concours.html" class="button alt">Cliquer ICI</a>
+								</footer>
 							</div>
 						</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="https://cdn.pixabay.com/photo/2017/11/26/15/16/smiley-2979107_960_720.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<h1>Envie d'en apprendre plus sur la mécanique quantique, lisez ce texte vulgarisé par Serge Hamoudou </h2>
-									</header>
-									<footer class="align-center">
-										<a href="texte/vulgarisation/la_mecanique_quantique_demystifiee.html" class="button alt">Pour le lire, cliquer sur ce lien</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-
 					</div>
+
+					<div>
+						<div class="box">
+							<div class="image fit">
+								<img src="https://cdn.pixabay.com/photo/2017/11/26/15/16/smiley-2979107_960_720.jpg" alt="" />
+							</div>
+							<div class="content">
+								<header class="align-center">
+									<h1>Envie d'en apprendre plus sur la mécanique quantique, lisez ce texte vulgarisé par Serge Hamoudou </h2>
+								</header>
+								<footer class="align-center">
+									<a href="texte/vulgarisation/la_mecanique_quantique_demystifiee.html" class="button alt">Pour le lire, cliquer sur ce lien</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+
 				</div>
-			</section>
+			</div>
+		</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
+		<section id="two" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
 
-						<h2>Parcourez le journal</h2>
-					</header>
-				</div>
-			</section>
+					<h2>Parcourez le journal</h2>
+				</header>
+			</div>
+		</section>
 
 		<!-- Three -->
-			<section id="three" class="wrapper style2">
-				<div class="inner">
-					<header class="align-center">
-						<p class="special"></h2>
-					</header>
-					<div class="gallery">
-						<div>
-							<div class="image fit">
-								<p class="main"><b>Témoignages</b>
-								<br>
+		<section id="three" class="wrapper style2">
+			<div class="inner">
+				<header class="align-center">
+					<p class="special"></h2>
+				</header>
+				<div class="gallery">
+					<div>
+						<div class="image fit">
+							<p class="main"><b>Témoignages</b>
+							<br/>
 
-																Vous trouverez ici les récits les moins visibles que certain.e.s membres de notre communauté étudiante nous transmettent
-								<a href="temoignage.html"><img src="images/human-2944064_1920.jpg" alt="" width="500" height="300" /></a>
+															Vous trouverez ici les récits les moins visibles que certain.e.s membres de notre communauté étudiante nous transmettent
+							<a href="temoignage.html"><img src="images/human-2944064_1920.jpg" alt="" width="500" height="300" /></a>
 
-							</div>
 						</div>
-
-						<div>
-							<div class="image fit">
-								<p style="text-align:center;color:black"><b>Littérature</b>
-								<br>
-
-																Envie de lire des nouvelles, des poèmes, des histoires, des critiques écrites ? Visiter la section littérature
-								<a href="litterature.html"><img src="images/narrative.jpg" alt=""width="500" height="300" /></a>
-
-							</div>
-						</div>
-
-						<div>
-							<div class="image fit">
-								<p style="text-align:center;color:black"><b>Ressource</b>
-								<br>
-								Question sur la recherche, l'Université de Montréal, les professeurs, comment écrire une lettre de motivation, un CV ?
-								 </p>
-								<a href="ressources.html"><img src="images/Ressource.png" width="600" height="400"alt="" style="text-align:center: width:50px;height:200px;" /></a>
-							</div>
-						</div>
-
-						<div>
-							<div class="image fit">
-								<p style="text-align:center;color:black"><b>Vulgarisation</b>
-									<br>
-
-									 Vous êtes curieux d'en apprendre plus sur des sujets qui ont des mots compliqués tels que quarks et monde quantique ? </p>
-								<a  href="vulgarisation.html"><img src="images/vulgarisation_22.png" alt=""width="600" height="400" /></a>
-							</div>
-						</div>
-
-						<div>
-							<div class="image fit">
-								<p style="text-align:center;color:black"><b>Événements</b>
-									<br>
-
-									 Description de la section Événements </p>
-								<a  href="evenements.html"><img src="images/phoenix-5212019_1280.png" alt=""width="600" height="400" /></a>
-							</div>
-						</div>
-
-						<div>
-							<div class="image fit">
-								<p style="text-align:center;color:black"><b>Archives</b>
-									<br>
-
-									 Vous chercher les anciennces éditions de l'Électron-Libre, voici le lien vers toutes les éditions depuis 2004 </p>
-								<a  href="archives.html"><img src="images/archive.jpg" alt=""width="600" height="400" /></a>
-							</div>
-						</div>
-
-				<!--		<div>
-							<div class="image fit">
-								<p style="text-align:center;color:black;"><b>La section Art</b>:
-									<br>
-									Dessins, critiques, poèmes, mots croisés </p>
-								<a href="litterature.html"><img src="images/narrative.jpg" alt="" /></a>
-							</div>
-						</div> -->
 					</div>
+
+					<div>
+						<div class="image fit">
+							<p style="text-align:center;color:black"><b>Littérature</b>
+							<br/>
+
+															Envie de lire des nouvelles, des poèmes, des histoires, des critiques écrites ? Visiter la section littérature
+							<a href="litterature.html"><img src="images/narrative.jpg" alt=""width="500" height="300" /></a>
+
+						</div>
+					</div>
+
+					<div>
+						<div class="image fit">
+							<p style="text-align:center;color:black"><b>Ressource</b>
+							<br>
+							Question sur la recherche, l'Université de Montréal, les professeurs, comment écrire une lettre de motivation, un CV ?
+							 </p>
+							<a href="ressources.html"><img src="images/Ressource.png" width="600" height="400"alt="" style="text-align:center: width:50px;height:200px;" /></a>
+						</div>
+					</div>
+
+					<div>
+						<div class="image fit">
+							<p style="text-align:center;color:black"><b>Vulgarisation</b>
+								<br/>
+
+								 Vous êtes curieux d'en apprendre plus sur des sujets qui ont des mots compliqués tels que quarks et monde quantique ? </p>
+							<a  href="vulgarisation.html"><img src="images/vulgarisation_22.png" alt=""width="600" height="400" /></a>
+						</div>
+					</div>
+
+					<div>
+						<div class="image fit">
+							<p style="text-align:center;color:black"><b>Événements</b>
+								<br/>
+
+								 Description de la section Événements </p>
+							<a  href="evenements.html"><img src="images/phoenix-5212019_1280.png" alt=""width="600" height="400" /></a>
+						</div>
+					</div>
+
+					<div>
+						<div class="image fit">
+							<p style="text-align:center;color:black"><b>Archives</b>
+								<br/>
+
+								 Vous chercher les anciennces éditions de l'Électron-Libre, voici le lien vers toutes les éditions depuis 2004 </p>
+							<a  href="archives.html"><img src="images/archive.jpg" alt=""width="600" height="400" /></a>
+						</div>
+					</div>
+
+			<!--		<div>
+						<div class="image fit">
+							<p style="text-align:center;color:black;"><b>La section Art</b>:
+								<br>
+								Dessins, critiques, poèmes, mots croisés </p>
+							<a href="litterature.html"><img src="images/narrative.jpg" alt="" /></a>
+						</div>
+					</div> -->
 				</div>
-			</section>
+			</div>
+		</section>
 
 		<!-- Four -->
-			<section id="four" class="wrapper style2">
-					<div class="inner">
-						<div class="box">
-							<div class="content">
-								<p style="text-align:center;font-size:24px;color:black;">
-								Saviez-vous que ?
-								</p>
+		<section id="four" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<p style="text-align:center;font-size:24px;color:black;">
+							Saviez-vous que ?
+							</p>
 
 
-								<p style="text-align:justify;font-size:18px;color:black;">
-							Si vous êtes au baccalauréat en physique, vous pouvez gratuitement devenir membre de l'association canadienne des physiciens et physiciennes (CAP). Ce faisant, vous pourrez participez à des conférences sur tous les sujets, recevoir les infolettres sur la physique au Canada. Pour plus d'information, voici le lien vers la page officielle de CAP:
-									<a href="https://www.cap.ca/fr/" > https://www.cap.ca/fr/ </a>.On y trouve beaucoup d'information sur la possibilité d'emploi, qu'est que représente la profession,etc.
-						<br>
-						<br>
-						Il existe aussi l'équivalent américain, APS qui permet aussi de vous tenir à jour sur la physique dans le monde, l'adhésion est encore une fois gratuite. C'est pourquoi je vous conseille vraiment de devenir membre, vous n'avez rien à perdre !<a href="https://www.aps.org/publications/apsnews/index.cfm" > https://www.aps.org/publications/apsnews/index.cfm </a>
-					   <br>
-					<br>
-							Pour plus d'information concernant plus spécifiquement la physique à l'Université de Montréal, je vous invites à consulter l'onglet Ressources.<a href="https://l-electron-libre.github.io/ressources.html" > Ressource </a>
-								</p>
-							</div>
+							<p style="text-align:justify;font-size:18px;color:black;">
+						Si vous êtes au baccalauréat en physique, vous pouvez gratuitement devenir membre de l'association canadienne des physiciens et physiciennes (CAP). Ce faisant, vous pourrez participez à des conférences sur tous les sujets, recevoir les infolettres sur la physique au Canada. Pour plus d'information, voici le lien vers la page officielle de CAP:
+								<a href="https://www.cap.ca/fr/" > https://www.cap.ca/fr/ </a>.On y trouve beaucoup d'information sur la possibilité d'emploi, qu'est que représente la profession,etc.
+					<br/>
+					<br/>
+					Il existe aussi l'équivalent américain, APS qui permet aussi de vous tenir à jour sur la physique dans le monde, l'adhésion est encore une fois gratuite. C'est pourquoi je vous conseille vraiment de devenir membre, vous n'avez rien à perdre !<a href="https://www.aps.org/publications/apsnews/index.cfm" > https://www.aps.org/publications/apsnews/index.cfm </a>
+				   <br/>
+				<br/>
+						Pour plus d'information concernant plus spécifiquement la physique à l'Université de Montréal, je vous invites à consulter l'onglet Ressources.<a href="https://l-electron-libre.github.io/ressources.html" > Ressource </a>
+							</p>
 						</div>
 					</div>
-			</section>
+				</div>
+		</section>
 
-			<!-- Footer bar -->
-			<div id="footer-placeholder">
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-			<!--Navigation Bar -->
-			<script>
-					$.get("template/sidenavbar.html", function(data){
-							$("#nav-placeholder").replaceWith(data);
-					});
-			</script>
-			<!-- Footer -->
-			<script>
-					$.get("template/footer.html", function(data){
-							$("#footer-placeholder").replaceWith(data);
-					});
-			</script>
-
+		<!-- Footer bar -->
+		<div id="footer-placeholder">
+		</div>
+		
 	</body>
 </html>

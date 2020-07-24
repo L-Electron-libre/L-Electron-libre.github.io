@@ -31,6 +31,13 @@ p.litt-indent{
   text-align: justify;
   color:black;
   font-size:18px
+
+}
+
+p.sous-titre{
+  text-align: justify;
+  color:#000000;
+  font-size: 20px;
 }
 
 div

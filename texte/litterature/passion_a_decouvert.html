@@ -31,12 +31,6 @@ base d'un code html
 			<script src="/assets/js/util.js"></script>
 			<script src="/assets/js/main.js"></script>
 
-			<!--Navigation Bar -->
-			<script>
-					$.get("/template/sidenavbar.html", function(data){
-							$("#nav-placeholder").replaceWith(data);
-					});
-			</script>
 			<!-- Footer -->
 			<script>
 					$.get("/template/footer.html", function(data){
@@ -48,8 +42,35 @@ base d'un code html
 
 		<body class="subpage">
 
-			<!-- Navigation bar -->
-			<div id="nav-placeholder"></div>
+			<!--Navigation bar-->
+			<div class="sidenavbar">
+				<header id="header" class="alt">
+						<div class="logo">
+							<a href="/index.html">
+								<img src="/images/logo_blanc.png" alt="Logo Électron Libre"   style="width:200px;height:100px"/>
+								<span>L'Électron Libre</span>
+							</a>
+						</div>
+							<a href="#menu"> Menu </a>
+				</header>
+
+
+		<!-- Nav -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="/index.html">Accueil</a></li>
+						<li><a href="/presentation.html">Présentation</a></li>
+						<li><a href="/temoignage.html">Témoignages</a></li>
+						<li><a href="/litterature.html">Littérature</a></li>
+						<li><a href="/ressources.html">Ressources</a></li>
+						<li><a href="/vulgarisation.html">Vulgarisation</a></li>
+						<li><a href="/evenements.html">Événements</a></li>
+						<li><a href="/archive.html">Archives</a></li>
+						<li><a href="/joindre.html">Nous joindre</a></li>
+					</ul>
+				</nav>
+		<!--end of Navigation bar-->
+			</div>
 
 			<!-- One -->
 			<section id="One" class="wrapper style3">

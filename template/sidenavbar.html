@@ -29,3 +29,18 @@
         </nav>
     <!--end of Navigation bar-->
       </div>
+
+
+<!-- script à mettre au début de chaque fichier html lorsque le problème va être résolu -->
+      <!--Navigation Bar -->
+      <script>
+          $.get("template/sidenavbar.html", function(data){
+              $("#nav-placeholder").replaceWith(data);
+          });
+      </script>
+      <!-- Footer -->
+      <script>
+          $.get("template/footer.html", function(data){
+              $("#footer-placeholder").replaceWith(data);
+          });
+      </script>

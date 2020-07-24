@@ -1671,8 +1671,13 @@ div.scrollmenu a:hover {
 	}
 
 	a {
+		text-decoration: none;
+		color: #008080
+	}
+	a.extern-link{
 		text-decoration: underline;
-		color:blue;
+		color: #008080;
+	/*	color: #e6b800*/
 	}
 
 		a:hover {
@@ -1813,7 +1818,8 @@ div.scrollmenu a:hover {
 	}
 
 	a {
-		color: #8a4680;
+/*		color: #8a4680;*/
+		color: #008080;
 	}
 
 	strong, b {
@@ -2738,7 +2744,8 @@ div.scrollmenu a:hover {
 		}
 
 		.wrapper.style1 {
-			background-color: #8a4680;
+		/*	background-color: #8a4680;*/
+			background-color: #008080;
 			color: #e2d1df;
 		}
 
@@ -2840,7 +2847,8 @@ div.scrollmenu a:hover {
 				.wrapper.style1 button.special,
 				.wrapper.style1 .button.special {
 					background-color: #ffffff;
-					color: #8a4680 !important;
+				/*	color: #8a4680 !important;*/
+					color: #000099 !important;
 				}
 
 			.wrapper.style1 label {
@@ -2884,7 +2892,8 @@ div.scrollmenu a:hover {
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
 				border-color: #ffffff;
-				color: #8a4680;
+				/*color: #8a4680;*/
+				color: #008080;
 			}
 
 			.wrapper.style1 input[type="checkbox"]:focus + label:before,
@@ -2955,7 +2964,8 @@ div.scrollmenu a:hover {
 			}
 
 			.wrapper.style2 a {
-				color: #8a4680;
+				/*color: #8a4680;*/
+				color: #008080;
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
@@ -3031,7 +3041,8 @@ div.scrollmenu a:hover {
 				.wrapper.style2 input[type="button"].special,
 				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
-					background-color: #8a4680;
+					/*background-color: #8a4680;*/
+					background-color: #008080;
 					color: #ffffff !important;
 				}
 
@@ -3069,7 +3080,8 @@ div.scrollmenu a:hover {
 				.wrapper.style2 input[type="email"]:focus,
 				.wrapper.style2 select:focus,
 				.wrapper.style2 textarea:focus {
-					border-color: #8a4680;
+				/*	border-color: #8a4680;*/
+					border-color: #008080;
 					box-shadow: 0 0 0 1px #8a4680;
 				}
 
@@ -3090,8 +3102,11 @@ div.scrollmenu a:hover {
 
 			.wrapper.style2 input[type="checkbox"]:checked + label:before,
 			.wrapper.style2 input[type="radio"]:checked + label:before {
-				background-color: #8a4680;
-				border-color: #8a4680;
+			/*	background-color: #8a4680;*/
+			/*	border-color: #8a4680;*/
+				background-color: #008080;
+				border-color: #008080;
+
 				color: #ffffff;
 			}
 
@@ -3168,7 +3183,8 @@ div.scrollmenu a:hover {
 			}
 
 			.wrapper.style3 a {
-				color: #8a4680;
+				/*color: #8a4680;*/
+				color: #008080;
 			}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -3260,7 +3276,8 @@ div.scrollmenu a:hover {
 				.wrapper.style3 input[type="button"].special,
 				.wrapper.style3 button.special,
 				.wrapper.style3 .button.special {
-					background-color: #8a4680;
+				/*	background-color: #8a4680;*/
+					background-color: #008080;
 					color: #ffffff !important;
 				}
 
@@ -3298,7 +3315,8 @@ div.scrollmenu a:hover {
 				.wrapper.style3 input[type="email"]:focus,
 				.wrapper.style3 select:focus,
 				.wrapper.style3 textarea:focus {
-					border-color: #8a4680;
+				/*	border-color: #8a4680;*/
+					border-color: #008080;
 					box-shadow: 0 0 0 1px #8a4680;
 				}
 
@@ -4056,7 +4074,8 @@ div.scrollmenu a:hover {
 /* Banner */
 
 	.banner {
-		background-color: #8a4680;
+	/*	background-color: #8a4680;*/
+		background-color: #008080;
 		color: #e2d1df;
 		padding: 8em 0;
 		position: relative;
@@ -4368,3 +4387,26 @@ div.scrollmenu a:hover {
 			}
 
 		}
+
+
+/* toc (Table of contents)*/
+#toc_container {
+	background: #f2f2f2;
+/*	background-image: url(/images/ciel_étoilé.jpg);*/
+	border: 1px solid #f2f2f2;/*#006400;*/
+	display: table;
+	font-size: 100%;
+	margin-bottom: 1em;
+	padding: 25px;
+	width: 100%;
+
+		}
+
+	.toc_title {
+	font-weight: 700;
+	text-align: center;
+	}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+	list-style: outside none none !important;
+}

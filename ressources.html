@@ -28,7 +28,17 @@
 						$("#footer-placeholder").replaceWith(data);
 				});
 		</script>
-
+				
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
@@ -66,6 +76,7 @@
 					<li><a href="/ressources.html">Ressources</a></li>
 					<li><a href="/vulgarisation.html">Vulgarisation</a></li>
 					<li><a href="/evenements.html">Événements</a></li>
+					<li><a href="/caricature.html">Caricatures</a></li>
 					<li><a href="/archive.html">Archives</a></li>
 					<li><a href="/joindre.html">Nous joindre</a></li>
 				</ul>
@@ -89,12 +100,15 @@
 				<div class="box">
 					<div class="content">
 						<header class="align-center">
-							<h2 style="text-decoration:underline;">Qu'est-ce que la recherche ?</h2>
 				<!--			<h3>Description de la section </h3>-->
 						</header>
 
 						<p class="main">
+  						<button onclick="myFunction()";>Description de la section</button>
+
+  						<div id="myDIV">
 						L'objectif de cette section est d'essayer de présenter une vue d'ensemble sur la recherche en physique. Ce n'est absolument pas une description absolue ou exhaustive. L'idée est simplement de donner les grandes lignes de ce qui se fait à l'Université de Montréal en physique et, ainsi, de guider les nouveaux étudiants et les nouvelles étudiantes à travers le monde de la recherche.
+					</div>
 
 						</p>
 

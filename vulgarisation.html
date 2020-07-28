@@ -27,6 +27,17 @@
 						$("#footer-placeholder").replaceWith(data);
 				});
 		</script>
+				
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
@@ -62,6 +73,7 @@
 					<li><a href="/ressources.html">Ressources</a></li>
 					<li><a href="/vulgarisation.html">Vulgarisation</a></li>
 					<li><a href="/evenements.html">Événements</a></li>
+					<li><a href="/caricature.html">Caricatures</a></li>
 					<li><a href="/archive.html">Archives</a></li>
 					<li><a href="/joindre.html">Nous joindre</a></li>
 				</ul>
@@ -84,6 +96,12 @@
 		<section id="two" class="wrapper style2">
 			<div class="inner">
 				<header class="align-center">
+					<p class="main">
+					<button onclick="myFunction()";>Description de la section</button>
+					</p>
+					<div id="myDIV">
+					<p class="main">
+					L'idée de cette section est de vulgariser, des concepts ( ex la théorie des groupes ), articles (article paru dans une revue ou que vous avez écrit et que vous êtes intéressés à expliqué), sujets (mécanique quantique, la cosmologie) de la physique et de présenter les sphères de la physique qui sont présentes à l'Université de Montréal. Le concept général est donnée une idée de ce que peut ressembler des études dans ces domaines, ou simplement de piquer votre intérêt à étudier un sujet des plus inusités.</p>	</div>
 					<p class="special"></p>
 				</header>
 				<div class="gallery">
@@ -92,7 +110,7 @@
 						<div class="image fit">
 							<p class="main" style="text-align:center"><b>La mécanique quantique démystifiée - Serge Hamoudou</b></p>
 							<br/>
-							<a href="texte/vulgarisation/la_mecanique_quantique_demystifiee.html"><img src="images/human-2944064_1920.jpg" alt="La mécanique quantique démystifiée" /></a>
+							<a href="texte/vulgarisation/la_mecanique_quantique_demystifiee.html"><img src="images/QM.jpg" alt="La mécanique quantique démystifiée" /></a>
 						</div>
 					</div>
 				</div>
@@ -106,13 +124,10 @@
 				<div class="box">
           <div class="content">
 						<header class="align-center">
-							<h2>Description de la section</h2>
+							
+
 						</header>
-
-						<p class="main">
-						L'idée de cette section est d'essayer d'expliquer les différentes sphères de la physique en se concentrant sur les 4 principaux champs : Physique des particules, Physique des plasma, Physique de la matière condensée, Biophysique, Astronomie et astrophysique et Physique médicale.
-
-						</p>
+			
 
 <!-- Table des matières -->
 						<div id="toc_container"a>

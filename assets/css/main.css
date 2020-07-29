@@ -4275,6 +4275,7 @@ div.scrollmenu a:hover {
 
 			.banner > article img {
 				display: none;
+				width: auto;
 			}
 
 			.banner > article.visible {

@@ -4411,3 +4411,15 @@ div.scrollmenu a:hover {
 #toc_container li, #toc_container ul, #toc_container ul li{
 	list-style: outside none none !important;
 }
+
+
+	/*Fleches*/
+	.next:before             { content: "\279C"; }
+	.left_arrow:before       { content: "\2190"; }
+	.up_arrow:before         { content: "\2191"; }
+	.right_arrow:before      { content: "\2192"; }
+	.down_arrow:before       { content: "\2193"; }
+	.up_left_arrow:before    { content: "\2196"; }
+	.up_right_arrow:before   { content: "\2197"; }
+	.down_left_arrow:before  { content: "\2199"; }
+	.down_right_arrow:before { content: "\2198"; }

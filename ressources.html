@@ -30,12 +30,17 @@
 		</script>
 
       <script>
-      function myFunction() {
+      function ClickButton() {
         var x = document.getElementById("myDIV");
+				var y = document.getElementById("myButtonImg");
+				console.log(x);
+				console.log(y);
         if (x.style.display === "none") {
           x.style.display = "block";
+					y.className = "up_arrow";
         } else {
           x.style.display = "none";
+					y.className = 'down_arrow';
         }
       }
       </script>
@@ -97,10 +102,10 @@
 		<section id="two" class="wrapper style2">
 			<div class="inner">
 				<header class="align-center">
-					<p class="main">
-						<button onclick="myFunction()";>Plus précisément</button>
-					</p>
-					<div id="myDIV">
+				  <p class="main">
+					  <button id="myButtonImg" class='down_arrow' onclick="ClickButton()";>     Plus précisément</button>
+				  </p>
+					<div id="myDIV" style="display:none">
 						<p class="main">
 							L'objectif de cette section est d'essayer de présenter une vue d'ensemble sur la recherche en physique. Ce n'est absolument pas une description absolue ou exhaustive. L'idée est simplement de donner les grandes lignes de ce qui se fait à l'Université de Montréal en physique et, ainsi, de guider les nouveaux étudiants et les nouvelles étudiantes à travers le monde de la recherche.
 						</p>

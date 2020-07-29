@@ -29,6 +29,7 @@
   		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <!-- Links -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
   		<link rel="stylesheet" href="assets/css/main.css" />
   		<link rel="stylesheet" href="assets/css/texte.css" />
 
@@ -48,12 +49,17 @@
 
 
       <script>
-      function myFunction() {
+      function ClickButton() {
         var x = document.getElementById("myDIV");
+				var y = document.getElementById("myButtonImg");
+				console.log(x);
+				console.log(y);
         if (x.style.display === "none") {
           x.style.display = "block";
+					y.className = "up_arrow";
         } else {
           x.style.display = "none";
+					y.className = 'down_arrow';
         }
       }
       </script>
@@ -112,9 +118,9 @@
   			<div class="inner">
   				<header class="align-center">
             <p class="main">
-						   <button onclick="myFunction()";text-align: center;>Plus précisément</button>
+						   <button id="myButtonImg" class="down_arrow" onclick="ClickButton()">    Plus précisément</button>
             </p>
-						<div id="myDIV">
+						<div id="myDIV" style="display:none">
 							<p class="main">
                 Cette section vous permet d'exprimer votre créativité, que ce soit par des poèmes, des nouvelles littéraires, des slams, etc.
               </p>

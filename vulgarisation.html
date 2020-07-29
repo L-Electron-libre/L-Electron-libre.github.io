@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/texte.css" />
 
@@ -28,16 +29,21 @@
 				});
 		</script>
 
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
+		<script>
+		function ClickButton() {
+			var x = document.getElementById("myDIV");
+			var y = document.getElementById("myButtonImg");
+			console.log(x);
+			console.log(y);
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				y.className = "up_arrow";
+			} else {
+				x.style.display = "none";
+				y.className = 'down_arrow';
+			}
+		}
+		</script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
@@ -96,9 +102,9 @@
 			<div class="inner">
 				<header class="align-center">
 					<p class="main">
-					<button onclick="myFunction()";>Description de la section</button>
+					<button  id="myButtonImg" class="down_arrow" onclick="ClickButton()";>    Description de la section</button>
 					</p>
-					<div id="myDIV">
+					<div id="myDIV" style="display:none">
 						<p class="main">
 							Cette section est ouverte à tout ce qui touche à la communication scientifique. Un résumé d’une expérience qui vous passionne ou de votre recherche, un résumé d’un stage que vous avez effectué, une sujet d'actualité scientifique qui vous intéresse, des concepts scientifiques ou bien les sphères de la physique qui sont présentes à l'Université de Montréal, les possibilités sont infinies! L'object est simplement de piquer votre intérêt pour différentes sphères de la physique, ou des sujets scientifiques plus inusités.
 						</p>

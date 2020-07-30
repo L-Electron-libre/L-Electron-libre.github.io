@@ -67,3 +67,10 @@ background: #000000 ;
 margin: auto;
 }
 
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+

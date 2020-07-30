@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Links -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link rel="stylesheet" href="/assets/css/texte.css" />
 		<!-- Scripts -->
@@ -26,6 +27,24 @@
 						$("#footer-placeholder").replaceWith(data);
 				});
 		</script>
+
+
+		<script>
+		function ClickButton() {
+			var x = document.getElementById("myDIV");
+			var y = document.getElementById("myButtonImg");
+			console.log(x);
+			console.log(y);
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				y.className = "up_arrow";
+			} else {
+				x.style.display = "none";
+				y.className = 'down_arrow';
+			}
+		}
+		</script>
+
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
@@ -78,6 +97,24 @@
 				</header>
 			</div>
 		</section>
+
+		<!-- Présentation de la section -->
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<header class="align-center">
+					<p class="main">
+						 <button id="myButtonImg" class="down_arrow" onclick="ClickButton()">    Plus précisément</button>
+					</p>
+					<div id="myDIV" style="display:none">
+						<p class="main">
+							DESCRIPTION DE LA SECTION
+						</p>
+					</div>
+					<p class="special"></p>
+			</header>
+			</div>
+		</section>
+
 
   <!-- Two -->
     <section id="two" class="wrapper style2">

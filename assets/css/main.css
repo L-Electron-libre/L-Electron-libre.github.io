@@ -3171,7 +3171,8 @@ div.scrollmenu a:hover {
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
-			background-image: url(../../images/ciel_étoilé.jpg);
+	/*		background-image: url(/images/ciel_etoile_2.jpg);*/
+			background-image: url("https://www.monash.edu/__data/assets/image/0006/869163/Attachment-1.jpg");
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;

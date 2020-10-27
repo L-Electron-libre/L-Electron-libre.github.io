@@ -71,6 +71,7 @@
 					<li><a href="/vulgarisation.html">Vulgarisation</a></li>
 					<li><a href="/evenements.html">Événements</a></li>
 					<li><a href="/caricature.html">Caricatures</a></li>
+					<li><a href="/jeux.html">Jeux</a></li>
 					<li><a href="/archive.html">Archives</a></li>
 					<li><a href="/joindre.html">Nous joindre</a></li>
 				</ul>
@@ -112,13 +113,13 @@
 			</div>
 		</section>
 
-
+<!--
 		<section id="info-lettres" class="wrapper style2">
 			<div class="inner">
 				<div class="box">
 					<div class="content">
 						<p class="poem">Inscrivez-vous à l'infolettre !</p>
-						<form method="post" >
+						<form method="post" action="infolettre.php" >
 							<table class="tbl-infolettre">
 								<tr>
 									<td class="main">Entrez votre adresse courriel</td>
@@ -133,21 +134,8 @@
 				</div>
 			</div>
 		</section>
+-->
 
-		<?php
-		   // Vérifier si le formulaire est soumis
-		   if ( isset( $_POST['submit'] ) ) {
-		     /* récupérer les données du formulaire en utilisant
-		        la valeur des attributs name comme clé
-		       */
-		     $email = $_POST['email'];
-
-		     // afficher le résultat
-		     echo '<h3>Informations récupérées en utilisant POST</h3>';
-		     echo 'Email : ' .$email;
-		     exit;
-		  }
-		?>
 
 		<!-- Footer bar -->
 		<div id="footer-placeholder">

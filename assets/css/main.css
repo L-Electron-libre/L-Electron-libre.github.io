@@ -3168,6 +3168,11 @@ div.scrollmenu a:hover {
 				border-color: rgba(0, 0, 0, 0.15);
 			}
 
+			.wrapper.style2.tblinfolettre table tbody tr td {
+				    margin: 0 0 1rem 0 !important;
+						background-color: :white !important;
+			}
+
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
@@ -4424,3 +4429,11 @@ div.scrollmenu a:hover {
 	.up_right_arrow:before   { content: "\2197"; }
 	.down_left_arrow:before  { content: "\2199"; }
 	.down_right_arrow:before { content: "\2198"; }
+
+
+	.centered {
+	  margin: auto;
+	  width: 60%;
+	  border: 5px solid #FFFF00;
+	  padding: 10px;
+	}

@@ -2438,21 +2438,39 @@ div.scrollmenu a:hover {
 	ol {
 		list-style: decimal;
 		margin: 0 0 2rem 0;
-		padding-left: 1.25rem;
+		padding-left: 2.5rem;
+	  color:black;
+	  font-size:22px;
+		font-weight:bold;
 	}
 
 		ol li {
 			padding-left: 0.25rem;
+			color:black;
+			font-size:20px;
+			font-weight:lighter;
 		}
 
+		ol ul li {
+			padding-left: 0.25rem;
+			font-size:18px;
+			font-weight:100;
+		}
 	ul {
 		list-style: disc;
 		margin: 0 0 2rem 0;
-		padding-left: 1rem;
+		padding-left: 2rem;
+		list-style-type: square;
+		color:black;
+		font-size:20px;
+		font-weight:bold;
 	}
 
 		ul li {
-			padding-left: 0.5rem;
+			padding-left: 0.1rem;
+			text-align: justify;
+			font-size:16px;
+			font-weight:normal;
 		}
 
 		ul.alt {

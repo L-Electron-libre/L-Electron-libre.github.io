@@ -1,0 +1,655 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+	<html>
+		<head>
+			<title>Vulgarisation - L'Électron Libre</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
+			<meta property="og:image" content="https://l-electron-libre.github.io/images/QM.jpg" />
+			<meta property="og:type" content="website"/>
+			<meta property="og:url" content="https://l-electron-libre.github.io/texte/vulgarisation/spectroscopie.html"/>
+			<meta property="og:title" content="Vulgarisation - L'Électron Libre"/>
+			<meta property="og:description" content="Émergence de la spectroscopie en astronomie, le rôle des raies d’absorption - Par Sarah Piché Perrier"/>
+
+	<!--		<meta property="og:url"                content="https://l-electron-libre.github.io/texte/vulgarisation/la_mecanique_quantique_demystifiee.html" />
+			<meta property="og:type"               content="article" />
+			<meta property="og:title"              content="La mécanique quantique démystifiée" />
+			<meta property="og:description"        content="La mécanique quantique a la réputation d’être incompréhensible. Aujourd’hui, je vais tenter de détruire ce mythe, phénomène par phénomène." />
+			<meta property="og:image"              content="images/QM.jpg" />
+-->
+
+			<!-- Links -->
+			<link rel="stylesheet" href="/assets/css/main.css" />
+	    <link rel="stylesheet" href="/assets/css/texte.css">
+
+			<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+
+			<!-- Footer -->
+			<script>
+					$.get("/template/footer.html", function(data){
+							$("#footer-placeholder").replaceWith(data);
+					});
+			</script>
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-169295343-1');
+			</script>
+			  <div id="fb-root"></div>
+			  <script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+		</head>
+		<body class="subpage">
+
+			<!-- Navigation bar -->
+			<div class="sidenavbar">
+				<header id="header" class="alt">
+						<div class="logo">
+							<a href="/index.html">
+						      <img src="/images/logo_blanc_avec_nom.png" alt="Logo Électron Libre"   style="width:200px;height:130px"/>
+							</a>
+						</div>
+							<a href="#menu"> Menu </a>
+				</header>
+
+
+		<!-- Nav -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="/index.html">Accueil</a></li>
+						<li><a href="/presentation.html">Présentation</a></li>
+						<li><a href="/temoignage.html">Témoignages</a></li>
+						<li><a href="/litterature.html">Littérature</a></li>
+						<li><a href="/ressources.html">Ressources</a></li>
+						<li><a href="/vulgarisation.html">Vulgarisation</a></li>
+						<li><a href="/evenements.html">Événements</a></li>
+						<li><a href="/caricature.html">Caricatures</a></li>
+						<li><a href="/jeux.html">Jeux</a></li>
+						<li><a href="/archive.html">Archives</a></li>
+						<li><a href="/joindre.html">Nous joindre</a></li>
+					</ul>
+				</nav>
+		<!--end of Navigation bar-->
+			</div>
+
+			<!-- One -->
+	    <section id="One" class="wrapper style3">
+	      <div class="inner">
+	        <header class="align-center">
+	          <p>Journal étudiant de la PHYSUM</p>
+	          <h2>Vulgarisation</h2>
+	        </header>
+	      </div>
+	    </section>
+
+			<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center titre">
+								<h2>Émergence de la spectroscopie en astronomie, le rôle des raies d’absorption</h2>
+								<h3>Par Sarah Piché Perrier</h3>
+							</header>
+							<br />
+							<p class="main">
+								Lorsque les premiers humains ont tourné leur regard vers le ciel il y a des millions d’années,
+								l’astronomie est née. Cette astronomie embryonnaire était encore bien loin de celle que l’on connaît
+								aujourd’hui. Elle commença tout d’abord par n’être que de simples observations, sans forcément
+								être accompagnée de questionnements. Puis, l’Homme commença à se poser des questions sur la
+								Lune et ces petits points brillants qui scintillaient dans les cieux. Il se mit à étudier la position, les
+								mouvements, la structure et l’évolution des corps célestes. Naquit ainsi peu à peu la science qu’est
+								l’astronomie moderne au fur et à mesure que celle-ci se dissociait des interprétations mystiques
+								de l’astrologie. Au cours des années, deux autres branches scientifiques découlèrent directement de
+								l’astronomie. L’une d’elle fut l’astrophysique, un domaine de l’astronomie qui étudie la nature, les
+								propriétés physiques, la formation et l’évolution des astres grâce à l’utilisation des lois et équations
+								de la physique. L’autre fut la cosmologie, une science qui étudie la structure et l’évolution de
+								l’Univers dans son ensemble. Chacune de ces sciences cousines emploie comme moteur de recherche
+								les observations de l’espace pouvant être réalisées depuis le point d’observation de l’humanité,
+								la Terre et le système solaire. En faisant abstraction des sondes qui peuvent être envoyées sur
+								certaines planètes, l’une des seules choses qui est observable depuis la planète bleue est la lumière en
+								provenance du reste de l’espace qui arrive jusqu’à elle. Cette lumière peut être étudiée sur l’ensemble
+								de son spectre, c’est-à-dire des rayons gamma, en passant par la lumière visible, jusqu’aux ondes
+								radios. Il existe deux principales méthodes permettant de l’étudier. La première consiste à mesurer
+								l’intensité de son flux, autrement dit, à calculer le nombre de photons reçus par unité de surface et
+								de temps en provenance d’une source localisée. Cette manière de procéder est réalisée la plupart
+								du temps grâce à la photométrie. La seconde méthode consiste à analyser en détail le spectre de
+								cette lumière ; en d’autres mots il s’agit d’étudier la décomposition de la lumière sur l’ensemble des
+								longueurs d’onde. Cette dernière est quant à elle réalisée via la spectroscopie. Ce fut avec l’arrivée
+								de la spectroscopie en astronomie que cette science fit réellement le grand bond vers la gloire
+								qu’elle connaît aujourd’hui. La suite de ce texte expose l’histoire de la spectroscopie en astronomie
+								à travers l’étude des raies d’absorption qui furent au coeur de chacune des grandes étapes évolutives
+								de cette science, en partant des premières découvertes qui menèrent à la naissance de ce domaine
+								d’études, puis en abordant les courts récits des personnes qui contribuèrent à son implantation
+								dans le domaine de l’étude des astres, et enfin, en concluant avec la dernière grande découverte
+								qui révolutionna la spectroscopie en apportant la dernière pièce manquante à la compréhension
+								des raies d’absorption, permettant ainsi à cette science de déployer son plein potentiel.
+							</p>
+							<p class="main" >
+								<h2><b>Des premières observations à la première grande découverte</b></h2>
+							</p>
+							<p class="main" >
+								Le début de cette grande histoire au dénouement heureux qu’est
+								la spectroscopie commença en 1666 lorsqu’un jeune Newton, alors âgé
+								d’une vingtaine d’années, remarqua qu’il était possible de séparer la
+								lumière concentrée du Soleil en une bande lumineuse ordonnée allant
+								du violet au rouge qu’il appela spectre.[1] [25] Plus encore, il découvrit
+								que cette séparation était une propriété de la lumière blanche elle-même
+								et non du prisme utilisé pour la diffracter. Il établit alors que la
+								lumière blanche était composée de toutes les couleurs visibles et que
+								chacune de ces couleurs était déviée avec un angle légèrement différent
+								lorsqu’elle passait d’un milieu transparent à un autre (ex : de l’air au
+								verre et du verre à l’air), allant du rouge qui est peu dévié au violet
+								qui comporte la déviation la plus importante. Bien qu’il ne saisissa pas
+								pourquoi ces couleurs avaient un angle de déviation différent propre
+								à chacune, il comprit que c’était ce phénomène qui créait le spectre
+								d’apparence continue lorsque la lumière passait d’un milieu à un autre
+								et que ce spectre serait toujours le même.
+							</p>
+							<p class="main" >
+								Il fallut attendre jusqu’en 1801 pour que la raison de ce phénomène
+								soit expliquée par l’homme de science britannique Thomas
+								Young, qui réussit à convaincre la communauté scientifique de l’époque
+								que la lumière était de nature ondulatoire grâce à une démonstration
+								expérimentale.[2] Il réussit aussi à calculer la longueur d’onde de sept
+								des couleurs du spectre lumineux de Newton, dont les lumières rouge
+								et violette.[10] De ces observations, il émit l’hypothèse que les couleurs
+								observables étaient liées à une longueur d’onde spécifique et que
+								les couleurs ayant une longueur d’onde plus courte étaient davantage
+								déviées que celles ayant une longueur d’onde plus longue. Avec cette
+								nouvelle affirmation, il fut alors possible d’associer une valeur numérique
+								à chacune des couleurs du spectre lumineux et, ainsi, de calculer
+								avec une certaine précision les positions de chacune des raies sombres qui
+								allaient être découvertes plus tard.
+							</p>
+							<p class="main" >
+								À l’époque, la précision des appareils optiques qu’utilisa Newton
+								ne lui permit pas de percevoir les minces bandes noires qui entrecoupaient
+								le spectre du Soleil, ce dernier lui apparut donc comme une
+								bande arc-en-ciel ininterrompue. Cependant, au début du 19e siècle,
+								les avancées dans le domaine de l’optique permirent d’avoir la précision
+								nécessaire pour apercevoir pour la première fois de fines raies
+								noires dans le spectre solaire que l’on croyait jusqu’alors continu. Le
+								récit du formidable rôle des raies d’absorption en astronomie commença
+								donc avec le scientifique britannique William Hyde Wollaston
+								[2], principalement connu pour ses avancées en chimie [18], qui, lors
+								de ses expérimentations en optique, fournit la première observation recensée
+								d’un spectre du soleil discontinu en 1802. Cependant, il n’investigua
+								pas davantage sur ce fait.
+							</p>
+							<div class="image fit">
+								<img src="/texte/vulgarisation/images/deuxfentes.png" alt="Deux fentes">
+								<figcaption>Expérience des deux fentes - Pixabay</figcaption>
+							</div>
+							<p class="main" >
+								Ce fut avec l’arrivée de Joseph von Fraunhofer [9], un opticien allemand,
+								près de 12 ans plus tard que l’épopée de ces minces bandes
+								noires recommença et prit son fulgurant envol. Alors que le jeune scientifique
+								effectuait des recherches dans le but d’améliorer les appareils
+								optiques de l’époque, il observa à son tour que le spectre du soleil était
+								discontinu. Cette redécouverte fut faite indépendamment des travaux
+								de Wollaston. À la même époque (entre 1814 et 1821), Fraunhofer
+								remplaça le prisme dans son appareil optique par un réseau de fentes
+								afin de diffracter la lumière, ce qui s’avéra bien plus efficace et précis,
+								permettant la création de spectres de meilleur qualité. C’est ainsi
+								qu’il aurait inventé à proprement parler le premier spectroscope.[3]
+								[21] Durant cette période, il observa près de 674 raies sur le spectre solaire et il mesura la position
+								de 324 à 350 de ces raies qu’il catalogua.[2] [26] [7] Il ne comprit pas la signification de ces bandes
+								sombres et encore moins leur cause, mais il remarqua que plusieurs autres astres avaient également
+								un spectre discontinu et compara le spectre du soleil avec d’autres astres comme Vénus.
+							</p>
+							<p class="main" >
+								S’ensuivit une période relativement morte durant laquelle aucune
+								avancée majeure ne se produisit avec ces fameuses bandes noires. Elles
+								furent remarquées et il était de plus en plus certain que la majorité des
+								astres observables pourraient en posséder, mais on ignorait toujours ce
+								qu’elles étaient et à quoi elles pourraient bien servir. Elles se révélèrent
+								donc fort peu utiles jusqu’à ce que leur signification soit découverte.
+							</p>
+							<p class="main" >
+								Le récit reprit donc en 1859 lorsque ce premier pan de mystère
+								s’envola grâce aux travaux conjugués du physicien allemand Gustav
+								Robert Kirchhoff et du chimiste de même nationalité Robert Wilhelm
+								Bunsen. Les deux scientifiques étudiaient alors la lumière produite
+								par certains sels et minéraux lorsqu’ils étaient soumis à la flamme
+								d’un brûleur et tentaient de déterminer s’il était possible d’identifier
+								les éléments qui les composaient grâce à cette lumière. Pour ce faire,
+								ils utilisèrent le brûleur à bec Bunsen développé par M. Bunsen.
+							</p>
+							<p class="main" >
+								La lumière qui était émise par le gaz chaud qui se dégageait des
+								combustions était alors dispersée afin d’obtenir un spectre, une idée
+								de Kirchhoff qui utilisa une version du spectroscope de Fraunhofer
+								qu’il avait lui-même perfectionné afin de disperser la lumière et mesurer
+								le spectre obtenu.[2] Cependant, le résultat ne fut pas un spectre
+								arc-en-ciel comme ce serait le cas avec une lumière blanche, ils obtinrent
+								plutôt des bandes lumineuses isolées. En approfondissant leur
+								recherche et en étudiant certains éléments chimiques de plus en plus
+								purs, Kirchhoff réalisa que chacun des éléments émettaient une série de
+								bandes lumineuses qui leur étaient propres lorsqu’ils étaient chauffés.
+								Il donna le nom de raies d’émission à ces bandes lumineuses. Kirchhoff
+								venait de découvrir qu’il était possible d’identifier les éléments
+								présents dans une substance en étudiant les raies spectrales qu’elle produisait une fois chauffée.
+								Sans encore vraiment le savoir, il venait également de créer la spectroscopie et de sonner le début
+								de l’impressionnante montée en puissance de ce nouveau domaine scientifique.[3]
+							</p>
+							<p class="main" >
+								En effectuant les mesures de la position des raies d’émission dans le spectre lumineux, Kirchhoff
+								remarqua que certaines d’entre elles correspondaient parfaitement à quelques-unes des raies
+								de Fraunhofer observées près de 35 ans auparavant dans le spectre solaire. Il formula alors l’hypothèse
+								que les minces bandes noires résultaient de l’absorption d’une partie de la lumière blanche
+								provenant d’une source chaude par les éléments chimiques plus froids situés entre la source et
+								l’observateur.[2] De plus, son hypothèse suggéra que les longueurs d’onde qui étaient absorbées
+								par chacun de ces éléments correspondaient aux longueurs d’onde émises par ces mêmes éléments
+								lorsqu’ils étaient chauffés. En d’autres mots, la présence d’un élément chimique se manifeste sur
+								un spectre continu par la présence de bandes sombres aux positions des raies d’émission caractéristiques
+								de cet élément. De la même manière qu’il avait nommé les raies résultantes de l’émission
+								de lumière par un élément « raies d’émission », il donna le nom de raies d’absorption aux bandes
+								noires. Kirchhoff fut le premier à établir le lien entre ces bandes sombres et les raies d’émission,
+								résolvant ainsi la première partie du puzzle. Bien qu’il réussit à comprendre d’où venait ces raies
+								et ce qu’elles représentaient, il ignorait toujours la raison physique qui causait ce phénomène.
+							</p>
+							<p class="main" >
+								<h2><b>Les pionniers et premières de la spectroscopie en astronomie</b></h2>
+							</p>
+							<p class="main" >
+								Il fallut patienter jusqu’à la deuxième décennie du 20e siècle pour que la deuxième partie du
+								mystère s’éclaircisse, mais entre temps, plusieurs personnes s’intéressèrent aux raies d’absorption
+								et à leurs applications possibles dans le domaine de l’étude astronomique. Kirchhoff lui-même
+								s’intéressa d’ailleurs aux applications de cette découverte en astronomie et en déduit que les raies
+								d’absorption présentes dans le spectre du Soleil étaient dues à la présence d’éléments chimiques
+								dans son atmosphère.[2]
+							</p>
+							<p class="main" >
+								Les implications ce cette découverte eurent des répercussions immenses, mais surtout établirent
+								une fois pour toute que le Soleil était un astre chaud, ce qui mit fin au débat encore présent à
+								l’époque sur l’hypothèse d’un Soleil froid.[17] Avec la connaissance de la signification des raies
+								spectrales, il fut également possible de déterminer la composition chimique des atmosphères des
+								autres étoiles ou de tout astre émettant une lumière visible suffisamment forte pour être perçue
+								depuis la Terre. Cette même compréhension des raies d’absorption laissa aussi présager l’existence
+								d’éléments chimiques qui n’avaient pas encore été identifiés sur Terre, mais qui de toute évidence
+								étaient présents autour de ces astres.[19]
+							</p>
+							<p class="main" >
+								En 1860, l’astronome italien Giovanni Battista Donati fut le premier
+								à avoir l’idée de coupler un spectroscope à son télescope pour
+								observer les comètes et les analyser de façon spectroscopique. Au cours
+								des trois années qui suivirent, il étudia également les spectres d’une
+								quinzaine d’étoiles et publia ses résultats en 1863.[3] Cependant, Donati
+								demeure principalement reconnu pour ses travaux sur les comètes.
+								Au cours de ces observations, il remarqua qu’à l’approche du
+								Soleil, ces corps froids émettaient leur propre lumière plutôt que celle
+								réfléchie de l’astre solaire, rendant ainsi possible l’analyse de leur composition
+								via la spectroscopie.[24] Il fut d’ailleurs le premier à observer
+								le spectre d’une comète et à en déduire la composition chimique en
+								1864.[13] Il inaugura ainsi l’étude spectroscopique de ces astres.
+							</p>
+							<p class="main" >
+								À la même époque, plusieurs autres scientifiques eurent des idées
+								similaires un peu partout dans le monde. C’est d’ailleurs le cas de l’astronome
+								britannique William Huggins qui regarda à son tour le ciel
+								à travers une vision spectroscopique.[3] [15] Il fut l’un des premiers
+								à vraiment appliquer l’analyse spectrale en astronomie et à déterminer
+								la composition chimique de plusieurs astres brillants. Il observa
+								principalement les objets célestes s’apparentant à première vue à des
+								étoiles et il fit plusieurs découvertes importantes. L’une des premières
+								parut en 1863 dans une publication dans laquelle il démontra que les
+								étoiles observables étaient composées des mêmes éléments chimiques
+								que ceux se trouvant sur la Terre et dans l’atmosphère du Soleil.[8] En
+								1864, il fut le premier à noter le spectre d’une nébuleuse planétaire.[27]
+								En approfondissant ses études, il établit la distinction entre les nébuleuses
+								et les galaxies, dont les spectres avaient des comportements bien différents.
+							</p>
+							<p class="main" >
+								Les spectres des nébuleuses s’apparentaient à ceux des gaz chauds,
+								alors que ceux des galaxies s’apparentaient davantage à ceux des
+								étoiles. Il est à noter qu’à cette époque, l’appellation de nébuleuse
+								désignait tout objet astronomique d’apparence diffuse. De ce fait, autant
+								les objets qui apparaissaient flous dû à la résolution insuffisante
+								des appareils que les vraies nébuleuses étaient considérés comme des
+								nébuleuses. Parmi ces objets inclus à tort dans le grand ensemble des
+								nébuleuses se trouvaient entre autres les galaxies et les amas d’étoiles.
+								La distinction entre les nombreux types de nébuleuses était également
+								encore à faire. La seconde grande découverte de Huggins amena la
+								preuve que parmi les nébuleuses se trouvaient des objets distincts, ce
+								qui ouvrit la porte au début de ces diverses classifications entre les
+								astres nébulaires qui aboutirent plus tard aux définitions actuelles des
+								différents corps célestes. Sa troisième grande découverte fut la possibilité de mesurer la vitesse
+								radiale des étoiles à partir du décalage des raies d’absorption présentes dans le spectre de celles-ci
+								grâce à l’effet Doppler. Il réalisa ainsi la première mesure de la vitesse radiale d’une étoile 1868
+								avec cette technique.[8] Cette technique est encore utilisée de nos jours afin de calculer les vitesses
+								de déplacements et surtout le sens de déplacement des astres. Un exemple de ce décalage dû à
+								l’effet Doppler est illustré sur la figure 4.
+							</p>
+							<p class="main" >
+								Monsieur Huggins et sa femme Margaret Lindsay Huggins (Murray de son nom de fille), une
+								astronome d’origine irlandaise qu’il épousa en 1878, furent considérés comme des pionniers dans le
+								domaine de la spectroscopie appliquée en astronomie, révolutionnant l’observation dans ce domaine.
+								Bien que le nom de celle-ci n’apparaisse sur aucune publication officielle en tant que coauteure, elle
+								fut indéniablement bien plus qu’une simple assistante de recherche. Il est donc légitime d’accorder
+								un mérite équivalent à ces deux personnes pour les découvertes faites par le couple Huggins après
+								cette date.[6] [14]
+							</p>
+							<p class="main" >
+								Parmi les autres grands noms qui s’intéressèrent à la spectroscopie
+								astronomique au début des années 1860 se trouvait l’astronome américain
+								Lewis Morris Rutherfurd. Bien que cet ancien homme de lois devenu
+								astronome fut principalement connu pour ses remarquables photographies
+								de la Lune, il apporta également de jolies avancées dans
+								le domaine de l’étude des raies d’absorption. Il est à noter que ses
+								découvertes et innovations dans le domaine de la photographie astronomique
+								furent d’une aide importante pour la conservation des observations
+								spectrales, permettant un enregistrement précis et durable qui
+								rendit possible l’étude ultérieure des spectres.
+							</p>
+							<p class="main" >
+								Dès 1862, Rutherfurd s’intéressa de près aux spectres des objets
+								lumineux célestes. Il développa d’ailleurs une nouvelle technique d’observation, qu’il peaufina avec
+								les années, qui lui permit d’acquérir une meilleure résolution spectrale. En remplaçant le prisme
+								conventionnel par une lentille cylindrique devant l’objectif de son appareil, il réussit à augmenter
+								la largeur du spectre résultant sans toutefois affecter sa longueur. Ceci permit de meilleures lectures
+								sans avoir d’étirement du spectre, étirement qui aurait pu modifier les positions des raies
+								et ainsi fausser les résultats. Il découvrit alors une multitude de nouvelles raies d’absorption invisibles
+								auparavant.[20] Grâce à sa nouvelle méthode d’observation, il étudia plusieurs des étoiles les
+								plus brillantes relativement fixes dans le ciel, telles que Sirius, Castor, Pollux, Capella, Procyon et
+								Orionis. De cette première série d’observations, il publia en 1863 son premier article astronomique
+								dans lequel il fit la première tentative connue d’une classification stellaire.[12] Cette classification
+								fut basée sur les similarités des propriétés observées dans les spectres des étoiles et porta principalement
+								sur les nombres de raies d’absorption présentes et les éléments qu’elles représentaient.
+								Cette catégorisation des étoiles, mais surtout la difficulté de leur classement en groupes distinctifs,
+								amena la preuve que les étoiles étaient bel et bien différentes les unes des autres malgré
+								des similitudes entre certaines d’entre elles. Parmi les observations de Rutherfurd ayant servi à
+								l’écriture de son article, aucune de ces étoiles ne possédaient le même spectre, et donc, chacune
+								possédait une composition légèrement différente ou bien largement différente, comme ce fut le cas avec
+								Sirius qui possédait des éléments absents de la surface du Soleil.[20] Bien que ces recherches
+								s’apparentèrent fortement à celles de Donati durant la même année, elles furent faites de façon
+								totalement indépendante. Les trois premières années de la septième décennie du 19e siècle furent
+								sans conteste très productives dans l’étude des raies spectrales. Un peu partout dans le monde,
+								des découvertes similaires furent faites sans qu’il n’y ait eu de communications directes entre les
+								divers scientifiques qui les réalisèrent.
+							</p>
+							<p class="main" >
+								Le dernier grand contributeur du début de cette décennie incroyablement
+								productive fut Angelo Secchi, un prêtre jésuite et astronome
+								italien qui fut très actif en Europe dans le domaine de l’astronomie.[11]
+								Il fut principalement connu pour ses apports importants en physique
+								solaire, mais fut aussi reconnu comme étant un pionnier de la spectroscopie
+								astronomique. Il fut le premier à utiliser systématiquement
+								la spectroscopie pour la classification des étoiles. Il laissa comme plus
+								grand lègue dans ce domaine son système de classification stellaire en
+								quatre groupes, un système qui perdura tout au long de la deuxième
+								moitié du siècle.[16]
+							</p>
+							<p class="main" >
+								Il publia à Paris en 1867 son premier ouvrage dans lequel il exposa
+								sa méthode de classification qui séparait les étoiles en quatre types
+								(type 1, type 2, type 3 et type 4).[23] Les étoiles de premier type
+								possédaient un spectre dont les raies dues à l’hydrogène étaient très marquées ; se retrouvèrent
+								dans cette catégorie les étoiles Sirius, Vega, Altair, Regulus, Rigel, ainsi que près de la moitié
+								des étoiles du ciel. Les étoiles de second type, quant à elles, étaient caractérisées par un spectre
+								comportant plusieurs raies d’absorption fines, comme l’on pouvait en retrouver dans le spectre du
+								Soleil. Les étoiles qui furent identifiées comme appartenant à ce groupe étaient le Soleil, Pollux,
+								Arcturus, Aldébaran, Procyon et α Ursae Majoris. Dans le troisième type se retrouvèrent les étoiles
+								dont les spectres comportaient des séries de bandes d’absorption dont le côté orienté vers le violet
+								possédait une meilleure définition que celui orienté vers le rouge (voir la figue 5). Finalement, dans
+								le quatrième type, le spectre des étoiles était séparé par de larges bandes d’absorption avec une
+								délimitation plus nette orientée vers le côté rouge du spectre.[23] Secchi fut le premier à souligner
+								les traits caractéristiques de chacun des groupes venant d’être énoncés. Sa clairvoyance dans la
+								classification spectroscopique inspira les bases des systèmes de classification subséquents[16], dont
+								ceux développés plus tard à Harvard et qui posèrent le fondement de celui qui est encore utilisé de
+								nos jours.
+							</p>
+							<p class="main" >
+								Ces six personnes furent les premières
+								dont les sources écrites témoignent de l’initiative
+								de combiner un spectroscope avec un
+								télescope dans le but d’étudier le ciel de manière
+								spectroscopique. Kirchhoff ayant résolu
+								une importante partie de l’énigme des raies
+								d’absorption en 1859, il est difficile d’attribuer
+								cette innovation à des gens d’une époque
+								antérieure. Même si certains prédécesseurs
+								avaient sans doute utilisé une lunette astronomique
+								ou un télescope avec un appareil de
+								diffusion de la lumière, ils ne comprenaient
+								pas pour autant les résultats de leurs observations.
+								Ces scientifiques furent donc les
+								initiateurs de l’utilisation de la spectroscopie
+								dans le but de recherches purement astronomiques
+								et même astrophysiques, lorsqu’ils
+								employaient des lois de la physique pour obtenir
+								leurs résultats. Ils furent les premiers à
+								extraire de l’information de la lumière stellaire,
+								faisant ainsi office de pionniers aux yeux de l’histoire. Bien que la raison physique derrière
+								l’étrange absorption de la lumière par les éléments chimiques demeurait toujours inconnue, les
+								découvertes de ces gens créèrent un engouement monstre pour cette nouvelle branche de l’astronomie,
+								ce qui encouragea plusieurs autres scientifiques à s’y intéresser à leur tour, jusqu’à faire de
+								la spectroscopie le principal domaine d’études en astronomie.
+							</p>
+							<p class="main" >
+								<h2><b>Le dernier morceau du puzzle</b></h2>
+							</p>
+							<p class="main" >
+								La compréhension de la cause du phénomène d’absorption de certaines
+								longueurs d’onde bien précises par les éléments n’arriva qu’au
+								vingtième siècle avec le nouveau modèle atomique du physicien danois
+								Niels Henrik David Bohr.[4] Il proposa en 1913 un modèle dans lequel
+								l’atome était composé d’un noyau positif entouré d’électrons négatifs
+								gravitant tout autour en orbites organisées. Dans cette nouvelle théorie
+								de l’atome, plus un électron s’éloigne du noyau et plus son contenu
+								énergétique doit être élevé afin de lui permettre de conserver son mouvement
+								orbital. Cette augmentation énergétique correspond à l’énergie
+								supplémentaire que l’électron doit fournir pour arriver à pallier l’attraction
+								que le noyau exerce sur lui et réussir à s’en éloigner.
+							</p>
+							<p class="main" >
+								De ce fait, les électrons ayant les plus grandes énergies occuperont
+								les orbitales les plus éloignées et ceux de plus faibles énergies, les orbitales
+								les plus basses. Dans cette même ligne d’idées, plus un électron
+								est proche du noyau et plus la force que celui-ci exerce sur la petite
+								particule négative est grande. Du coup, un électron qui se trouve déjà
+								sur une orbite éloignée du noyau aura besoin d’un moins grand apport
+								d’énergie supplémentaire pour aller rejoindre une orbite encore plus
+								éloignée, alors qu’un électron se trouvant initialement à une orbite
+								plus basse aura besoin de beaucoup plus d’énergie pour rejoindre la
+								même orbite finale.
+							</p>
+							<p class="main" >
+								En s’inspirant des travaux des physiciens allemands Max Planck et
+								Albert Einstein, Bohr suggéra que les variations d’énergie d’un électron
+								qui passe d’une orbitale à une autre sont régies par de petits paquets d’énergie ayant des valeurs
+								bien définies, des «quanta» ou des photons, comme l’avait suggéré Planck 13 ans plus tôt. Il reprit
+								également l’affirmation d’Einstein selon laquelle l’énergie que possède un photon correspond à la
+								longueur d’onde qu’il émet. Selon cette même hypothèse, les photons de longueurs d’onde plus
+								courtes seraient plus énergétiques que ceux de longueurs d’onde plus élevées (le violet est plus
+								énergétique que le rouge).[5]
+							</p>
+							<p class="main" >
+								En combinant ces deux théories, Bohr émit l’hypothèse qu’un corps
+								froid qui est réchauffé absorbe de l’énergie. Les électrons qui le composent
+								passent donc à des orbitales plus élevées, absorbant le quanta
+								d’énergie nécessaire pour atteindre cette nouvelle orbitale. Lorsque
+								le corps devenu chaud refroidit, de la manière inverse à celle ayant
+								produit l’excitation des électrons et leur présence sur des orbitales
+								plus élevées, ces électrons perdent une énergie équivalente à celle qui
+								a été nécessaire pour atteindre l’orbitale plus élevée et émettent un
+								photon de longueur d’onde correspondante en retournant sur leur orbitale
+								initiale, créant ainsi les raies d’émission. Puisque chaque élément
+								a une organisation atomique qui lui est propre, ces retours en
+								position d’équilibre des électrons produisent une signature lumineuse
+								également propre à cet élément. De la même façon, chaque élément
+								absorbe un quanta d’énergie correspondant à la couleur (longueur d’onde) des raies d’émission qui
+								lui sont propres lorsqu’il se réchauffe, créant ainsi les raies d’absorption lorsqu’une lumière blanche
+								le traverse.
+							</p>
+							<p class="main" >
+								Avec cette dernière découverte, le voile fut enfin levé sur la grande énigme des raies d’absorption
+								et elles purent enfin être utilisées à leur plein potentiel. Depuis que la compréhension des raies est
+								aussi complète, de fulgurantes avancées ont pu être réalisées en astrophysique. L’association directe
+								entre les raies spectrales et une valeur d’énergie permet également de relier les longueurs d’onde à
+								des températures moyennes, permettant ainsi d’estimer la température des astres. Cette avancée
+								combinée aux spectres stellaires fit naître la classification actuelle des étoiles, mais surtout, le
+								diagramme de Hertzsprung-Russell sur lequel est visible l’évolution des étoiles les plus communes
+								de l’Univers. Ceci représenta un pas important dans la compréhension du développement de notre
+								univers.
+							</p>
+							<p class="main" >
+								Combinée à la photométrie, la spectroscopie a permis de déduire l’ensemble des connaissances
+								que nous avons sur l’Univers à l’extérieur du système solaire, ainsi qu’une grande partie des celles
+								des objets internes à ce système. Les raies d’absorption ont été le pivot central dans l’histoire de
+								la spectroscopie et eurent un rôle capital dans l’étude des spectres en astrophysique, depuis le
+								commencement jusqu’à la fin.
+							</p>
+							<p class="main" >
+								<h2><b>Références</b></h2>
+							</p>
+							<ul style="list-style-type:none;">
+  							<li>
+									[1] © ASTROLab du parc national du Mont-Mégantic, (2021). La découverte du spectre de la
+								lumière blanche. Le Canada sous les étoiles. http://astro-canada.ca/la_decouverte_du_spectre_de_la_lumiere_blanche-the_white_light_spectrum-fra
+								</li>
+  							<li>
+									[2] © ASTROLab du parc national du Mont-Mégantic, (2021). Des codes dans la lumière . Le Canada
+									sous les étoiles. http://astro-canada.ca/des_codes_dans_la_lumiere-codes_into_the_light-fra
+								</li>
+  							<li>
+									[3] © ASTROLab du parc national du Mont-Mégantic, (2021). Les spectromètres. Le Canada sous
+									les étoiles. http://astro-canada.ca/les_spectrometres-spectrometers-fra
+								</li>
+								<li>
+									[4] © ASTROLab du parc national du Mont-Mégantic, (2021). Les spectres d’absorption. Le Canada
+									sous les étoiles. http://astro-canada.ca/les_spectres_d_absorption-absorption_spectra-fra
+								</li>
+								<li>
+									[5] © ASTROLab du parc national du Mont-Mégantic, (2021). Les spectres d’émission. Le
+									Canada sous les étoiles. http://astro-canada.ca/les_spectres_d_emission-emission_spectra-fra
+								</li>
+								<li>
+									[6] Becker, J. B. (2016, April) Margaret Huggins and Tulse Hill Observatory, Astronomy Geophysics,
+									Volume 57, Issue 2, Pages 2.13–2.14, https://doi.org/10.1093/astrogeo/atw069
+								</li>
+								<li>
+									[7] Brémond, A. (s. d.). Histoire de la spectroscopie. soaslyon.org. http://www.soaslyon.org/images/PDF/Histoire_de_la_spectroscopie.pdf
+								</li>
+								<li>
+									[8] Britannica, T. Editors of Encyclopaedia (2021, May 8). William Huggins. Encyclopedia Britannica.
+									https://www.britannica.com/biography/William-Huggins
+								</li>
+								<li>
+									[9] Britannica, T. Editors of Encyclopaedia (2021, June 3). Joseph von Fraunhofer. Encyclopedia
+									Britannica. https://www.britannica.com/biography/Joseph-von-Fraunhofer
+								</li>
+								<li>
+									[10] Britannica, T. Editors of Encyclopaedia (2021, June 9). Thomas Young. Encyclopedia
+									Britannica.https://www.britannica.com/biography/Thomas-Young
+								</li>
+								<li>
+									[11] Britannica, T. Editors of Encyclopaedia (2021, June 25). Pietro Angelo Secchi. Encyclopedia
+									Britannica. https://www.britannica.com/biography/Pietro-Angelo-Secchi
+								</li>
+								<li>
+									[12] Britannica, T. Editors of Encyclopaedia (2021, November 21). Lewis Morris Rutherfurd. Encyclopedia
+									Britannica.https://www.britannica.com/biography/Lewis-Morris-Rutherfurd
+								</li>
+								<li>
+									[13] Britannica, T. Editors of Encyclopaedia (2021, December 12). Giovanni Battista
+									Donati. Encyclopedia Britannica. https://www.britannica.com/biography/
+									Giovanni-Battista-Donati
+								</li>
+								<li>
+									[14] Brück M.T. (2014) Huggins, Margaret Lindsay Murray. In : Hockey T. et al. (eds) Biographical
+									Encyclopedia of Astronomers. Springer, New York, NY.https://doi.org/10.1007/
+									978-1-4419-9917-7_659
+								</li>
+								<li>
+									[15] Chant, C. A. (1910). Sir William Huggins KCB, OM. Journal of the Royal Astronomical
+									Society of. http://adsabs.harvard.edu/pdf/1910JRASC...4..253C
+								</li>
+								<li>
+									[16] Charnonneau, P. (2008). Angelo Secchi (1818-1878). Astro Université de Montréal. https:
+									//www.astro.umontreal.ca/~paulchar/grps/histoire/newsite/bio/secchi_f.html
+								</li>
+								<li>
+									[17] Charnonneau, P. (2008). Gustav Kirchhoff (1824-1887). Astro Université de Montréal. https:
+									//www.astro.umontreal.ca/~paulchar/grps/histoire/newsite/bio/kirchhoff_f.html
+								</li>
+								<li>
+									[18] Davidson, M. W. et The Florida State University, (2015). William Hyde Wollaston. Molecular
+									Expression TM Science, Optics & You Pioneers in Optics. https://micro.magnet.fsu.edu/
+									optics/timeline/people/wollaston.html
+								</li>
+								<li>
+									[19] Genin, C. (2008). Kirchhoff et Bunsen fondent l’analyse spectrale. Bibnum [En ligne], Physique.
+									http://journals.openedition.org/bibnum/746
+								</li>
+								<li>
+									[20] Gould, B. A. (1892). LEWIS MORRIS RUTHERFURD. The Astronomical journal,
+									12, 32. http://nationalacademyofsciences.org/publications/biographical-memoirs/
+									memoir-pdfs/rutherfurd-lewis.pdf
+								</li>
+								<li>
+									[21] Haïdar, R. (2021). Joseph von Fraunhofer. In Sous la lumière, les hommes (pp. 95-99). Les
+									Ulis : EDP Sciences. https://doi.org/10.1051/978-2-7598-1205-9.c018
+								</li>
+								<li>
+									[22] Kneller, G. (1689) Sir Isaac Newton[peinture]. National Geographic. https://www.
+									nationalgeographic.org/article/isaac-newton-who-he-was-why-apples-are-falling/
+								</li>
+								<li>
+									[23] Monthly Notices of the Royal Astronomical Society, Volume 39, Issue 4, February 1879, Pages
+									238–241, https://doi.org/10.1093/mnras/39.4.238a
+								</li>
+								<li>
+									[24] Oxford Press University (2021)Giovanni Battista Donati.Oxford Reference. https://www.
+									oxfordreference.com/view/10.1093/oi/authority.20110803095726280
+								</li>
+								<li>
+									[25] Ramsay, D. (2015). Spectroscopie. Dans l’Encyclopédie Canadienne. Repéré à https://www.
+									thecanadianencyclopedia.ca/fr/article/spectroscopie
+								</li>
+								<li>
+									[26] Roumens, M. (1932). Les Raies de Fraunhofer. L’Astronomie. http://adsabs.harvard.edu/
+									pdf/1932LAstr..46..209R
+								</li>
+								<li>
+									[27] The Royal Astronomical Society of Canada (2021). Honorary Member :
+									William Huggins. Royal Astronomical Society of Canada. https://www.rasc.ca/
+									honorary-member-william-huggins
+								</li>
+							</ul>
+				  		 <div class="fb-share-button" data-href="https://l-electron-libre.github.io/texte/vulgarisation/spectroscopie.html" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
+				    </div>
+					</div>
+				</div>
+			</section>
+
+		  <!-- Your share button code -->
+
+				<!-- Footer bar -->
+			<div id="footer-placeholder"></div>
+		</body>
+	</html>

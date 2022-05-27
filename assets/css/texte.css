@@ -103,7 +103,6 @@ figcaption {
 
 figure.left {
   float: left;
-  width: 30%;
   text-align: center;
   font-size: smaller;
   text-indent: 0;
@@ -113,7 +112,6 @@ figure.left {
 
 figure.right {
   float: right;
-  width: 30%;
   text-align: center;
   font-size: smaller;
   text-indent: 0;

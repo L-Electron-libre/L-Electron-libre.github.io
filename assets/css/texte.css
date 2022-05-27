@@ -93,11 +93,12 @@ img.center {
   background-color: #555;
 }
 figure {
-  display: inline
+  display: table;
 }
 
 figcaption {
-  display: block
+  display:table-caption;
+  caption-side:bottom;
 }
 
 figure.left {

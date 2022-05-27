@@ -96,7 +96,7 @@ figure {
   display: table;
 }
 
-figcaption {
+figcaption.table {
   display:table-caption;
   caption-side:bottom;
 }
@@ -106,8 +106,7 @@ figure.left {
   text-align: center;
   font-size: smaller;
   text-indent: 0;
-  margin: 0.5em;
-  padding: 0.5em;
+  margin: 0 15px 0 0;
 }
 
 figure.right {
@@ -115,8 +114,7 @@ figure.right {
   text-align: center;
   font-size: smaller;
   text-indent: 0;
-  margin: 0.5em;
-  padding: 0.5em;
+  margin: 0 0 0 15px;
 }
 
 figure.center {

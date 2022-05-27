@@ -92,11 +92,18 @@ img.center {
 #myBtn:hover {
   background-color: #555;
 }
-#left_aligned  {
-float: right;
- margin: 0 0 0 15px;
+figure {
+  display: inline
 }
-#right_aligned  {
-float: left;
- margin: 0 15px 0 0;
+
+figcaption {
+  display: block
+}
+
+figure.left {
+  float: left
+}
+
+figure.right {
+  float: right
 }

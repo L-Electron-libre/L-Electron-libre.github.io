@@ -118,5 +118,6 @@ figure.right {
 }
 
 figure.center {
-  float: none; text-align:center;
+  float: none;
+  text-align:center;
 }

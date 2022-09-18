@@ -58,7 +58,12 @@ div.scrollmenu a:hover {
 	}
 
 	ol, ul {
-		list-style: none;
+		margin-left: 100;
+  	margin-right: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
 	}
 
 	blockquote, q {

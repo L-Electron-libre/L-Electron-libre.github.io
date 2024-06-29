@@ -313,7 +313,32 @@ i {
 	padding: 1rem;
 }
 
+.fredChronique {
+	height: 350px;
+	max-width: 100%;
+}
+
+.content {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+
+.fredImg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.fredImg2 img {
+	height: 300px;
+}
+
 @media screen and (min-width: 980px) {
+	.content {
+		padding-left: 2rem!important;
+		padding-right: 2rem!important;
+	}
+
 	.disclaimer {
 		flex-direction: row;
 		max-width: 50%;

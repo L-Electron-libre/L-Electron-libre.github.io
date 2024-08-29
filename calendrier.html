@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Hielo by TEMPLATED
 	templated.co @templatedco
@@ -9,7 +9,6 @@ base d'un code html
 -->
 
 <!-- Voici comment écrire un commentaire -->
-
 
 <!-- La section suivante est nécessaire pour la mise en page de l'en-tête du site -->
 <html>
@@ -22,7 +21,7 @@ base d'un code html
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/texte.css" />
 
-	<!-- Scripts -->
+		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
@@ -31,84 +30,88 @@ base d'un code html
 
 		<!--Navigation Bar -->
 		<script>
-				$.get("template/sidenavbar.html", function(data){
-						$("#nav-placeholder").replaceWith(data);
-				});
+			$.get("template/sidenavbar.html", function (data) {
+				$("#nav-placeholder").replaceWith(data);
+			});
 		</script>
 		<!-- Footer -->
 		<script>
-				$.get("template/footer.html", function(data){
-						$("#footer-placeholder").replaceWith(data);
-				});
+			$.get("template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
 		</script>
 		<script>
-			$( "#main" ).load( "/template/sidenavbar.html" );
+			$("#main").load("/template/sidenavbar.html");
 		</script>
-
 	</head>
 	<body class="subpage">
+		<!--Navigation bar-->
+		<header id="header" class="alt">
+			<div class="logo">
+				<a href="index.html"> <img src="images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" style="width: 200px; height: 130px" /> <span>L'Électron Libre</span></a>
+			</div>
+			<a href="#menu"> Menu </a>
+		</header>
 
-				<!--Navigation bar-->
-					<header id="header" class="alt">
-				    <div class="logo"><a href="index.html">  <img src="images/logo_blanc.png" alt="photo auteur(e)/sujet"   style="width:200px;height:100px"> <span>L'Électron Libre</span></a></div>
-				    <a href="#menu"> Menu </a>
-				  </header>
-
-
-			<!-- Nav -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="presentation.html">Présentation</a></li>
-							<li><a href="temoignage.html">témoignage</a></li>
-							<li><a href="litterature.html">Littérature</a></li>
-							<li><a href="ressources.html">Ressources</a></li>
-							<li><a href="vulgarisation.html">Vulgarisation</a></li>
-							<li><a href="evenements.html">Événements</a></li>
-							<li><a href="archive.html">Archives</a></li>
-							<li><a href="joindre.html">Nous joindre</a></li>
-						</ul>
-					</nav>
-			<!--end of Navigation bar-->
-<!--============================================================================== -->
-<!--Après le Header, le code html est divisé en section. Chaque section possède une classe et peut posséder un Titre
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="presentation.html">Présentation</a></li>
+				<li><a href="temoignage.html">témoignage</a></li>
+				<li><a href="litterature.html">Littérature</a></li>
+				<li><a href="ressources.html">Ressources</a></li>
+				<li><a href="vulgarisation.html">Vulgarisation</a></li>
+				<li><a href="evenements.html">Événements</a></li>
+				<li><a href="archive.html">Archives</a></li>
+				<li><a href="joindre.html">Nous joindre</a></li>
+			</ul>
+		</nav>
+		<!--end of Navigation bar-->
+		<!--============================================================================== -->
+		<!--Après le Header, le code html est divisé en section. Chaque section possède une classe et peut posséder un Titre
 sous la forme d'un header. Le texte de l'article doit être compris entre des caractères tel que <p>, <b>,h1,h2,h3,h4,h5,h6, etc qui détermine le style du texte (bold,taille,etc)
 
 <a> sert à l'insertion d'un lien avec comme argument href
 
 -->
 		<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Le calendrier oficiel de la PHYSUM!</p>
-						<h2>Événements</h2>
-					</header>
-				</div>
-			</section>
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>Le calendrier oficiel de la PHYSUM!</p>
+					<h2>Événements</h2>
+				</header>
+			</div>
+		</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-            <div class="image.image.left">
-              <img src="images/physum2.png" alt="photo auteur(e)/sujet"   style="width:100px;height:50px">
-          </div>
-						<div class="content">
-							<header class="align-center">
-								<p> PHYSUM</p>
-								<h2>Calendrier des événements</h2>
-							</header>
-						<iframe src="https://calendar.google.com/calendar/embed?height=1000&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=am9lMTk5ODI3QGdtYWlsLmNvbQ&amp;src=Y2xhc3Nyb29tMTA0NTgyMjA5NDQzOTQ0OTMzODE1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZmFtaWx5MDE3Mzc5NjY1ODEwODI5MzAyNjNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZnIuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB&amp;color=%230B8043&amp;color=%23A79B8E&amp;color=%237986CB&amp;color=%23795548" style="border:solid 1px #777" width="900" height="1000" frameborder="0" scrolling="no"></iframe>
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="image.image.left">
+						<img src="images/physum2.png" alt="photo auteur(e)/sujet" style="width: 100px; height: 50px" />
 					</div>
+					<div class="content">
+						<header class="align-center">
+							<p>PHYSUM</p>
+							<h2>Calendrier des événements</h2>
+						</header>
+						<iframe
+							src="https://calendar.google.com/calendar/embed?height=1000&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=am9lMTk5ODI3QGdtYWlsLmNvbQ&amp;src=Y2xhc3Nyb29tMTA0NTgyMjA5NDQzOTQ0OTMzODE1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZmFtaWx5MDE3Mzc5NjY1ODEwODI5MzAyNjNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZnIuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB&amp;color=%230B8043&amp;color=%23A79B8E&amp;color=%237986CB&amp;color=%23795548"
+							style="border: solid 1px #777"
+							width="900"
+							height="1000"
+							frameborder="0"
+							scrolling="no"
+						></iframe>
 					</div>
 				</div>
-			</section>
-
-	<!-- Cette section, tel que l'en tête de la page web, ne doit pas être changer et est commun à chaque page du site web-->
-	<!-- Footer bar -->
-			<div id="footer-placeholder">
 			</div>
+		</section>
 
-		</body>
+		<!-- Cette section, tel que l'en tête de la page web, ne doit pas être changer et est commun à chaque page du site web-->
+		<!-- Footer bar -->
+		<div id="footer-placeholder"></div>
+	</body>
 </html>

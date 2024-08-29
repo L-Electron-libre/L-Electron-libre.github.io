@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Hielo by TEMPLATED
 	templated.co @templatedco
@@ -12,13 +12,13 @@
 
 		<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
 		<meta property="og:image" content="https://l-electron-libre.github.io/images/logo.png" />
-		<meta property="og:type" content="website"/>
-		<meta property="og:url" content="https://l-electron-libre.github.io/vulgarisation.html"/>
-		<meta property="og:title" content="Vulgarisation - L'Électron Libre"/>
-		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM"/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://l-electron-libre.github.io/vulgarisation.html" />
+		<meta property="og:title" content="Vulgarisation - L'Électron Libre" />
+		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM" />
 
 		<!-- Links -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/texte.css" />
 
@@ -31,68 +31,68 @@
 
 		<!-- Footer -->
 		<script>
-				$.get("template/footer.html", function(data){
-						$("#footer-placeholder").replaceWith(data);
-				});
+			$.get("template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
 		</script>
 
 		<script>
-		function ClickButton() {
-			var x = document.getElementById("myDIV");
-			var y = document.getElementById("myButtonImg");
-			console.log(x);
-			console.log(y);
-			if (x.style.display === "none") {
-				x.style.display = "block";
-				y.className = "up_arrow";
-			} else {
-				x.style.display = "none";
-				y.className = 'down_arrow';
+			function ClickButton() {
+				var x = document.getElementById("myDIV");
+				var y = document.getElementById("myButtonImg");
+				console.log(x);
+				console.log(y);
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					y.className = "up_arrow";
+				} else {
+					x.style.display = "none";
+					y.className = "down_arrow";
+				}
 			}
-		}
 		</script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-		  gtag('config', 'UA-169295343-1');
+			gtag("config", "UA-169295343-1");
 		</script>
-
 	</head>
 	<body class="subpage">
 		<div class="sidenavbar">
 			<header id="header" class="alt">
-					<div class="logo">
-						<a href="/index.html">
-						    <img src="/images/logo_blanc_avec_nom.png" alt="Logo Électron Libre"   style="width:200px;height:130px"/>
-						</a>
-					</div>
-						<a href="#menu"> Menu </a>
+				<div class="logo">
+					<a href="index.html">
+						<img src="/images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" style="width: 200px; height: 130px" />
+					</a>
+				</div>
+				<a href="#menu"> Menu </a>
 			</header>
 
-
-	<!-- Nav -->
+			<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="/index.html">Accueil</a></li>
-					<li><a href="/presentation.html">Présentation</a></li>
-					<li><a href="/temoignage.html">Témoignages</a></li>
-					<li><a href="/litterature.html">Littérature</a></li>
-					<li><a href="/ressources.html">Ressources</a></li>
-					<li><a href="/vulgarisation.html">Vulgarisation</a></li>
-					<li><a href="/opinion.html">Opinions</a></li>
-					<li><a href="/evenements.html">Événements</a></li>
-					<li><a href="/caricature.html">Caricatures</a></li>
-					<li><a href="/jeux.html">Jeux</a></li>
-					<li><a href="/archive.html">Archives</a></li>
-					<li><a href="/joindre.html">Nous joindre</a></li>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation</a></li>
+					<li><a href="temoignage.html">Témoignages</a></li>
+					<li><a href="litterature.html">Littérature</a></li>
+					<li><a href="ressources.html">Ressources</a></li>
+					<li><a href="vulgarisation.html">Vulgarisation</a></li>
+					<li><a href="opinion.html">Opinions</a></li>
+					<li><a href="evenements.html">Événements</a></li>
+					<li><a href="caricature.html">Caricatures</a></li>
+					<li><a href="jeux.html">Jeux</a></li>
+					<li><a href="archive.html">Archives</a></li>
+					<li><a href="joindre.html">Nous joindre</a></li>
 				</ul>
 			</nav>
-	<!--end of Navigation bar-->
+			<!--end of Navigation bar-->
 		</div>
 
 		<!-- One -->
@@ -105,43 +105,44 @@
 			</div>
 		</section>
 
-
 		<!-- Two -->
 		<section id="two" class="wrapper style2">
 			<div class="inner">
 				<header class="align-center">
 					<p class="main">
-					<button  id="myButtonImg" class="down_arrow" onclick="ClickButton()";>    Vulgariser, pour quelles raisons?</button>
+						<button id="myButtonImg" class="down_arrow" onclick="ClickButton()" ;>Vulgariser, pour quelles raisons?</button>
 					</p>
-					<div id="myDIV" style="display:none">
+					<div id="myDIV" style="display: none">
 						<p class="main">
-							Cette section est ouverte à tout ce qui touche à la communication scientifique. Un résumé d’une expérience qui vous passionne, de votre recherche, d’un stage que vous avez effectué, d'un sujet d'actualité scientifique qui vous intéresse, de concepts scientifiques ou bien des sphères de la physique qui sont présentes à l'Université de Montréal, les possibilités sont infinies! L'object est simplement de piquer votre intérêt pour différentes sphères de la physique, ou des sujets scientifiques plus inusités.
+							Cette section est ouverte à tout ce qui touche à la communication scientifique. Un résumé d’une expérience qui vous passionne, de votre recherche, d’un stage que vous avez effectué, d'un sujet d'actualité scientifique qui vous intéresse, de
+							concepts scientifiques ou bien des sphères de la physique qui sont présentes à l'Université de Montréal, les possibilités sont infinies! L'object est simplement de piquer votre intérêt pour différentes sphères de la physique, ou des sujets
+							scientifiques plus inusités.
 						</p>
-				  </div>
+					</div>
 					<p class="special"></p>
 				</header>
 				<div class="gallery">
 					<!-- Émergence de la spectroscopie en astronomie, le rôle des raies d’absorption - Sarah Piché Perrier -->
 					<div>
 						<div class="image fit">
-							<p class="main" style="text-align:center"><b>Émergence de la spectroscopie en astronomie, le rôle des raies d’absorption - Sarah Piché Perrier</b><br/>16 juin 2022</p>
-							<br/>
+							<p class="main" style="text-align: center"><b>Émergence de la spectroscopie en astronomie, le rôle des raies d’absorption - Sarah Piché Perrier</b><br />16 juin 2022</p>
+							<br />
 							<a href="texte/vulgarisation/spectroscopie.html"><img src="images/observatoire.jpg" alt="Émergence de la spectroscopie en astronomie, le rôle des raies d’absorption" class="img_opacity_transition" /></a>
 						</div>
 					</div>
 					<!-- La mécanique quantique démystifiée - Serge Hamoudou -->
 					<div>
 						<div class="image fit">
-							<p class="main" style="text-align:center"><b>La mécanique quantique démystifiée - Serge Hamoudou</b></p>
-							<br/>
+							<p class="main" style="text-align: center"><b>La mécanique quantique démystifiée - Serge Hamoudou</b></p>
+							<br />
 							<a href="texte/vulgarisation/la_mecanique_quantique_demystifiee.html"><img src="images/QM.jpg" alt="La mécanique quantique démystifiée" class="img_opacity_transition" /></a>
 						</div>
 					</div>
 					<!-- Mon projet de recherche en 500 mots - Jeremy Savoie -->
 					<div>
 						<div class="image fit">
-							<p class="main" style="text-align:center"><b>Mon projet de recherche en 500 mots - Jeremy Savoie</b></p>
-							<br/>
+							<p class="main" style="text-align: center"><b>Mon projet de recherche en 500 mots - Jeremy Savoie</b></p>
+							<br />
 							<a href="texte/vulgarisation/mon_projet_de_recherche_jeremy_savoie.html"><img src="images/matiere_sombre_resize.jpg" alt="Mon projet de recherche en 500 mots" class="img_opacity_transition" /></a>
 						</div>
 					</div>
@@ -149,35 +150,34 @@
 					<!-- Les interprétations de la mécanique quantique - Serge Hamoudou-->
 					<div>
 						<div class="image fit">
-							<p class="main" style="test-align:center"><b>Les interprétations de la mécanique quantique - Serge Hamoudou </b></p>
-							<br/>
-							<a href="texte/vulgarisation/les_interpretations_mecanique_quantique_SH.html"><img src="images/intrication.png" alt="Intricatin quantique" class="img_opacity_transition"/></a>
+							<p class="main" style="test-align: center"><b>Les interprétations de la mécanique quantique - Serge Hamoudou </b></p>
+							<br />
+							<a href="texte/vulgarisation/les_interpretations_mecanique_quantique_SH.html"><img src="images/intrication.png" alt="Intricatin quantique" class="img_opacity_transition" /></a>
 						</div>
 
-					<!-- La gravité est une géométrie - Serge Hamoudou  -->
-					<div>
-						<div class="image fit">
-							<p class="main" style="text-align:center"><b>La gravité est une géométrie - Serge Hamoudou  </b></p>
-							<br/>
-							<a href="texte/vulgarisation/la_gravite_geometrique_SH.html"><img src="texte/vulgarisation/images/wormhole.png" alt="La gravité est une géométrie" class="img_opacity_transition" /></a>
+						<!-- La gravité est une géométrie - Serge Hamoudou  -->
+						<div>
+							<div class="image fit">
+								<p class="main" style="text-align: center"><b>La gravité est une géométrie - Serge Hamoudou </b></p>
+								<br />
+								<a href="texte/vulgarisation/la_gravite_geometrique_SH.html"><img src="texte/vulgarisation/images/wormhole.png" alt="La gravité est une géométrie" class="img_opacity_transition" /></a>
+							</div>
 						</div>
-					</div>
-
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Two -->
-<!--		<section id="two" class="wrapper style2">
+		<!--		<section id="two" class="wrapper style2">
 			<div class="inner">
 				<div class="box">
           <div class="content">
 						<header class="align-center">
 						</header>
 -->
-<!-- Table des matières -->
-<!--						<div id="toc_container"a>
+		<!-- Table des matières -->
+		<!--						<div id="toc_container"a>
 							<h3>Table des matières</h3>
 							<p class="main">
 								<a href="#particule">1. La physique des particules</a>
@@ -201,8 +201,8 @@
 
 						<div>
 	-->
-<!-- La physique des particules -->
-<!--
+		<!-- La physique des particules -->
+		<!--
 							<h2 id="particule">La physique des particules</h2>
 
 							<p class="main">
@@ -236,8 +236,8 @@
 								Il reste encore de nombreux défis à relever. Par exemple, nous n’avons toujours pas trouvé la ou les particules qui constituent la matière sombre. Une section sera dédiée à ce concept et à un peu de cosmologie ! De plus, le Modèle Standard ne nous permet pas d’expliquer la gravité, ce qui est un très grand problème puisque l’on voit son effet à tous les jours. Aussi, le Modèle Standard n’est pas la théorie finale, car il y a plusieurs phénomènes non expliqués par celui-ci. Le problème des 20 dernières années est qu’on ne trouve aucune théorie qui supporte aussi bien les données expérimentales. Qui sait, peut-être serez-vous parmi ceux et celles qui créeront le prochain Modèle qui décrit notre univers!
 							</p>
 -->
-<!-- La physique des plasmas -->
-<!--
+		<!-- La physique des plasmas -->
+		<!--
 							<h2 id="plasma">La physique des plasmas</h2>
 
 						</div>
@@ -249,6 +249,5 @@
 		<!-- Footer bar -->
 
 		<div id="footer-placeholder"></div>
-
 	</body>
 </html>

@@ -1,6 +1,4 @@
-
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Hielo by TEMPLATED
 	templated.co @templatedco
@@ -12,73 +10,81 @@ base d'un code html
 
 <!-- Voici comment écrire un commentaire -->
 
-
 <!-- La section suivante est nécessaire pour la mise en page de l'en-tête du site -->
-	<html>
-		<head>
-			<title>Littérature - L'Électron Libre</title>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+	<head>
+		<title>Littérature - L'Électron Libre</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-			<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
-			<meta property="og:image" content="https://l-electron-libre.github.io/images/yeet.jpg" />
-			<meta property="og:type" content="website"/>
-			<meta property="og:url" content="https://l-electron-libre.github.io/texte/litterature/slam_victor_st_cyr_robitaille.html"/>
-			<meta property="og:title" content="Littérature - L'Électron Libre"/>
-			<meta property="og:description" content="Slam = - Par Victor St-Cyr Robitaille"/>
+		<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
+		<meta property="og:image" content="https://l-electron-libre.github.io/images/yeet.jpg" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://l-electron-libre.github.io/texte/litterature/slam_victor_st_cyr_robitaille.html" />
+		<meta property="og:title" content="Littérature - L'Électron Libre" />
+		<meta property="og:description" content="Slam = - Par Victor St-Cyr Robitaille" />
 
-			<!-- Links -->
-			<link rel="stylesheet" href="/assets/css/main.css" />
-			<link rel="stylesheet" href="/assets/css/texte.css">
+		<!-- Links -->
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/texte.css" />
 
-			<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/jquery.scrollex.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<script src="/assets/js/main.js"></script>
-      <script>
-         window.MathJax = {
-           tex2jax : { inlineMath : [ ['##','##'], ["\\(","\\)"] ],
-                       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-                       processEscapes : true
-            },
-            displayAlign: "left"
-         };
-       </script>
-      <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+		<!-- Scripts -->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.scrollex.min.js"></script>
+		<script src="/assets/js/skel.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script>
+			window.MathJax = {
+				tex2jax: {
+					inlineMath: [
+						["##", "##"],
+						["\\(", "\\)"],
+					],
+					displayMath: [
+						["$$", "$$"],
+						["\\[", "\\]"],
+					],
+					processEscapes: true,
+				},
+				displayAlign: "left",
+			};
+		</script>
+		<script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-			<!-- Footer -->
-			<script>
-					$.get("/template/footer.html", function(data){
-							$("#footer-placeholder").replaceWith(data);
-					});
-			</script>
-		  <div id="fb-root"></div>
-		  <script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		  }(document, 'script', 'facebook-jssdk'));</script>
-		</head>
+		<!-- Footer -->
+		<script>
+			$.get("/template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+		<div id="fb-root"></div>
+		<script>
+			(function (d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, "script", "facebook-jssdk");
+		</script>
+	</head>
 
-		<body class="subpage">
+	<body class="subpage">
+		<!--Navigation bar-->
+		<div class="sidenavbar">
+			<header id="header" class="alt">
+				<div class="logo">
+					<a href="/index.html">
+						<img src="/images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" style="width: 200px; height: 130px" />
+					</a>
+				</div>
+				<a href="#menu"> Menu </a>
+			</header>
 
-			<!--Navigation bar-->
-			<div class="sidenavbar">
-				<header id="header" class="alt">
-						<div class="logo">
-							<a href="/index.html">
-						      <img src="/images/logo_blanc_avec_nom.png" alt="Logo Électron Libre"   style="width:200px;height:130px"/>
-							</a>
-						</div>
-							<a href="#menu"> Menu </a>
-				</header>
-
-
-		<!-- Nav -->
+			<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="/index.html">Accueil</a></li>
@@ -94,201 +100,167 @@ base d'un code html
 					<li><a href="/joindre.html">Nous joindre</a></li>
 				</ul>
 			</nav>
-		<!--end of Navigation bar-->
+			<!--end of Navigation bar-->
+		</div>
+
+		<!-- One -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>Journal étudiant de la PHYSUM</p>
+					<h2>Littérature</h2>
+				</header>
 			</div>
+		</section>
 
-			<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Journal étudiant de la PHYSUM</p>
-						<h2>Littérature</h2>
-					</header>
-				</div>
-			</section>
+		<!-- Two-->
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<div class="align-center">
+							<header class="align-center">
+								<h2>`F = Y^{E^{E^{T}}}`</h2>
+								<p>Par Victor St-Cyr Robitaille</p>
+							</header>
+							<br />
+							<p class="poem">
+								Amorphe; au fond d'un bus de la RTL<br />
+								À l'abris d'un climat frette en cristal d'eau au nez<br />
+								J'étale mes songes en verres peu ordonnés:<br />
+								&quot;Un réseau social est isomorphe à un réseau de braves haies&quot;<br />
+							</p>
+							<p class="poem">
+								Chacune est plantée sur son sit in<br />
+								Ternet formant un enclos électronique d'amis proches autour de son potentiel positif<br />
+								Afin d'écranter les chants négatifs<br />
+								De ces lointains voisins...<br />
+							</p>
+							<p class="poem">
+								Ça me fait réfléchir;<br />
+								Cousin Vincent fréquentait une fille en droit...<br />
+								Il devait avoir l'douâ!<br />
+								Ça me fait souvenir;<br />
+							</p>
+							<p class="poem">
+								Tout vert... heu... je veux dire<br />
+								Tout jeune je voulais devenir un avocat qui maintient la justice.<br />
+								De justesse je ne me suis pas enridé sur ce murmure<br />
+								À dénoyauter ma tête dure<br />
+								Afin de m'écraser dans une guacamole d'avogadrôle... jajaja!<br />
+							</p>
+							<p class="poem">
+								Sur ce jeu de moles très dense; ma concentration molaire d'avoir pris un COUP.<br />
+								Du COUP;<br />
+								Je vous pose la question qui COUP:<br />
+								&quot;Donneriez-vous votre langue au chat de Schrödinger?&quot;<br />
+							</p>
+							<p class="poem">
+								Je superpose lui avoir donné<br />
+								Ma langue complexée<br />
+								D'une ortographe orthonormée<br />
+								À un `\pi`-ti Robert déphasé.<br />
+							</p>
+							<p class="poem">
+								J'Euler d'un ##|cassé>##<br />
+								Dans ma ##<àconjugué|##<br />
+								Mon i d'hermitien<br />
+								En un produit ##{\rm I\!R}## sca-a-laire...<br />
+							</p>
+							<p class="poem">
+								Oof!<br />
+								Quelle bourde!!<br />
+								Mes rimes de oof<br />
+								s'embourbent!!!<br />
+							</p>
+							<p class="poem">
+								Force fictive; j'ai perdu<br />
+								Force est; j'éperdue<br />
+								Force... conservatrice?!?<br />
+							</p>
+							<p class="poem">
+								&#161;Non nOn noN!<br />
+								Ça ne tourne pas rond<br />
+								Ce que je diverge<br />
+								Sca-a-laire converge...<br />
+							</p>
+							<p class="poem">MAUDIT SOIS-TU; HELM-HOLTZ-HODGE!!!<br /></p>
+							<p class="poem">
+								Il faut que je me condense.<br />
+								Si je résiste en courant;<br />
+								Je vais m'induire dans le champ.<br />
+								Ça ferait de moi un épaisdense.<br />
+							</p>
+							<p class="poem">OHM... 043... ohm... orz<br /></p>
+							<p class="poem">
+								Dans un pétrain<br />
+								Mes quatrains.<br />
+								Cousin Hugo<br />
+								Il me faut:<br />
+							</p>
+							<p class="poem">
+								Les roses sont rouges.<br />
+								Les violets sont bleus.<br />
+								Je décale dans le rouge.<br />
+								Quel dédale sacrebleu.<br />
+							</p>
+							<p class="poem">
+								Une lueur d'espoir dans mon écran...<br />
+								Une publication sans bon sens!<br />
+								Mémés merveilleux à la mémoire de Montcalm...<br />
+								Mais mais; je ne peux pas ravoir mon calme!<br />
+							</p>
+							<p class="poem">
+								Je commune avec Pierre de la Trudeau.<br />
+								Un bastion en amont des rois.<br />
+								Une échappatoire à mon désarroi.<br />
+								Comme une roche dans un trou d'eau...<br />
+							</p>
+							<p class="poem">
+								La réalité me repêche!<br />
+								Si je ne me dépêche<br />
+								Je vais perdre la pêche<br />
+								Devant ceux qui me prêchent:<br />
+							</p>
+							<p class="poem">
+								&quot;C'est l'échec sans les maths.&quot;<br />
+								Au moins j'ai mon latin; check et matte:<br />
+								<span style="font-family: trjnfamily">&quot;TEMPUS EDAX RERUM &quot;</span><br />
 
-			<!-- Two-->
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-						<div class="content">
-							<div class="align-center">
-								<header class="align-center">
-									<h2> `F = Y^{E^{E^{T}}}`</h2>
-									<p>Par Victor St-Cyr Robitaille</p>
-								</header>
-								<br />
-								<p class="poem">
-                  Amorphe; au fond d'un bus de la RTL<br />
-                  À l'abris d'un climat frette en cristal d'eau au nez<br />
-                  J'étale mes songes en verres peu ordonnés:<br />
-                  &quot;Un réseau social est isomorphe à un réseau de braves haies&quot;<br />
-								</p>
-								<p class="poem">
-                  Chacune est plantée sur son sit in<br />
-                  Ternet formant un enclos électronique d'amis proches autour de son potentiel positif<br />
-                  Afin d'écranter les chants négatifs<br />
-                  De ces lointains voisins...<br />
-								</p>
-								<p class="poem">
-                  Ça me fait réfléchir;<br />
-                  Cousin Vincent fréquentait une fille en droit...<br />
-                  Il devait avoir l'douâ!<br />
-                  Ça me fait souvenir;<br />
-								</p>
-								<p class="poem">
-                  Tout vert... heu... je veux dire<br />
-                  Tout jeune je voulais devenir un avocat qui maintient la justice.<br />
-                  De justesse je ne me suis pas enridé sur ce murmure<br />
-                  À dénoyauter ma tête dure<br />
-                  Afin de m'écraser dans une guacamole d'avogadrôle... jajaja!<br />
-								</p>
-								<p class="poem">
-                  Sur ce jeu de moles très dense; ma concentration molaire d'avoir pris un COUP.<br />
-                  Du COUP;<br />
-                  Je vous pose la question qui COUP:<br />
-                  &quot;Donneriez-vous votre langue au chat de Schrödinger?&quot;<br />
-								</p>
-                <p class="poem">
-                  Je superpose lui avoir donné<br />
-                  Ma langue complexée<br />
-                  D'une ortographe orthonormée<br />
-                  À un `\pi`-ti Robert déphasé.<br />
-                </p>
-                <p class="poem">
-                  J'Euler d'un ##|cassé>##<br />
-                  Dans ma ##<àconjugué|##<br />
-                  Mon i d'hermitien<br />
-                  En un produit ##{\rm I\!R}## sca-a-laire...<br />
-
-                </p>
-                <p class="poem">
-
-                  Oof!<br />
-                  Quelle bourde!!<br />
-                  Mes rimes de oof<br />
-                  s'embourbent!!!<br />
-
-                </p>
-                <p class="poem">
-
-                  Force fictive; j'ai perdu<br />
-                  Force est; j'éperdue<br />
-                  Force... conservatrice?!?<br />
-
-                </p>
-                <p class="poem">
-
-                  &#161;Non nOn noN!<br />
-                  Ça ne tourne pas rond<br />
-                  Ce que je diverge<br />
-                  Sca-a-laire converge...<br />
-
-                </p>
-                <p class="poem">
-
-                  MAUDIT SOIS-TU; HELM-HOLTZ-HODGE!!!<br />
-
-                </p>
-                <p class="poem">
-
-                  Il faut que je me condense.<br />
-                  Si je résiste en courant;<br />
-                  Je vais m'induire dans le champ.<br />
-                  Ça ferait de moi un épaisdense.<br />
-
-                </p>
-                <p class="poem">
-
-                  OHM... 043... ohm... orz<br />
-
-                </p>
-                <p class="poem">
-
-                  Dans un pétrain<br />
-                  Mes quatrains.<br />
-                  Cousin Hugo<br />
-                  Il me faut:<br />
-
-                </p>
-                <p class="poem">
-
-                  Les roses sont rouges.<br />
-                  Les violets sont bleus.<br />
-                  Je décale dans le rouge.<br />
-                  Quel dédale sacrebleu.<br />
-
-                </p>
-                <p class="poem">
-
-                  Une lueur d'espoir dans mon écran...<br />
-                  Une publication sans bon sens!<br />
-                  Mémés merveilleux à la mémoire de Montcalm...<br />
-                  Mais mais; je ne peux pas ravoir mon calme!<br />
-
-                </p>
-                <p class="poem">
-
-                  Je commune avec Pierre de la Trudeau.<br />
-                  Un bastion en amont des rois.<br />
-                  Une échappatoire à mon désarroi.<br />
-                  Comme une roche dans un trou d'eau...<br />
-
-                </p>
-                <p class="poem">
-
-                  La réalité me repêche!<br />
-                  Si je ne me dépêche<br />
-                  Je vais perdre la pêche<br />
-                  Devant ceux qui me prêchent:<br />
-
-                </p>
-                <p class="poem">
-
-                  &quot;C'est l'échec sans les maths.&quot;<br />
-                  Au moins j'ai mon latin; check et matte:<br />
-                  <span style="font-family: trjnfamily;">&quot;TEMPUS EDAX RERUM &quot;</span><br />
-
-                  Tantepus j'rélaxe j'présume.<br />
-
-                </p>
-                <p class="poem">
-
-                  Finalement; que ce soit un `E`<br />
-                  Publié sur Facebook ou mon relevé de notes; taper `F`<br />
-                  Sur mon clavier `C-`<br />
-                  Dure ssi Dieu me jette quelques `D`<br />
-                  K chu pas `\kappa` de dire `A+`<br />
-                  Au `B`<br />
-                  Moles qui me brulent J après J.<br />
-
-                </p>
-                <p class="poem">
-
-                  CQFD<br />
-                </p>
-							</div>
-	          </div>
+								Tantepus j'rélaxe j'présume.<br />
+							</p>
+							<p class="poem">
+								Finalement; que ce soit un `E`<br />
+								Publié sur Facebook ou mon relevé de notes; taper `F`<br />
+								Sur mon clavier `C-`<br />
+								Dure ssi Dieu me jette quelques `D`<br />
+								K chu pas `\kappa` de dire `A+`<br />
+								Au `B`<br />
+								Moles qui me brulent J après J.<br />
+							</p>
+							<p class="poem">CQFD<br /></p>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section id="three" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-						<div class="content">
-							<div class="align-center">
-  							 <div class="fb-share-button" data-href="https://l-electron-libre.github.io/texte/litterature/passion_a_decouvert.html" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a>
-                 </div>
-    					</div>
-            </div>
-    			</div>
-    		</div>
-    	</section>
-
+		<section id="three" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<div class="align-center">
+							<div class="fb-share-button" data-href="https://l-electron-libre.github.io/texte/litterature/passion_a_decouvert.html" data-layout="button_count" data-size="large">
+								<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- Cette section, tel que l'en tête de la page web, ne doit pas être changer et est commun à chaque page du site web-->
-				<!-- Footer bar -->
-			<div id="footer-placeholder"></div>
-		</body>
-	</html>
+		<!-- Footer bar -->
+		<div id="footer-placeholder"></div>
+	</body>
+</html>

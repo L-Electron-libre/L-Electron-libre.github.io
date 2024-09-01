@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<!-- C'est quoi ?
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+-->
+  <html>
+  	<head>
+  		<title>Témoignages - L'Électron Libre</title>
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
+  		<meta property="og:image" content="https://l-electron-libre.github.io/images/logo.png" />
+  		<meta property="og:type" content="website"/>
+  		<meta property="og:url" content="https://l-electron-libre.github.io/temoignage.html"/>
+  		<meta property="og:title" content="Témoignages - L'Électron Libre"/>
+  		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM"/>
+
+        <!-- Links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  		<link rel="stylesheet" href="../assets/css/main.css" />
+  		<link rel="stylesheet" href="../assets/css/texte.css" />
+
+        <script>
+            function ClickButton() {
+                var x = document.getElementById("myDIV");
+                var y = document.getElementById("myButtonImg");
+                console.log(x);
+                console.log(y);
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    y.className = "up_arrow";
+                } else {
+                    x.style.display = "none";
+                    y.className = 'down_arrow';
+                }
+            }
+        </script>
+
+        <!-- Scripts -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.scrollex.min.js"></script>
+        <script src="../assets/js/skel.min.js"></script>
+        <script src="../assets/js/util.js"></script>
+        <script src="../assets/js/main.js"></script>
+
+        <!-- Footer -->
+        <script>
+            $.get("../template/footer.html", function(data){
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script>
+  		
+  		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-169295343-1');
+        </script>
+
+  	</head>
+  	<body class="subpage">
+        <div class="sidenavbar">
+  			<header id="header" class="alt">
+  					<div class="logo">
+  						<a href="index.html">
+						      <img src="images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" style="width:200px;height:130px"/>
+  						</a>
+  					</div>
+  					<a href="#menu"> Menu </a>
+  			</header>
+
+            <!-- Nav -->
+  			<!-- <nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation</a></li>
+					<li><a href="temoignage.html">Témoignages</a></li>
+					<li><a href="litterature.html">Littérature</a></li>
+					<li><a href="ressources.html">Ressources</a></li>
+					<li><a href="vulgarisation.html">Vulgarisation</a></li>
+					<li><a href="opinion.html">Opinions</a></li>
+					<li><a href="evenements.html">Événements</a></li>
+					<li><a href="caricature.html">Caricatures</a></li>
+					<li><a href="jeux.html">Jeux</a></li>
+					<li><a href="archive.html">Archives</a></li>
+					<li><a href="joindre.html">Nous joindre</a></li>
+				</ul>
+			</nav> -->
+  			<!--end of Navigation bar-->
+  		</div>
+
+  		<!-- One -->
+  		<section id="One" class="wrapper style3">
+  			<div class="inner">
+  				<header class="align-center">
+  					<p>Journal étudiant de la PHYSUM</p>
+  					<h2>Témoignages</h2>
+  				</header>
+  			</div>
+  		</section>
+
+  		<!-- Description de la section -->
+  		<section id="description_section" class="wrapper style2">
+  			<div class="inner">
+                <header>
+                    <p class="main">
+  						<button id="myButtonImg" class="down_arrow" onclick="ClickButton()">Pourquoi des témoignages?</button>
+                    </p>
+  					<div id="myDIV" style="display:none">
+						<p class="main">
+							Dans le but de créer un espace où les récits les moins entendus prennent de la visibilité, de créer un espace de partage où on s'encourage à être à l'écoute de l'autre, à bâtir des liens et à rendre la vie étudiante sécuritaire et agréable, la section « Témoignages » s'offre à vous.
+  							<br/><br/>
+  							Nous vous invitons à entreprendre ce processus d'amélioration de la vie étudiante avec votre témoignage. Travaillons ensemble pour que les différences ne soient pas perçues comme une menace, non plus comme une faiblesse. Luttons ensemble pour accueillir l'authenticité au sein de notre communauté de physiciens et de physiciennes.
+  							<br/><br/>
+  							Fais-nous part d'une expérience que tu as vécue en parallèle avec tes études et qui pourrait parler à une prochaine personne dans une situation similaire. Tu as souffert d'anxiété ou de dépression? Tu ne te reconnais pas dans les gens qui t'entourent? Tu penses à faire un coming out ou tu l'as déjà fait? Tu arrives difficilement à payer tes frais de scolarité? Tu as connu c'est quoi l'immigration? Tu as enduré de la discrimination à un moment, par l'infrastructure du campus, une procédure administrative, un commentaire, un regard? Tu as du mal à t'exprimer en français? Prends ça en main. Écris-nous par courriel à <a href="mailto:electron.libre.physum@outlook.com">electron.libre.physum@outlook.com</a> avec « Témoignages » comme objet du message.
+  							<br/><br/>
+  							Sortons du tabou et parlons des choses moins glorieuses. Des témoignages humains sur ces questions sont la clé pour avancer tou.te.s ensemble. Ils nous permettent de sortir des stéréotypes, d'abandonner l’idée que seulement les génies réussissent leurs études, d'ouvrir les yeux sur les réalités qui nous entourent et à devenir de meilleur.e.s scientifiques : curieux.ses et ouvert.e.s d'esprit.
+  							<br/><br/>
+  							Si tu as des questions n'hésite pas à nous contacter. Nous pouvons aussi établir une entrevue ou réfléchir au format qui te convient le mieux pour afficher ton histoire. Et n'hésite pas à en parler autour de toi.
+  							<br/><br/>
+  							Nous reconnaissons le courage que ça peut prendre pour participer à cette initiative, et nous tenons à te dire: Merci!!!
+                        </p>
+    				</header>
+    			</div>
+            </div>
+            <header class="align-center">
+                <p class="special"></h2>
+            </header>
+    	</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="gallery">
+					<div>
+						<div class="image fit">
+							<p class="main" style="text-align:center;"><b>Dossier Femmes en physique </b></p>
+							<br>
+							<a href="../texte/temoignages/femmes_en_physique/presentation.html">
+								<img src="../images/femmes.jpg" alt="Dossier Femmes en physique" class="img_opacity_transition" />
+							</a>
+						</div>
+					</div>
+
+					<div>
+						<div class="image fit">
+							<p class="main" style="text-align:center;"><b>Faire une place pour soi - Une entrevue de Fiorella </b></p>
+							<br>
+							<a href="../texte/temoignages/faire_une_place_pour_soi.html">
+								<img src="../images/background-1592030_1920.jpg" alt="Faire une place pour soi" class="img_opacity_transition" />
+							</a>
+						</div>
+					</div>
+
+					<!-- Témoignage 2 - Gauvin -->
+					<div>
+						<div class="image fit">
+							<p class="main" style="text-align:center"><b>Témoignage de Gauvin </b></p>
+							<br/>
+							<a href="../texte/temoignages/temoignage-gauvin.html">
+								<img src="../images/graffiti-1304693_1920.jpg" alt="Témoignage de Gauvin" class="img_opacity_transition" />
+							</a>
+						</div>
+					</div>
+
+					<!-- Témoignage 3 - Grégory -->
+					<div>
+						<div class="image fit">
+							<p class="main" style="text-align:center"><b>Témoignage de Grégory </b></p>
+							<br/>
+							<a href="../texte/temoignages/temoignage-gregory.html">
+								<img src="../images/manila-1426826_1920.jpg" alt="Témoignage de Grégory" class="img_opacity_transition" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+  		<!-- Footer -->
+      <div id="footer-placeholder"></div>
+  	</body>
+  </html>

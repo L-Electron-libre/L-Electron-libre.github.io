@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chroniques - L'Électron Libre</title>
+
+		<meta property="og:image" content="https://l-electron-libre.github.io/images/logo.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://l-electron-libre.github.io/index.html" />
+		<meta property="og:title" content="L'Électron Libre" />
+		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM" />
+
+		<!-- Links -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/texte.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/index2024.css" />
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Footer -->
+		<script>
+			$.get("template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+	</head>
+	<body>
+		<div class="sidenavbar">
+			<div class="sidenavbar">
+				<header id="header" class="alt">
+					<div class="logo">
+						<a href="index.html" class="accueilPhone">
+							<img src="images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" class="logoAccueil" style="width:150px;height:100px"/>
+						</a>
+						<a href="index.html" class="accueilText">Accueil</a>
+
+					</div>
+				<a href="https://l-electron-libre.github.io/texte/electron_libre.rss"><img src="images/rss_icon.png" alt="rss-feed" style="width:20px;height:20px" />  </img> </a>
+						<a href="#menu"> Menu </a>
+			</header>
+
+				<!-- Nav -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="presentation.html">Présentation</a></li>
+						<li><a href="conseils.html">Conseils</a></li>
+						<li><a href="entrevues.html">Entrevues</a></li>
+						<li><a href="articles.html">Articles</a></li>
+						<li><a href="histoires.html">Histoires</a></li>
+						<li><a href="chroniques.html">Chroniques</a></li>
+						<li><a href="jeux.html">Jeux</a></li>
+						<li><a href="archive.html">Archives</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>Journal étudiant de la PHYSUM</p>
+					<h2>Chroniques</h2>
+				</header>
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style2 section2024">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+							<h2>Un stage à Hawai’i</h2>
+							<p>par Frédéric Beaudet</p>
+						</header>
+						<p class="paragraphe">
+							À mi-altitude entre les eaux du Pacifique et le sommet du Mauna Kea, j’ai passé le mois de juillet à compléter un projet de stage aux bureaux du Canada-France-Hawai’i Telescope (CFHT). Laissez-moi vous raconter mon expérience, du point de vue
+							scientifique, mais aussi sur les relations particulières qui unissent les observatoires et les communautés locales et leur importance pour le futur de l’astronomie à Hawai’i.
+						</p>
+						<div class="diffractionImg fredImg">
+							<img src="images/physum_reborn/fred.jpg" alt="Fred" width="400px" height="500px" />
+							<div class="fredText">
+								<p class="paragraphe">
+									J’ai eu la chance cet été d’être un des vingt stagiaires d’été de l’iREx et de travailler sur un projet avec David Lafrenière. Dans le cadre de ce stage, on m’a aussi offert de passer un mois au Canada-France-Hawai’i Telescope (CFHT) à
+									Hawai'i sur Big Island, pour un deuxième projet de stage, complètement séparé du premier, d’une durée d’un mois. Ce projet, supervisé par Luc Arnold, astronome résident au CFHT, avait pour but de visualiser l’évolution de la correction des
+									lignes d’absorption telluriques par le pipeline de réduction des données de l’instrument SPIRou. SPIRou étant un spectropolarimètre à très haute résolution, il est important d’avoir une excellente connaissance des lignes spectrales qui sont
+									absorbées par l’atmosphère terrestre, afin de mieux identifier les lignes d’absorption de l’étoile qui nous intéresse. Lorsqu’on connaît très précisément la position des lignes d’absorption de l’étoile, on peut ensuite mesurer leur décalage
+									(blueshift/redshift) d’une observation à l’autre, et déterminer si une planète orbite autour de l’étoile; c’est ce qu’on appelle la méthode des vitesses radiales.
+								</p>
+								<p class="paragraphe">
+									Mon projet se déclinait en deux parties. La première était d’observer comment notre connaissance des lignes telluriques s’est améliorée depuis 2018 (première lumière de SPIRou), et à quel point nos observations continuent à se préciser après
+									plus de cinq ans d’observations. La deuxième partie était de créer des séries pour les vitesses radiales calculées par le pipeline pour différentes étoiles, à différents semestres, et selon différents paramètres (principalement le temps et
+									la vitesse propre de la Terre). Cette deuxième partie soulevait plusieurs pistes d’exploration supplémentaires, car les séries de vitesses radiales en fonction de la vitesse de la Terre présentent toutes du bruit corrélé qui aurait dû être
+									effacé par le pipeline de réduction des données. Ma dernière semaine de stage a tenté d’explorer certaines explications à ces bruits corrélés, mais sans succès; peut-être un projet pour un.e futur.e stagiaire\ Pour plus de détails sur SPIRou
+									et le pipeline de réduction des données, je vous invite à consulter les papiers de Jean-François Donati (2020), Neil Cook (2022) et Étienne Artigau (2022).
+								</p>
+							</div>
+						</div>
+						<p class="paragraphe">
+							Il ne serait toutefois pas juste de dire que l’opposition aux télescopes et aux observatoires est universelle sur Big Island. En effet, le peuple hawaïen ayant historiquement toujours été un peuple navigateur, les étoiles et le ciel nocturne
+							revêtaient une importance particulière dans la culture hawaïenne. Ainsi, pour plusieurs hawaïen.ne.s, les télescopes sont vus comme une manière de se rapprocher du ciel, de raffermir le lien sacré unissant les humains et les étoiles. De plus,
+							il faut mentionner l’aspect économique des observatoires, qui apportent leur lot d’investissements dans l’économie de Big Island, ainsi qu’un flot constant de visiteurs et de travailleurs. Il reste certain que pour assurer un avenir éthique et
+							humain à l’astronomie sur Big Island, la communauté scientifique devra apprendre de ses erreurs et renforcer ses liens et ses collaborations avec les communautés locales. En effet, en 2018 et 2019, la proposition de construction du Thirty
+							Meter Telescope (TMT), qui serait devenu l’un des plus grands et plus imposants télescopes au monde, fut l’étincelle qui déclencha une série de protestations et manifestations de la part des communautés hawaïennes. En plus d’ultimement bloquer
+							la construction du télescope (le projet est techniquement toujours sur la table, mais son avenir est extrêmement incertain), les manifestations de 2019 ont mené à la création d’un nouvel organe de direction du sommet du Mauna Kea, le Mauna Kea
+							Stewardship and Oversight Authority, dont l’objectif est d’assurer une gouvernance plus équitable et éthique du Mauna Kea.
+						</p>
+						<div class="reverseDiffractionImg fredImg">
+							<img src="images/physum_reborn/téles.jpg" alt="astronomie" width="600px" height="400px" />
+							<p class="paragraphe">
+								Mon séjour à Hawai'i m’a permis de constater qu’il reste beaucoup de travail pour rebâtir les ponts entre la communauté astronomique et la population hawaïenne, et la balle est dans le camp des astronomes. Des initiatives sont déjà en place,
+								par exemple, le CFHT s’est engagé à offrir gratuitement des visites guidées de son télescope à des personnes habitant sur Big Island, afin de donner un accès privilégié aux personnes locales à leur propre montagne. Plusieurs pensent toutefois
+								que la communauté scientifique devrait en faire plus, notamment les astronomes qui « utilisent » la montagne en utilisant les observations astronomiques qui y sont faites, même si les astronomes ne se déplacent pas nécessairement à Hawai'i.
+								S’éduquer et soutenir les revendications des populations locales est un premier pas important et nécessaire afin de créer un véritable esprit de collaboration entre la communauté astronomique et la population hawaïenne — le CFHT pense
+								d’ailleurs exiger de toutes les personnes qui obtiennent du temps d’observation sur leurs télescopes d’écouter des vidéos de formation sur l’importance du Mauna Kea. Je me suis aussi fait conseiller un livre qui permet d’en apprendre plus sur
+								l’historique et le contexte de l’astronomie à Hawai'i, soit La montagne aux étoiles — Enquête sur les terres contestées de l’astronomie par Pascal Marichalar, un sociologue français qui relate l’histoire de l’astronomie à Hawai'i, mais aussi
+								à travers le monde, ainsi qu’un regard sur les manifestations contre le TMT. Je prévois de demander à la bibliothèque de l’Université de Montréal qu’elle se procure ce livre, qui pourrait devenir une référence plus qu’intéressante pour toutes
+								les personnes qui s’intéressent à l’astronomie. Je pense d’ailleurs que ce sujet devrait être abordé dans le parcours en physique, et pas nécessairement seulement dans les cours d’astronomie, puisque le colonialisme en sciences ne s’arrête
+								pas à Hawai'i.
+							</p>
+						</div>
+						<p class="paragraphe">
+							<strong>En résumé,</strong> mon séjour à Hawai’i m’a permis d’en apprendre beaucoup sur tout le travail derrière les observations astronomiques, entre l’acquisition des premiers photons et l’obtention de résultats réduits et utilisables. Si
+							mon séjour fut surtout mémorable grâce aux rencontres et expériences que j’ai pu vivre sur l’île, j’en ressors surtout avec une meilleure compréhension de l’impact de l’astronomie sur les communautés de Big Island (et c’est sans parler des
+							impacts environnementaux sur le Mauna Kea). J’ose croire que la communauté astronomique peut apprendre du passé et devenir un modèle de cohabitation sur Big Island, afin d’assurer un avenir profitable à toutes et tous.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section id="anciennes_publication_archives" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<h2>Anciennes publications du journal</h2>
+				</header>
+			</div>
+		</section>
+
+		<div class="separator">
+			<header class="align-center">
+				<h2>Parcourez le journal</h2>
+			</header>
+		</div> -->
+
+		<section id="four" class="wrapper style2">
+			<button onclick="topFunction()" id="myBtn" class="topButton" title="Go to top">Tête de la page</button>
+		</section>
+
+		<div id="footer-placeholder"></div>
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function () {
+				scrollFunction();
+			};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "flex";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+</html>

@@ -1,6 +1,4 @@
-
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Hielo by TEMPLATED
 	templated.co @templatedco
@@ -12,63 +10,64 @@ base d'un code html
 
 <!-- Voici comment écrire un commentaire -->
 
-
 <!-- La section suivante est nécessaire pour la mise en page de l'en-tête du site -->
-	<html>
-		<head>
-			<title>Littérature - L'Électron Libre</title>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+	<head>
+		<title>Littérature - L'Électron Libre</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-			<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
-			<meta property="og:image" content="https://l-electron-libre.github.io/images/poeme.jpg" />
-			<meta property="og:type" content="website"/>
-			<meta property="og:url" content="https://l-electron-libre.github.io/texte/litterature/passion_a_decouvert.html"/>
-			<meta property="og:title" content="Littérature - L'Électron Libre"/>
-			<meta property="og:description" content="Passion à découvert - Par Laurent Mercier"/>
+		<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
+		<meta property="og:image" content="https://l-electron-libre.github.io/images/poeme.jpg" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://l-electron-libre.github.io/texte/litterature/passion_a_decouvert.html" />
+		<meta property="og:title" content="Littérature - L'Électron Libre" />
+		<meta property="og:description" content="Passion à découvert - Par Laurent Mercier" />
 
-			<!-- Links -->
-			<link rel="stylesheet" href="/assets/css/main.css" />
-			<link rel="stylesheet" href="/assets/css/texte.css">
+		<!-- Links -->
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/texte.css" />
 
-			<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/jquery.scrollex.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<script src="/assets/js/main.js"></script>
+		<!-- Scripts -->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.scrollex.min.js"></script>
+		<script src="/assets/js/skel.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
 
-			<!-- Footer -->
-			<script>
-					$.get("/template/footer.html", function(data){
-							$("#footer-placeholder").replaceWith(data);
-					});
-			</script>
-		  <div id="fb-root"></div>
-		  <script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		  }(document, 'script', 'facebook-jssdk'));</script>
-		</head>
+		<!-- Footer -->
+		<script>
+			$.get("/template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+		<div id="fb-root"></div>
+		<script>
+			(function (d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, "script", "facebook-jssdk");
+		</script>
+	</head>
 
-		<body class="subpage">
+	<body class="subpage">
+		<!--Navigation bar-->
+		<div class="sidenavbar">
+			<header id="header" class="alt">
+				<div class="logo">
+					<a href="/index.html">
+						<img src="/images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" style="width: 200px; height: 130px" />
+					</a>
+				</div>
+				<a href="#menu"> Menu </a>
+			</header>
 
-			<!--Navigation bar-->
-			<div class="sidenavbar">
-				<header id="header" class="alt">
-						<div class="logo">
-							<a href="/index.html">
-						      <img src="/images/logo_blanc_avec_nom.png" alt="Logo Électron Libre"   style="width:200px;height:130px"/>
-							</a>
-						</div>
-							<a href="#menu"> Menu </a>
-				</header>
-
-
-		<!-- Nav -->
+			<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="/index.html">Accueil</a></li>
@@ -84,81 +83,82 @@ base d'un code html
 					<li><a href="/joindre.html">Nous joindre</a></li>
 				</ul>
 			</nav>
-		<!--end of Navigation bar-->
+			<!--end of Navigation bar-->
+		</div>
+
+		<!-- One -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>Journal étudiant de la PHYSUM</p>
+					<h2>Littérature</h2>
+				</header>
 			</div>
+		</section>
 
-			<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Journal étudiant de la PHYSUM</p>
-						<h2>Littérature</h2>
-					</header>
-				</div>
-			</section>
-
-			<!-- Two-->
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-						<div class="content">
-							<div class="align-center">
-								<header class="align-center">
-									<h2>Passion à découvert</h2>
-									<p>Par Laurent Mercier</p>
-								</header>
-								<br />
-								<p class="poem">
-									Étreinte nocturne<br />
-									Gentille et lente<br />
-									Un parfum poivré de menthe<br />
-									Un baiser valant une fortune<br />
-								</p>
-								<p class="poem">
-									Séparés par le temps<br />
-									Un jour ce sera<br />
-									Un jour tu resteras<br />
-									Appréhender en attendant<br />
-								</p>
-								<p class="poem">
-									Profiter des petits moments<br />
-									Heureux à tes côtés<br />
-									Admirer tes cheveux au vent<br />
-									Vouloir les caresser<br />
-								</p>
-								<p class="poem">
-									Silhouette élancée<br />
-									Rire ensorcelant<br />
-									Tu m'aperçois obnubilé<br />
-									Par ce sourire plus que charmant<br />
-								</p>
-								<p class="poem">
-									Parfois un peu tannante<br />
-									Mais très attachante<br />
-									Dans mes pensées et mon être<br />
-									Passion, il faut la reconnaître<br />
-								</p>
-												</div>
-						          </div>
-										</div>
-									</div>
-								</section>
-
-								<section id="three" class="wrapper style2">
-									<div class="inner">
-										<div class="box">
-											<div class="content">
-												<div class="align-center">
-								 <div class="fb-share-button" data-href="https://l-electron-libre.github.io/texte/litterature/passion_a_decouvert.html" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
-							</div>
-	          </div>
+		<!-- Two-->
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<div class="align-center">
+							<header class="align-center">
+								<h2>Passion à découvert</h2>
+								<p>Par Laurent Mercier</p>
+							</header>
+							<br />
+							<p class="poem">
+								Étreinte nocturne<br />
+								Gentille et lente<br />
+								Un parfum poivré de menthe<br />
+								Un baiser valant une fortune<br />
+							</p>
+							<p class="poem">
+								Séparés par le temps<br />
+								Un jour ce sera<br />
+								Un jour tu resteras<br />
+								Appréhender en attendant<br />
+							</p>
+							<p class="poem">
+								Profiter des petits moments<br />
+								Heureux à tes côtés<br />
+								Admirer tes cheveux au vent<br />
+								Vouloir les caresser<br />
+							</p>
+							<p class="poem">
+								Silhouette élancée<br />
+								Rire ensorcelant<br />
+								Tu m'aperçois obnubilé<br />
+								Par ce sourire plus que charmant<br />
+							</p>
+							<p class="poem">
+								Parfois un peu tannante<br />
+								Mais très attachante<br />
+								Dans mes pensées et mon être<br />
+								Passion, il faut la reconnaître<br />
+							</p>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
+		<section id="three" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<div class="align-center">
+							<div class="fb-share-button" data-href="https://l-electron-libre.github.io/texte/litterature/passion_a_decouvert.html" data-layout="button_count" data-size="large">
+								<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- Cette section, tel que l'en tête de la page web, ne doit pas être changer et est commun à chaque page du site web-->
-				<!-- Footer bar -->
-			<div id="footer-placeholder"></div>
-		</body>
-	</html>
+		<!-- Footer bar -->
+		<div id="footer-placeholder"></div>
+	</body>
+</html>

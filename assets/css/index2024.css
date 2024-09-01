@@ -1,0 +1,390 @@
+:root {
+	--light-gray: #f2f2f2;
+	--white: #ffffff;
+	--text-color: rgb(65, 65, 65);
+}
+
+body {
+	background-color: var(--light-gray);
+}
+
+h3 {
+	padding: 1rem;
+	padding-bottom: 0rem;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+i {
+	color: black;
+	font-weight: 500;
+}
+
+.sousTitre {
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: 600;
+	transition: transform 0.5s ease;
+	padding: 1rem;
+	padding-bottom: 0rem;
+}
+
+.sousTitre:hover {
+	cursor: default;
+	transform: translateY(-5px) scale(1.1);
+}
+
+.rightHeader {
+	display: flex;
+	gap: 3rem;
+	margin-right: 5rem;
+}
+
+.section2024 {
+	max-width: 80vw;
+	margin: 0 auto;
+}
+
+.paragraphe {
+	color: var(--text-color);
+	padding: 1rem;
+	margin: 0 !important;
+}
+
+.finSection {
+	color: black;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.disclaimer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: gray;
+	gap: 1rem;
+}
+
+.disclaimerEntrevue {
+	color: black;
+	font-weight: 600;
+	margin: 1rem;
+}
+
+.miniText {
+	color: red;
+	font-weight: 500;
+	padding: 1rem;
+	font-size: large;
+}
+
+.lightText {
+	color: rgb(109, 109, 109);
+	font-weight: 400;
+}
+
+.explicationArticles {
+	text-align: center;
+}
+
+.temporaire {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	gap: 1rem;
+	text-align: center;
+}
+
+.temporaire > * {
+	margin: 0;
+	padding: 0;
+}
+
+.countdownStyle {
+	display: flex;
+	flex-direction: row;
+}
+
+.countdownStyle span {
+	font-size: 2rem;
+}
+
+.h1Context {
+	font-size: 2.5rem;
+}
+
+.textTimer {
+	font-size: 2rem;
+	color: rgb(44, 44, 44);
+}
+
+/* Évitez d'utiliser les !important à l'avenir, c'est juste que le vieux css est un hot mess et flemme de tout fix up - Andrei Bituleanu */
+.topButton {
+	display: flex;
+	justify-content: center !important;
+	align-items: center !important;
+	right: 15px !important;
+	width: 50%;
+	border: 2px solid white !important;
+	opacity: 0.9;
+}
+
+.legendeSection .content {
+	border: 1px solid rgb(187, 187, 187);
+}
+
+.legende {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.headerHistoire {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#chaptersList {
+	display: none;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.wrapper.style2 a {
+	color: black;
+}
+
+.toggleButtonChapters {
+	background-color: rgb(44, 44, 44) !important;
+	border: 2px solid gray;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 12rem;
+	padding: 1rem;
+}
+
+.toggleButtonChapters:hover {
+	background-color: rgb(73, 73, 73) !important;
+}
+
+.contentHistoire {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.chapitres {
+	width: 100%;
+	margin: 1rem;
+}
+
+.chapitres li {
+	text-align: center;
+	padding: 0.5rem;
+	border: 1px solid lightgray;
+	border-bottom: none;
+}
+
+.chapitres li:last-child {
+	border-bottom: 1px solid gray;
+}
+
+.chapitres a {
+	transition: transform 0.3s ease;
+	display: inline-block;
+}
+
+.chapitres a:hover {
+	opacity: 0.7;
+	transform: scale(1.1);
+}
+
+.legendeTitre {
+	text-align: left;
+	text-decoration: none;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.legende > * {
+	transition: transform 0.3s ease;
+}
+
+.legende > *:hover {
+	opacity: 0.7;
+	transform: scale(1.1);
+}
+
+.sectionEntrevue {
+	padding-top: 0;
+}
+
+.imgArticles {
+	max-width: 100%;
+}
+
+.imgPasserelle {
+	font-size: 0.75rem;
+}
+
+.red {
+	color: red;
+}
+
+.muon {
+	display: flex;
+	justify-content: center;
+}
+
+.miniJeux .titre {
+	margin: 0;
+	padding: 0;
+}
+
+.miniJeux {
+	display: flex;
+	flex-direction: column;
+}
+
+.jeuxCredits {
+	text-align: center;
+	align-self: center;
+	color: rgba(128, 128, 128, 0.767);
+}
+
+.envelope {
+	padding-left: 0 !important;
+}
+
+.telechargement {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.telechargement p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0.25rem;
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.downloadPDFDiv {
+	background-color: #4caf50;
+	color: white;
+	padding: 15px 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	background-image: url(../../images/physum_reborn/downloadable.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	padding: 3rem;
+	max-width: 25vw;
+	margin: 0 auto;
+	transition: transform, background-color, 0.2s ease;
+}
+
+.downloadPDF {
+	display: inline-block;
+	max-width: 25vw;
+}
+
+.downloadPDFDiv:hover {
+	background-color: #02940a;
+	transform: scale(1.1);
+}
+
+.accueilPhone {
+	padding: 1rem;
+}
+
+@media screen and (min-width: 980px) {
+	.disclaimer {
+		flex-direction: row;
+		max-width: 50%;
+		gap: 2rem;
+	}
+
+	.disclaimerEntrevue {
+		max-width: 80%;
+	}
+
+	.topButton {
+		width: 20%;
+	}
+
+	.legende {
+		flex-direction: row;
+	}
+
+	.legendeTitre {
+		text-align: center;
+		text-decoration: none;
+		padding-top: 0;
+	}
+
+	.legende > * {
+		display: inline-block;
+	}
+
+	.imgArticles {
+		width: 400px;
+	}
+
+	.imgPasserelle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.introPasserelle {
+		display: flex;
+	}
+
+	.textIntro {
+		display: flex;
+		flex-direction: column;
+		max-width: 50%;
+	}
+
+	.diffractionImg {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.reverseDiffractionImg {
+		display: flex;
+	}
+
+	.figureArticle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.fredImg {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.imgArticles {
+		width: 800px;
+	}
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Hielo by TEMPLATED
 	templated.co @templatedco
@@ -18,7 +18,6 @@ class='visually_embed_script' id='visually_embed_script_31800'></script><p> From
 https://pixabay.com
 -->
 
-
 <html>
 	<head>
 		<title>L'Électron Libre</title>
@@ -27,16 +26,17 @@ https://pixabay.com
 
 		<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
 		<meta property="og:image" content="https://l-electron-libre.github.io/images/logo.png" />
-		<meta property="og:type" content="website"/>
-		<meta property="og:url" content="https://l-electron-libre.github.io/index.html"/>
-		<meta property="og:title" content="L'Électron Libre"/>
-		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM"/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://l-electron-libre.github.io/index.html" />
+		<meta property="og:title" content="L'Électron Libre" />
+		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM" />
 
 		<!-- Links -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/texte.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/index2024.css" />
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -47,124 +47,143 @@ https://pixabay.com
 
 		<!-- Footer -->
 		<script>
-				$.get("template/footer.html", function(data){
-						$("#footer-placeholder").replaceWith(data);
-				});
+			$.get("template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
 		</script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+		<script defer>
+			let countDownDate = new Date("Sep 3, 2024 10:00:00").getTime();
 
+			let countdownFunction = setInterval(function () {
+				let now = new Date().getTime();
+
+				let timeLeft = countDownDate - now;
+
+				let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+				let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+				let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+				document.getElementById("days").innerHTML = days + " Days ";
+				document.getElementById("hours").innerHTML = hours + " Hours ";
+				document.getElementById("minutes").innerHTML = minutes + " Minutes ";
+				document.getElementById("seconds").innerHTML = seconds + " Seconds ";
+
+				if (timeLeft < 0) {
+					clearInterval(countdownFunction);
+					document.getElementById("countdown").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
 	</head>
 
 	<body>
-		<div class="sidenavbar">
+		<div class="temporaire">
+			<h1 class="h1Context">Le site est actuellement en travaux...</h1>
+			<img src="images/physum_reborn/workinprogress.png" alt="Work in Progress..." style="max-width: 100%" />
+			<h2 class="h2Context">Revenez dans:</h2>
+			<div id="countdown" class="countDownStyle">
+				<span id="days" class="textTimer"></span>
+				<span id="hours" class="textTimer"></span>
+				<span id="minutes" class="textTimer"></span>
+				<span id="seconds" class="textTimer"></span>
+			</div>
+			<h2 class="h2Context">pour la sortie du nouveau site web!</h2>
+		</div>
+
+		<!-- <div class="sidenavbar">
 			<header id="header" class="alt">
 					<div class="logo">
-						<a href="index.html">
-							<img src="images/logo_blanc_avec_nom.png" alt="Logo Électron Libre"   style="width:200px;height:130px"/>
+						<a href="index.html" class="accueilPhone">
+							<img src="images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" class="logoAccueil" style="width:150px;height:100px"/>
 						</a>
+						<a href="index.html" class="accueilText">Accueil</a>
 
 					</div>
 				<a href="https://l-electron-libre.github.io/texte/electron_libre.rss"><img src="images/rss_icon.png" alt="rss-feed" style="width:20px;height:20px" />  </img> </a>
 						<a href="#menu"> Menu </a>
 			</header>
 
-
-	<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="presentation.html">Présentation</a></li>
-					<li><a href="temoignage.html">Témoignages</a></li>
-					<li><a href="litterature.html">Littérature</a></li>
-					<li><a href="ressources.html">Ressources</a></li>
-					<li><a href="vulgarisation.html">Vulgarisation</a></li>
-					<li><a href="opinion.html">Opinions</a></li>
-					<li><a href="evenements.html">Événements</a></li>
-					<li><a href="caricature.html">Caricatures</a></li>
-					<li><a href="jeux.html">Jeux</a></li>
-					<li><a href="archive.html">Archives</a></li>
-					<li><a href="joindre.html">Nous joindre</a></li>
-				</ul>
-			</nav>
-	<!--end of Navigation bar-->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="presentation.html">Présentation</a></li>
+				<li><a href="conseils.html">Conseils</a></li>
+				<li><a href="entrevues.html">Entrevues</a></li>
+				<li><a href="articles.html">Articles</a></li>
+				<li><a href="histoires.html">Histoires</a></li>
+				<li><a href="chroniques.html">Chroniques</a></li>
+				<li><a href="jeux.html">Jeux</a></li>
+				<li><a href="archive.html">Archives</a></li>
+			</ul>
+		</nav>
 		</div>
 
-		<!-- Banner -->
 		<section class="banner full" style="background-color:black!important" >
 			<article>
-				<img src="images/newton_2.jpg"  alt="Pendule de Newton" />
-				<div class="inner">
+				<img src="images/physum_reborn/newton.jpg"  alt="Newton's cradle" />
+				<div class="inner bannerCenterTitle">
 					<header>
-						<p style="font-size:50px;color:white"> Bienvenue sur le site de l'Électron Libre</p>
+						<p class="titreBienvenue"> Bienvenue sur le site de l'Électron Libre</p>
 					</header>
 				</div>
 			</article>
 			<article>
-				<img src="images/vegan_resize.png" style="width:80%!important" alt="Le mouvement végan" />
-				<div class="inner">
+				<img src="images/physum_reborn/journal2024.png" alt="Frontpage Journal 2024-25">
+				<div class="inner bannerCenterTitle">
 					<header>
-					<p style="font-size:25px;color:black"><a href="texte/opinions/contre_la_polarisation.html"> Contre la polarisation: le mouvement végan - Par Alexis-Étienne Fortier</a></p>
+						<p class="sousTitreBienvenue" ><a href="../">Une nouvelle page de couverture!</a></p>
 					</header>
 				</div>
 			</article>
-
-				<article>
-				  <img src="images/matiere_sombre_resize.jpg" alt="Mon projet de recherche en 500 mots" />
-					<div class="inner">
-						<header>
-						<p style="font-size:30px;color:white"><a href="texte/vulgarisation/mon_projet_de_recherche_jeremy_savoie.html" > Mon projet de recherche en 500 mots - Par Jeremy Savoie</a></p>
-						</header>
-					</div>
-				</article>
-				<article>
-				  <img class="img_center" src="images/emancipation_Laurent_modifie.png" style="width:231px; height:320px" alt="" />
-					<div class="inner">
-						<header>
-						<p style="font-size:30px;color:white"><a href="texte/litterature/emancipation.html" > Émancipation - Par Laurent Mercier</a></p>
-						</header>
-					</div>
-				</article>
+			<article>
+				<img src="images/physum_reborn/mil.jpg" alt="Campus MIL">
+				<div class="inner bannerCenterTitle">
+					<header>
+						<p class="sousTitreBienvenue" ><a href="../">Une nouvelle équipe!</a></p>
+					</header>
+				</div>
+			</article>
+				
 		    </div>
 		</section>
 
-		<!-- One -->
-		<section id="one" class="wrapper style2">
-
-
-
+		<section id="one" class="wrapper style2 topNews">
 			<div class="inner">
 				<div class="grid-style">
 
-					<div>
+					<div class="headInfo">
 						<div class="box">
 							<div class="image fit">
-								<img src="https://cdn.pixabay.com/photo/2018/02/04/09/09/brushes-3129361_960_720.jpg" alt="Concours de logo"  />
+								<img src="./images/physum_reborn/equipe.webp" alt="Nouvelle équipe"  />
 							</div>
 							<div class="content">
 								<header class="align-center">
-									<h4>Vous voulez voir les finalistes du concours de logo ?</h4>
+									<h4>Une nouvelle équipe pour un nouveau départ!</h4>
 								</header>
 
 								<footer class="align-center">
-									<a href="concours.html" class="button alt">Cliquez ici</a>
+									<a href="presentation.html" class="button alt">Voir ses membres</a>
 								</footer>
 							</div>
 						</div>
 					</div>
 
-					<div>
+					<div class="headInfo">
 						<div class="box">
 							<div class="image fit">
-								<img src="images/Caricature_1_janvier.png"style="width:100%">
+								<img src="images/physum_reborn/instagram.jpg">
 							</div>
 							<div class="content">
 								<header class="align-center">
-									<h4>Voici la caricature du jour </h4>
+									<h4>Rejoignez-nous sur instagram et restez à jour!</h4>
 								</header>
 								<footer class="align-center">
-									<a href="caricature.html" class="button alt" >Cliquez ici pour en voir d'autres</a>
+									<a href="https://www.instagram.com/electron_libre_journal/" class="button alt" >Notre instagram</a>
 								</footer>
 							</div>
 						</div>
@@ -173,7 +192,6 @@ https://pixabay.com
 			</div>
 		</section>
 
-		<!-- Two -->
 		<section id="two" class="wrapper style3">
 			<div class="inner">
 				<header class="align-center">
@@ -183,119 +201,75 @@ https://pixabay.com
 			</div>
 		</section>
 
-		<!-- Three -->
 		<section id="three" class="wrapper style2">
 			<div class="inner">
 				<header class="align-center">
 					<p class="special"></p>
 				</header>
 				<div class="gallery">
+				
 					<div>
-						<div class="image fit ">
-							<p class="main"><b>Témoignages</b>
-							<br/>
-
-															Vous trouverez ici les récits les moins visibles des membres de notre communauté étudiante
-							<a href="temoignage.html"><img src="images/human-2944064_1920.jpg" alt="Témoignages" class="img_opacity_transition" /></a>
-							<!-- width="500" height="300"-->
-						</div>
-					</div>
-
-					<div>
-						<div class="image fit ">
-							<p class="main"><b>Littérature</b>
-							<br/>
-
-															Envie de lire des nouvelles, des poèmes, des histoires ou des critiques? Vous trouverez tout cela ici.
-							<a href="litterature.html"><img src="images/narrative.jpg" alt="Littérature" class="img_opacity_transition"  /></a>
-
+						<div class="image fit">
+							<p class="main pMain2024"><b>Conseils</b></p>
+							<p class="p2024">10 choses que j’aurais aimées savoir au début de mon bac <strong>; par Élio.</strong></p>
+							<a href="conseils.html"><img src="images/physum_reborn/conseils.webp" alt="Conseils" class="img_opacity_transition" style="height: 400px" /></a>
 						</div>
 					</div>
 
 					<div>
 						<div class="image fit">
-							<p class="main"><b>Ressources</b>
-							<br>
-							Vous avez des questions sur la recherche, l'Université de Montréal, le corps professoral, la rédaction d'une lettre de motivation ou d'un CV ?
-							Les réponses sont ici.
-							 </p>
-							<a href="ressources.html"><img src="images/Ressource.png" width="600" height="400" alt="Ressources" style="text-align:center;" class="img_opacity_transition" /></a>
+							<p class="main pMain2024"><b>Entrevues</b></p>
+							<p class="p2024">L’entrevue avec Cédric et Étienne.</p>
+							<a href="entrevues.html"><img src="images/physum_reborn/entrevues.png" width="600" height="400" alt="Entrevues" style="text-align:center;" class="img_opacity_transition" /></a>
 						</div>
 					</div>
 
 					<div>
 						<div class="image fit">
-							<p class="main"><b>Vulgarisation</b>
-								<br/>
-
-								 Vous souhaitez en apprendre plus sur des sujets qui ont des mots compliqués tels que quarks et Schwarzschild ?
-							 Cliquez ici. </p>
-							<a  href="vulgarisation.html"><img src="images/vulgarisation_22.png" alt="Vulgarisation" width="600" height="400" class="img_opacity_transition"/></a><figcaption> "<p class="main">"Piled Higher and Deeper" by Jorge Cham
-www.phdcomics.com</p>  </figcaption>
+							<p class="main pMain2024"><b>Articles</b></p>
+							<p class="p2024">La passerelle du Mil : un réseau de diffraction acoustique <strong>; par Mathieu et Paul-Édouard</strong></p>
+							<a href="articles.html"><img src="images/physum_reborn/articles.png" alt="Articles" width="600" height="400" class="img_opacity_transition" /></a>
 						</div>
 					</div>
-
-			<!--		<div>
-						<div class="image fit">
-							<p class="main"><b>Opinions</b>
-								<br/>
-
-								????
-							 Cliquez ici. </p>
-							<a  href="opinion.html"><img src="images/vulgarisation_22.png" alt="Opinions" width="600" height="400" /></a><figcaption> "<p class="main">"Piled Higher and Deeper" by Jorge Cham
-www.phdcomics.com</p>  </figcaption>
-						</div>
-					</div>
-
--->
 
 					<div>
 						<div class="image fit">
-							<p class="main"><b>Événements</b>
-								<br/>
-
-								 Un événement traditionnnel de la PHYSUM approche? Apprenez les faits comiques des éditions passées ici. </p>
-							<a  href="evenements.html"><img src="images/EvenementCalendrier.png" alt=""width="600" height="400" class="img_opacity_transition" /></a>
+							<p class="main pMain2024"><b>Histoires</b></p>
+							<p class="p2024">Enquête : des événements surnaturels surprenants survenus au campus MIL <strong>; par Émile</strong></p>
+							<a href="histoires.html"><img src="images/archive.jpg" alt="Histoires" width="600" height="400" class="img_opacity_transition" /></a>
 						</div>
 					</div>
-
-					<!--		<div>
-								<div class="image fit">
-									<p class="main"><b>Jeuxs</b>
-										<br/>
-
-										 ????
-									 Cliquez ici. </p>
-									<a  href="jeux.html"><img src="images/vulgarisation_22.png" alt="Jeux" width="600" height="400" /></a><figcaption> "<p class="main">"Piled Higher and Deeper" by Jorge Cham
-		www.phdcomics.com</p>  </figcaption>
-								</div>
-							</div>
-
-		-->
 
 					<div>
 						<div class="image fit">
-							<p class="main"><b>Archives</b>
-								<br/>
-
-								 Vous cherchez les anciennes éditions de l'Électron Libre? Voici le lien vers plusieurs éditions depuis 2004 </p>
-							<a  href="archive.html"><img src="images/archive.jpg" alt=""width="600" height="400" class="img_opacity_transition" /></a>
+							<p class="main pMain2024"><b>Chroniques</b></p>
+							<p class="p2024">Un stage à Hawaii <strong>; par Frédéric</strong></p>
+							<a href="chroniques.html"><img src="images/physum_reborn/hawaii.jpg" alt="Chroniques" width="600" height="400" class="img_opacity_transition" /></a>
 						</div>
 					</div>
 
-			<!--		<div>
+					<div>
 						<div class="image fit">
-							<p style="text-align:center;color:black;"><b>La section Art</b>:
-								<br>
-								Dessins, critiques, poèmes, mots croisés </p>
-							<a href="litterature.html"><img src="images/narrative.jpg" alt="" /></a>
+							<p class="main pMain2024"><b>Jeux</b></p>
+							<p class="p2024">Les mots croisés <strong>; par Clara</strong></p>
+							<a href="jeux.html"><img src="images/physum_reborn/vraimot.png" alt="Jeux" width="600" height="400" class="img_opacity_transition" /></a>
 						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Four -->
+		<hr>
+
+		<div class="telechargement">
+			<p>Téléchargez la version PDF de notre journal de l'électron libre A24 ici!</p>
+			<a href="./journalPdf/L'électron Libre A24.pdf" class="downloadPDF" download>
+				<div class="downloadPDFDiv"></div>
+			</a>
+		</div>
+		
+		<hr>
+
 		<section id="four" class="wrapper style2">
 				<div class="inner">
 					<div class="box">
@@ -310,38 +284,37 @@ www.phdcomics.com</p>  </figcaption>
 								<br/>
 								Il existe aussi l'équivalent américain, l'American Physical Society (APS), qui permet aussi de vous tenir à jour sur la physique dans le monde. L'adhésion est, encore une fois, gratuite. C'est pourquoi nous vous conseillons de devenir membre, vous n'avez rien à perdre ! Visitez leur site officiel pour plus d'informations:
 								<br/><a href="https://www.aps.org" >https://www.aps.org</a>
-				   			<br/>
+				   				<br/>
 								<br/>
 								Pour des informations plus spécifiques sur la physique à l'Université de Montréal, consultez l'onglet <a href="https://l-electron-libre.github.io/ressources.html" >Ressources</a>.
 							</p>
 						</div>
 					</div>
 				</div>
-			  <button onclick="topFunction()" id="myBtn" title="Go to top">Tête de la page</button>
 		</section>
 
-		<!-- Footer bar -->
+		<section id="four" class="wrapper style2">
+			<button onclick="topFunction()" id="myBtn" class="topButton" title="Go to top">Tête de la page</button>
+		</section>
+
 		<div id="footer-placeholder"></div>
 	  <script>
-	  //Get the button
-	  var mybutton = document.getElementById("myBtn");
+	  let mybutton = document.getElementById("myBtn");
 
-	  // When the user scrolls down 20px from the top of the document, show the button
 	  window.onscroll = function() {scrollFunction()};
 
 	  function scrollFunction() {
 	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-	      mybutton.style.display = "block";
+	      mybutton.style.display = "flex";
 	    } else {
 	      mybutton.style.display = "none";
 	    }
 	  }
 
-	  // When the user clicks on the button, scroll to the top of the document
 	  function topFunction() {
 	    document.body.scrollTop = 0;
 	    document.documentElement.scrollTop = 0;
 	  }
-	  </script>
+	  </script> -->
 	</body>
 </html>

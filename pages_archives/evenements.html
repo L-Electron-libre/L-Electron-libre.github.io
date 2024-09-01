@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Événements - L'Électron Libre</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
+		<meta property="og:image" content="https://l-electron-libre.github.io/images/logo.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://l-electron-libre.github.io/evenements.html" />
+		<meta property="og:title" content="Événements - L'Électron Libre" />
+		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM" />
+
+		<!-- Links -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/texte.css" />
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+		<!-- Footer -->
+		<script>
+			$.get("../template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+
+		<script>
+			function ClickButton() {
+				var x = document.getElementById("myDIV");
+				var y = document.getElementById("myButtonImg");
+				console.log(x);
+				console.log(y);
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					y.className = "up_arrow";
+				} else {
+					x.style.display = "none";
+					y.className = "down_arrow";
+				}
+			}
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-169295343-1");
+		</script>
+	</head>
+
+	<body class="subpage">
+		<div class="sidenavbar">
+			<header id="header" class="alt">
+				<div class="logo">
+					<a href="../index.html">
+						<img src="../images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" style="width: 200px; height: 130px" />
+					</a>
+				</div>
+				<a href="#menu"> Menu </a>
+			</header>
+
+			<!-- Nav -->
+			<!-- <nav id="menu">
+				<ul class="links">
+					<li><a href="../index.html">Accueil</a></li>
+					<li><a href="../presentation.html">Présentation</a></li>
+					<li><a href="../temoignage.html">Témoignages</a></li>
+					<li><a href="../litterature.html">Littérature</a></li>
+					<li><a href="../ressources.html">Ressources</a></li>
+					<li><a href="../vulgarisation.html">Vulgarisation</a></li>
+					<li><a href="../opinion.html">Opinions</a></li>
+					<li><a href="../evenements.html">Événements</a></li>
+					<li><a href="../caricature.html">Caricatures</a></li>
+					<li><a href="../jeux.html">Jeux</a></li>
+					<li><a href="../archive.html">Archives</a></li>
+					<li><a href="../joindre.html">Nous joindre</a></li>
+				</ul>
+			</nav> -->
+			<!--end of Navigation bar-->
+		</div>
+
+		<!-- One -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>Journal étudiant de la PHYSUM</p>
+					<h2>Événements</h2>
+				</header>
+			</div>
+		</section>
+
+		<!-- Présentation de la section -->
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<header class="align-center">
+					<p class="main">
+						<button id="myButtonImg" class="down_arrow" onclick="ClickButton()">De quoi s'agit-il?</button>
+					</p>
+					<div id="myDIV" style="display: none">
+						<p class="main">
+							Comment découvrir l'énergie incroyable de la Physum de façon fort divertissante? Avec la section « Événements». Ici, vous trouverez toutes les anecdotes juteuses de votre association étudiante. Que vous soyez en première année du baccalauréat
+							ou en dernière de votre doctorat, que ce soit par curiosité ou par nostalgie, vous allez adorer.
+						</p>
+					</div>
+					<p class="special"></p>
+				</header>
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="gallery">
+					<div>
+						<div class="image fit">
+							<p class="main" style="text-align: center"><b>Renaissance - Manuel Bender</b></p>
+							<br />
+							<a href="../texte/evenements/renaissance_manuelbender.html"><img src="../images/phoenix-5212019_1280.png" alt="Renaissance" class="img_opacity_transition" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer bar -->
+		<div id="footer-placeholder"></div>
+	</body>
+</html>

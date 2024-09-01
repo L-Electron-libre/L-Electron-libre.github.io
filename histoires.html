@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Histoires - L'Électron Libre</title>
+
+		<meta property="og:image" content="https://l-electron-libre.github.io/images/logo.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://l-electron-libre.github.io/index.html" />
+		<meta property="og:title" content="L'Électron Libre" />
+		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM" />
+
+		<!-- Links -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/texte.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/index2024.css" />
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Footer -->
+		<script>
+			$.get("template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+
+		<script defer>
+			$(document).ready(function () {
+				$("#toggleChapters").click(function () {
+					$("#chaptersList").slideToggle();
+					$(this).text($(this).text() === "Cacher chapitres" ? ($("#toggleChapters").text = "Afficher chapitres") : ($("#toggleChapters").text = "Cacher chapitres"));
+				});
+			});
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+	</head>
+	<body>
+		<div class="sidenavbar">
+			<div class="sidenavbar">
+				<header id="header" class="alt">
+					<div class="logo">
+						<a href="index.html" class="accueilPhone">
+							<img src="images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" class="logoAccueil" style="width:150px;height:100px"/>
+						</a>
+						<a href="index.html" class="accueilText">Accueil</a>
+
+					</div>
+				<a href="https://l-electron-libre.github.io/texte/electron_libre.rss"><img src="images/rss_icon.png" alt="rss-feed" style="width:20px;height:20px" />  </img> </a>
+						<a href="#menu"> Menu </a>
+			</header>
+
+				<!-- Nav -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="presentation.html">Présentation</a></li>
+						<li><a href="conseils.html">Conseils</a></li>
+						<li><a href="entrevues.html">Entrevues</a></li>
+						<li><a href="articles.html">Articles</a></li>
+						<li><a href="histoires.html">Histoires</a></li>
+						<li><a href="chroniques.html">Chroniques</a></li>
+						<li><a href="jeux.html">Jeux</a></li>
+						<li><a href="archive.html">Archives</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>Journal étudiant de la PHYSUM</p>
+					<h2>Histoires</h2>
+				</header>
+			</div>
+		</section>
+
+		<section id="two" class="wrapper style2 section2024 legendeSection">
+			<div class="inner">
+				<div class="box">
+					<div class="content contentHistoire">
+						<header class="align-center headerHistoire">
+							<h3 class="legendeTitre">Chapitres:</h3>
+							<button id="toggleChapters" class="toggleButtonChapters"><span>Afficher Chapitres</span></button>
+						</header>
+						<ul id="chaptersList" class="chapitres">
+							<li><a href="#20juillet">20 juillet 2024 - La première visite des lieux</a></li>
+							<li><a href="#21juillet">21 juillet 2024 - Une réalisation</a></li>
+							<li><a href="#24juillet">24 juillet 2024 - Le premier plan en exécution</a></li>
+							<li><a href="#1aout">1 août 2024 - Des rechercheset des culs-de-sac</a></li>
+							<li><a href="#2aout">2 août 2024 - La rencontre avec l’expert</a></li>
+							<li><a href="#5aout">5 août 2024 - Le deuxième plan en action</a></li>
+							<li><a href="#9aout">9 août 2024 - Une entrevue révélatrice</a></li>
+							<li><a href="#conclusion">Conclusion - Une enquête inachevée</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style2 section2024">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+							<h2>Enquête: des événements surnaturels surprenants survenus au campus MIL</h2>
+							<p>par Émile Deschamps</p>
+						</header>
+						<p class="paragraphe">
+							Jean Charest, <span class="red">l’esprit frappeur du MIL.</span> Personne ne sait quand il est né, la vraie question est plutôt : quand est-il mort ? Comment est-il mort ? Pourquoi est-il mort ? Quelle est sa couleur préférée ? Ce sont ces
+							questions qui nous ont poussé à investiguer le sujet, armés de notre curiosité et de prudence, avec comme seule piste des rumeurs racontant que la mort du revenant aurait à voir avec le MIL lui-même…
+						</p>
+						<p class="paragraphe">
+							La légende raconte que depuis sa mort tragique, son esprit est resté attaché au bâtiment. En guise de <span class="red">vengeance</span>, il se glisse près des gens et, dès que par mégarde ceux-ci regardent ailleurs, il tape sur leur épaule et
+							disparaît aussitôt sans laisser de trace. Ses victimes se retournent ensuite dans sa direction, croyant naïvement que quelqu’un les a interpellées ; mais quel choc vivent-elles à la réalisation qu’il n’y a personne en vue ! Certaines ne s’en
+							remettent pas et doivent être conduites d’urgence à un prêtre qui les exorcise de toute trace du poltergeist. Plusieurs n’osent pas revenir au MIL en raison de leurs épaules trop frêles, d’autres ont des épaulettes pour s’en protéger, mais
+							personne à ce jour n’a réussi à esquiver son toucher maléfique.
+						</p>
+						<p class="paragraphe">À travers cette enquête, nous avons interrogé témoins et experts, nous sommes allés sur le terrain et après un travail acharné, nous avons fini par révéler une partie du mystère entourant le fameux fantôme…</p>
+						<p class="paragraphe align-center"><strong id="20juillet">20 juillet 2024 - La première visite des lieux</strong></p>
+						<p class="paragraphe">
+							Huit jours après que cette histoire ait atterri sur notre bureau, nous allons pour la première fois au campus MIL où notre contact, Pauline*, a été victime de Jean Charest alors qu’elle dînait avec ses collègues. Elle nous a expliqué que son
+							histoire est loin d’être unique, car parmi les visiteurs fréquents du lieu, plusieurs prétendent recevoir un toucher fantomatique au moins une fois par semaine.
+						</p>
+						<p class="paragraphe">
+							Nous allons donc rejoindre Pauline devant l’entrée principale de l’aile B du bâtiment, d’où elle nous fait visiter les lieux. Aussitôt à l’intérieur, nous remarquons l’inquiet sur les visages, les regards évitants, et l’absence totale de
+							conversations de couloir. Pauline nous assure que ces comportements sont attribuables à la faune de l’aile B composée principalement de scientifiques, et non au fantôme. À vrai dire, les gens semblent habitués à sa présence, munis d’une
+							résistance routinière à son influence néfaste.
+						</p>
+						<p class="paragraphe">
+							C’est rendu dans une certaine cage d’escaliers prémonitoire que je perçois pour la première fois ce sentiment qui allait me hanter pour le reste de mon investigation. Dès que je referme la porte derrière nous, des frissons me parcourent le dos
+							en guise de mauvais présage. Alors que nous suivons Pauline, je tourne malencontreusement ma tête vers la gauche pour parler à Nicolas lorsque, d’un coup, le temps s’arrête et je sens un toucher sur mon épaule droite, me signifiant que
+							quelqu’un veut me parler dans cette même direction. Sans que je réalise ce qui m’arrive, ma tête se tourne par elle-même. Je ne vois personne, et je comprends alors, figé par <span class="red">une terreur invisible</span>, que Jean Charest est
+							bel et bien réel, et qu’il est venu m’accueillir dans sa demeure pour me signifier que je n’y suis pas le bienvenu. Je m’évanouis.
+						</p>
+						<div class="muon">
+							<img src="images/physum_reborn/muons/Muon flabbergasté2.png" alt="muon effrayé" width="300px" height="300px" style="max-width: 100%" />
+						</div>
+						<p class="paragraphe align-center" id="21juillet"><strong>21 juillet 2024 - Une réalisation</strong></p>
+						<p class="paragraphe">
+							À mon réveil, ma tête est remplie d’un brouillard de pensées. Je suis dans un lit à l’urgence, un bandeau enroulé autour de ma tête et une infirmière à mes côtés qui prend des notes en m’observant. On m’explique que je suis tombé dans les
+							escaliers à la suite d’un choc trop grand qui m’a fait perdre connaissance, et que je souffre maintenant d’une commotion mineure. Je suis chanceux de m’en être autant bien tiré selon le médecin, mais moi je ne crois pas à la chance. Je sais
+							que Jean Charest n’a pas essayé de me tuer, il m’a simplement averti : si je retourne au MIL, je ne serai pas aussi chanceux une deuxième fois ; il faudra donc abandonner l'enquête ou vivre avec les conséquences de mon affront.
+						</p>
+						<p class="paragraphe">
+							Je m’extirpe de l’hôpital aussi vite que possible et aussitôt dans le bus, j'appelle Nicolas pour lui annoncer qu’il devra abandonner tous les projets qu’il avait ce soir même pour m’aider à bâtir un plan d’action qui nous mènera à percer les
+							mystères du spectre toucheur.
+						</p>
+						<p class="paragraphe align-center"><strong id="24juillet">24 juillet 2024 - Le premier plan en exécution</strong></p>
+
+						<p class="paragraphe">
+							Après trois jours de planification, les premiers préparatifs sont faits : cette fois-ci, nous allons pénétrer le bâtiment équipés des épaulières de football les plus épaisses que j’ai pu trouver. En plus, cette fois-ci, nous apportons notre
+							amie Marianne en guise d’appât pour notre fantôme, pour ensuite essayer de capter sa présence à l’aide d’un détecteur de fantômes haut de gamme (l’Électron Libre a un budget assez important, heureusement) alors qu’il visera cette étudiante
+							sans défense.
+						</p>
+						<p class="paragraphe">
+							Le soir venu, notre trio s’infiltre dans le MIL alors que ses habitants désertent les lieux. C’est le moment parfait, car un soir d’été comme celui-là, le spectre a peu de victimes à viser et on aura plus de chances de l’attirer vers nous.
+							Nous nous installons dans la même cage d’escalier où j’avais senti le toucher glacial pour la première fois, essayant de maximiser nos chances. Après avoir allumé détecteur, caméra, micro, lampe UV et capteur d’ondes quantiques, nous sommes en
+							position, Nicolas et moi armés d’épaulettes, observant une Marianne à l'affût de tout signe d’une quatrième présence.
+						</p>
+						<p class="paragraphe">
+							L’attente est interminable. Nous sommes tous crispés, les six sens alertes, sans mot et sans mouvement, retenant même nos pets et nos éternuements, car nous savons que le fantôme ne reste pas longtemps sur place après avoir frappé. À vrai
+							dire, je suis presque en état de transe lorsque Marianne lève subitement la tête pour nous signifier qu’il se passe finalement quelque chose d’anormal. Aussitôt, le détecteur de fantômes se met à sonner et l’air devient glacial pendant une
+							seconde, pas plus. Aussi vite qu’elle est apparue, la sensation d’effroi disparaît. Nous nous précipitons sur Marianne pour lui éviter une commotion, puis sur nos appareils pour enregistrer tout ce qui vient de se passer. Enfin, croyons-nous,
+							voilà une chance de prouver définitivement l’existence de l’esprit frappeur!
+						</p>
+						<p class="paragraphe">
+							Un peu après, dans notre voiture, nous regardons attentivement la vidéo afin de voir si Jean Charest laisse une trace tangible lors de son passage, mais malgré nos efforts, nous ne décelons rien de plus que notre détecteur de fantômes qui
+							sonne frénétiquement. Pas un pixel remarquable dans la vidéo, pas un bruit anormal dans l’audio, pas une onde quantique en vue. Je décide alors de changer d’approche. Si on veut en apprendre plus, il va falloir user de ruse et se renseigner
+							plus assidûment sur le sujet.
+						</p>
+						<p class="paragraphe align-center" id="1aout">
+							<strong>1<sup>er</sup> août 2024 - Des recherches et des culs-de-sac</strong>
+						</p>
+						<p class="paragraphe">
+							La semaine suivant notre expérience sur le terrain est un enchaînement désordonné de diverses recherches, culs-de-sac et pistes prometteuses. De son côté, Nicolas s’est distancé de l’enquête pour s’attarder à d’autres projets, comme son
+							travail par exemple. Mais je n’ai rien à faire de ces broutilles, car une seule énigme occupe mon esprit en ce moment : pourquoi Jean Charest agit-il ainsi ? Ce simple questionnement m’a mené dans un abysse sans fond de questions qui émergent
+							sans cesse des réponses que je déniche. J’en ai même oublié un peu cet article, mais maintenant que je suis sorti de ce trou noir d’information, voici un résumé de mes trouvailles.
+						</p>
+						<p class="paragraphe">
+							Je me suis d’abord informé au sujet des phénomènes surnaturels pour orienter mes recherches. Heureusement, le cas de Jean Charest n’est pas le seul en son genre, et plusieurs chasseurs de fantômes ont documenté des cas de bâtiments hantés qui
+							s’apparentent au mien. Selon la plupart des experts en matière de fantômes et autres apparitions spectrales, lorsqu’une âme reste attachée à un bâtiment spécifique pour tourmenter ses occupants, c’est qu’il y a eu un événement majeur dans sa
+							vie lié à ce bâtiment, le plus souvent en lien avec sa mort. De plus, les exorcistes préfèrent habituellement laisser le fantôme venir à eux à travers des rituels obscurs qui permettent d’entrer en communication avec lui, mais je n’ai trouvé
+							nulle part des détails sur ces sorts qui semblent réservés aux initiés. Il va donc falloir que je trouve un exorciste prêt à m’aider.
+						</p>
+						<p class="paragraphe">
+							Imbu de ce savoir, j’ai compris que peu importe qui était ce spectre avant sa mort, il avait probablement un lien le rattachant au lieu qu’il ne quittait plus maintenant. Cependant, je n’ai trouvé nulle part d’information concernant quiconque
+							s’appelant Jean Charest, ayant un lien avec le MIL, et qui est décédé. Le seul Jean Charest qui ressortait de mes recherches était un philanthrope qui avait financé la construction du campus il y a des années, mais celui-ci n’avait pas encore
+							quitté ce monde.
+						</p>
+						<p class="paragraphe">
+							J’ai par la suite élargi mes recherches, ignorant si le nom qu’on attribuait à ce démon était vraiment le sien. Fouillant dans les archives de la faculté des arts et des sciences de l’université, je n’ai trouvé personne qui a étudié, enseigné
+							ou travaillé dans un département scientifique et qui y est mort depuis l’inauguration du bâtiment. Quant aux autres employés et étudiants fréquentant les lieux, aucun n’avait connu sa fin près de là. J’ai ensuite essayé de trouver une
+							quelconque information dans les archives médiatiques mentionnant un accident grave au MIL, mais cela ne m’a pas mené plus loin. Enfin, j’ai eu l’idée de m’attarder aux ouvriers qui ont construit le bâtiment car, après tout, ce dernier est
+							plutôt récent et j’aurais peut-être des chances de trouver des informations pertinentes à ce sujet. J’ai réussi à savoir quelle compagnie avait fourni le plus de main-d’œuvre au chantier, je les ai donc contactés pour leur demander s’ils
+							pouvaient m’accorder une entrevue. J’en ai aussi profité pour tenter de contacter la direction de l’université pour savoir si des informations étaient cachées du public. Si oui, je vais tout faire pour les obtenir.
+						</p>
+						<p class="paragraphe">
+							Finalement, après huit jours de recherches intensives, j’ai pu trouver une soi-disant exorciste qui était prête à m’aider. J’ai des réserves à son sujet puisque jusqu’à récemment, j’associais les exorcistes à des charlatans, mais je dois quand
+							même la rencontrer demain.
+						</p>
+						<p class="paragraphe align-center" id="2aout"><strong>2 août 2024 - La rencontre avec l'expert</strong></p>
+						<p class="paragraphe">
+							J’arrive chez l’exorciste à 8h du matin, dans un bâtiment anodin de Parc-Extension au milieu des appartements et des restaurants. Christophe*, mon contact, m’accueille dans un vestibule où même la lumière du jour craint d’entrer. Il me prie de
+							le suivre, pour rencontrer sans plus tarder l’exorciste en question. À l’intérieur, mes yeux inadaptés ne voient que la lueur de la bougie de mon guide, qui m’emmène vers sa collègue dans un silence brisé seulement par le craquement du
+							plancher sous nos pas. Autour de moi, je ne perçois que des ombres qui laissent deviner des pièces adjacentes, mais dont le contenu m’échappe. Nous arrivons finalement au bout du long couloir qui mène à un bureau plus intrigant qu’inquiétant.
+						</p>
+						<p class="paragraphe">
+							La lumière ne provient encore que des bougies, mais elles se comptent ici dans les dizaines, jonchant les murs de la pièce et le sol barbouillé d’inscriptions runiques. Au centre se trouve un autel qui se révèle en réalité être une pile de
+							vieux livres, sur lequel était déposé un immense grimoire dans lequel est plongé notre exorciste, si concentrée qu’elle ne remarque pas mon arrivée. La figure recroquevillée devant moi pourrait être prise pour une gargouille tant elle est
+							repliée sur son livre, complètement recouverte par une vieille guenille noire qui accumule la poussière à vue d’œil. Elle marmonne en lisant frénétiquement ligne après ligne de son manuel de sorcière, sirotant parfois une tasse qui, à la lueur
+							de chandelle, semble remplie de goudron.
+						</p>
+						<p class="paragraphe">
+							Je lance une salutation timide, qui provoque la surprise immense de la goule et une tasse presque renversée sur ses livres. Elle me toise en se relevant de peine et de misère de sa position de rocher, et ne me quitte du regard que pour
+							s’étirer les articulations dont le craquement retentit partout dans l’appartement lugubre. Après s’être finalement relevée, elle tire sur une chaînette qui pend du plafond et soudainement, la pièce s’illumine d’une lumière froide issue de
+							néons vrombissants.
+						</p>
+						<p class="paragraphe">
+							Au travers de ses nombreuses plaintes sur ses maux de dos et d’yeux et de ses instructions à Christophe pour qu’il lui apporte un déjeuner, j’apprends de l’exorciste qu’elle s’appelle en réalité Flora* (et non Grimoria la Grande, comme sa page
+							Facebook l’affirme fièrement) et qu’elle est formée à l’école d’exorcisme de Saint-Jérôme, une de meilleures de toute l’Amérique du Nord (et responsable en partie de la réputation si particulière de la petite ville). Elle m’invite à déjeuner
+							avec elle et j’accepte joyeusement, la suivant jusque dans sa cuisine entièrement décorée de comptoirs et d’armoires noirs. Je m'assois dans une chaise comiquement haute et lui explique enfin mes problèmes de fantôme.
+						</p>
+						<p class="paragraphe">
+							Heureusement, la jeune dame accepte de m’aider et d’aller au MIL pour tenter de communiquer avec l’esprit, mais malheureusement pour la direction de l’électron libre, son taux horaire sous-entend que son temps est très précieux et qu'il va
+							falloir agir efficacement une fois sur place. Elle me donne rendez-vous quelques jours plus tard pour faire ses préparatifs, et je repars donc, plus confiant que jamais, pensant déjà aux questions que j'aurai pour le poltergeist qui me hante
+							depuis trop longtemps déjà.
+						</p>
+						<p class="paragraphe align-center"><strong id="5aout">5 août 2024 - Le deuxième plan en action</strong></p>
+						<p class="paragraphe">
+							Le lundi soir suivant, je retrouve l’exorciste et son collègue (ou bien son partenaire, je ne comprends pas bien leur relation…) près du MIL pour un caucus. Elle me met en garde, afin que que j’agisse comme il le faut pour que le spectre
+							puisse tomber dans le piège qu’elle va lui tendre et ainsi se prêter à mon interrogatoire. J’enfile ensuite un collier auquel est attaché un énorme talisman qui me protégera du toucher maléfique tout le long du rituel. Enfin, nous sommes prêts
+							au moment de vérité.
+						</p>
+						<p class="paragraphe">
+							À l’intérieur du bâtiment, nous déterminons que le meilleur endroit pour ne pas se faire déranger par un employé est le stationnement le plus profond, qui est vide à cette heure-ci. J’aide Flora à installer son matériel, puis je me range sur
+							le côté pour la voir préparer un cercle de sel en murmurant des incantations cryptiques. Ensuite, notre trio se place à l’intérieur, s'asseyant autour d’un vase de jade hexagonal recouvert de runes et de motifs hypnotisants. Nous joignons nos
+							mains (celle de Christophe est désagréablement moite) et Flora récite une prière, suivie d’appels répétés pour attirer l’attention d’un fantôme. J'attends ainsi plusieurs minutes avant de remarquer un faible vent glacial qui semble souffler
+							vers le milieu du cercle. Le vent s’arrête subitement lorsque j'entends un grondement provenant du vase. J’aperçois un mince sourire sur les lèvres de mes comparses.
+						</p>
+						<p class="paragraphe">
+							Enfin, j’ai réussi ! J’ai une occasion inespérée de communiquer avec l’esprit, et aussitôt que l’exorciste m’affirme que je peux lui adresser la parole, je cache mon enthousiasme pour sortir mon calepin et prendre note de tout ce qui va sortir
+							de l’échange.
+						</p>
+						<div class="muon">
+							<img src="images/physum_reborn/muons/Muon content2.png" alt="muon content" width="300px" height="300px" style="max-width: 100%" />
+						</div>
+						<p class="paragraphe">
+							Jean Charest est bizarrement silencieux au premier abord, mais quand je lui pose finalement ma première question, la médium lui ordonne de répondre et une voix émane abruptement du vase. Le fantôme parle avec un accent critiquement québécois
+							et avec une voix rauque qui sent la cigarette à travers le voile de la mort. Il ne répond à aucune question, cependant, affirmant à répétition qu’on ne veut que l’expulser des lieux « comme les autres salauds de la ville ».Je martèle la
+							promesse qu’on n’est là que pour lui parler, et après quelques minutes de ce manège, il se décide finalement à nous écouter sérieusement. Plusieurs choses sortent de cet échange que je ne relaterai pas entièrement, mais voici les éléments clés
+							de mon « entrevue » avec le revenant :
+						</p>
+						<p class="paragraphe">
+							D’abord, Jean Charest n'est pas son vrai nom (en réalité, personne ne sait vraiment d’où vient ce surnom) ; il s’appelle Jean Chagnon et est natif de Montréal, né en mille-neuf-cent-longtemps. Sa couleur préférée est le bleu. Selon ses dires,
+							il a habité de sa retraite à sa mort dans une maison située sur le site de l’ancienne gare de triage où se situe présentement le MIL (j’ai vérifié par la suite et il existait bel et bien un petit développement construit à la place d’anciens
+							chemins de fer qui n’a vécu que le temps que l’Université de Montréal acquière le site en 2006, après quoi les habitants de ces quelques maisons ont dû déménager). Cependant, un seul est resté, et c’était Mr. Chagnon, qui refusait de céder sa
+							maison malgré les innombrables plaintes et avis de la ville et de l’université. Il n’a jamais quitté sa maison par la porte à partir du moment où il s’est mis à craindre qu’on ne vienne la démolir pendant son absence. Il comptait sur un tunnel
+							secret qui débouchait de l’autre côté des rails pour faire une épicerie de temps en temps ou voler des fils de cuivre pour financer ladite épicerie.
+						</p>
+						<p class="paragraphe">
+							C’est dans ce même tunnel qu’il a connu son sort, à l’époque de la construction du campus, alors qu’on effectuait des travaux d’excavation directement au-dessus de lui et qu’un coup de pelle en trop provoqua l’effondrement de son passage
+							souterrain. Jean ne se souvient de rien à partir de ce moment jusqu’à ce qu’il reprenne conscience des années plus tard, à l’inauguration du MIL. Il n’était alors qu’une ombre de lui-même, condamné à errer dans le bâtiment qui le retenait
+							prisonnier, comme il l’a appris en essayant de sortir pour retrouver sa demeure. Sa maison, malheureusement pour lui, avait été démolie peu de temps après sa mort ; le fantôme l’avait réalisé rapidement en voyant à quel point le site avait
+							changé depuis son dernier souffle.
+						</p>
+						<p class="paragraphe">
+							Depuis son réveil, l’esprit de Jean Chagnon essaie désespérément de se sortir de sa prison de verre et d’acier, mais le seul moyen qu’il a d’agir autrement que d’errer sans but est de tenter la communication avec les vivants. Malheureusement
+							pour lui, malgré ses efforts, il n’arrive à rien sauf à faire peur aux gens, et ça le désespère. Ainsi, le fantôme s’est résigné à hanter sans but le MIL, n’ayant aucun espoir de se sortir de son châtiment éternel.
+						</p>
+						<p class="paragraphe">
+							Après nous avoir dit ces dernières lignes, l’esprit se tait pour de bon, et Flora m’affirme qu’on n’en tirera plus rien et qu’il vaut mieux le libérer. Je referme mon calepin rempli de notes et nous ramassons tout pour nous éclipser par la
+							suite sans laisser de trace. J’ai d’autres rencontres planifiées dans les jours suivants et ces nouvelles informations recontextualisent celles-ci considérablement.
+						</p>
+						<p class="paragraphe align-center" id="9aout"><strong>9 août 2024 - Une entrevue révélatrice</strong></p>
+						<p class="paragraphe">
+							Les jours suivant mon expérience surnaturelle, je les passe surtout à débriefer Nicolas sur tout ce qui s’est passé et à remettre de l’ordre dans le dossier à la lumière de toutes mes découvertes. Aujourd’hui, cependant, nous allons éclairer
+							un aspect qui me titille énormément, à savoir l’emplacement actuel du cadavre du vieux Jean. J’ai réussi à obtenir une entrevue avec un des contremaîtres qui était présent au début du chantier du MIL. Il a fallu pousser énormément et même que
+							je me présente aux bureaux de son employeur trois fois avant que quelqu’un ne cède et veuille me parler sous prétexte que j’écris un article sur l’histoire du MIL. Si quelqu’un sait quoi que ce soit à propos de la dépouille, c’est soit lui,
+							soit un de ses collègues.
+						</p>
+						<p class="paragraphe">
+							Vers l’heure du midi, nous entrons dans le bureau de Jamel*, celui qui a accepté de me parler, et je remarque tout de suite son air subtilement inquiet, suspicieux pour quelqu’un qui est supposément là pour parler d’un simple contrat de
+							travail passé. Après quelques questions sur le chantier en général pour le mettre à l’aise, mes suspicions se révèlent fondées dès que je passe à la véritable raison de ma présence. Je lui demande s’il sait quoi que ce soit sur un certain Mr.
+							Chagnon qui aurait causé du trouble au début du chantier. Sa réponse est immédiatement de me demander comment je sais que cet homme existait. Je suis extrêmement surpris de voir qu’il croyait que l’existence du vieil homme était un secret bien
+							gardé, puisqu’en soi, cette histoire n’a rien de suspect. Je lui réponds prudemment que j’ai été mis au courant en lisant un vieil article archivé sur internet. Après une pause réflexive, le costaud bonhomme commence son récit. Il me dit qu’au
+							début de son contrat, on l’a averti que la seule maison encore debout sur le site de construction ne pouvait pas être touchée tant que la ville n’arrivait pas à évincer son seul habitant. Les ouvriers ont quand même commencé les travaux
+							d’excavation et de préparation pour avoir le moins de délais que possible une fois le problème réglé. Sur le lieu de travail, la maison était presque mythique, tant on racontait de fables et d’histoires sur son propriétaire. À un moment,
+							personne n’osait s’en approcher trop par peur de représailles, car on connaissait l’aversion du vieil homme pour les travaux.
+						</p>
+						<p class="paragraphe">
+							Un jour, plus personne n’a entendu ou vu quoi que ce soit en provenance de la maison. Après quelques semaines sans signe de vie, tout le monde a cru que le grincheux était enfin mort dans son isolement, mais là encore personne n’osait vraiment
+							regarder de plus près à cause du mythe entourant le bâtiment. Après un mois de silence environ, la police a fouillé la maison sans jamais trouver de corps; ils ont fini par déclarer Jean Chagnon disparu et la ville, sautant sur l’occasion, a
+							enfin ordonné la destruction de sa maison.
+						</p>
+						<p class="paragraphe">
+							Après ce récit, Jamel nous explique que l’histoire se finit là, mais ayant parlé au défunt, je sais qu’il en cache plus. Je choisis mes mots attentivement pour n’en révéler pas plus qu’il faut, et je demande innocemment si vraiment personne
+							n’a retrouvé de trace du vieil homme après coup. Cachant mal son intrigue devant mon insistance, il réitère que ses collègues et lui n'ont plus entendu parler de l’histoire après la disparition, ce à quoi je réponds qu’une source fiable m’a
+							informé que l’ermite avait creusé un tunnel sous le chantier et que ses quelques voisins qui étaient au courant savaient que le tunnel s’était écroulé lors des travaux. Aussitôt, toute illusion de bonhomie s’efface du visage de mon
+							interlocuteur. Il commence par m’insulter en disant que je suis venu pour détruire sa réputation, mais je le rassure longuement que je cache son identité dans tous mes documents. Il réfléchit, puis me dit en me fixant d’un regard rempli de
+							remords qu’on avait bel et bien retrouvé le corps sur le chantier.
+						</p>
+						<p class="paragraphe">
+							Le lendemain du jour où on a vu le dernier signe de vie de la maison, un travailleur qui creusait non loin de là avec sa pelle mécanique a vu une partie du terrain s’effondrer devant lui. C’était un événement bien étrange, et il a obtenu
+							l’aide de ses collègues pour étudier cette cavité qu’ils ont découvert comme étant un tunnel qui menait directement vers la fameuse maison. Jamel faisait partie de cette équipe de recherche, et il était donc là quand ils ont retrouvé le corps
+							du vieil homme, enfoui sous une partie du terrain qui s’était effondré sous le coup de pelle. Il m'avoue avec culpabilité qu’il a été complice dans les actions entreprises par un autre contremaître, qui affirmait que cette affaire, si elle
+							était révélée au public, compromettrait non seulement le chantier en cours, mais la compagnie pour laquelle ils travaillaient tous. Les gens présents ont donc fait un pacte verbal de ne jamais mentionner cet événement à quiconque, pas même à
+							leurs proches, et d’enfouir le corps du vieux bonhomme sous les fondations du MIL (une compensation financière a aussi été donnée aux gens présents pour acheter leur silence).
+						</p>
+						<p class="paragraphe">
+							Cette histoire est incroyablement révélatrice, non seulement pour le cas de Jean Chagnon, mais aussi par rapport à la corruption de l’entreprise de construction qui ne pardonnerait pas de voir cette affaire divulguée ici. Heureusement, nous
+							n’avons divulgué ni nos vraies identités, ni le journal pour lequel nous travaillons, et de toute manière, j’ai garanti à Jamel que son employeur ne verrait jamais cette information (la portée de l’électron libre a ses limites, après tout).
+						</p>
+						<p class="paragraphe">
+							Après nous être assurés de ne pas nous faire suivre, nous sortons du bureau et je pars directement après pour aller chez l’exorciste en lui annonçant mon arrivée imminente pour tenter d’éclaircir une bonne fois pour toutes les choses. En
+							chemin, je décide aussi d’interrompre tout contact avec la direction de l’université pour l’instant, car il vaut mieux garder l’affaire discrète avant d’avoir plus d’informations et de preuves.
+						</p>
+						<p class="paragraphe align-center"><strong>* * *</strong></p>
+						<p class="paragraphe">
+							Arrivé chez Flora, je n’ai pas le temps de cogner que Christophe m’ouvre déjà la porte et m’emmène vers une Flora surexcitée qui attend avidement les nouveaux morceaux de l’histoire. Je lui révèle ce que je sais maintenant du destin charnel du
+							défunt, mais en plein milieu de mon récit elle se met subitement à fouiller dans sa bibliothèque en ignorant complètement la fin de mon histoire.
+						</p>
+						<p class="paragraphe">
+							Je vais donc l’attendre dans la cuisine avec son collègue, qui me sert le thé dans un ensemble de vaisselle de très mauvais goût (les tasses sont en forme de têtes d’insectes et la théière est une araignée qui éjecte le thé comme une toile).
+							En lui parlant, j’apprends qu’il est simplement le colocataire de Flora, et qu’elle doit travailler de la maison parce qu’un bureau coûte bien trop cher de nos jours. Il apprécie quand même sa présence et l’aide même dans ses travaux car il a
+							développé une fascination pour l’occulte à force de cohabiter avec une exorciste.
+						</p>
+						<p class="paragraphe">
+							Sa colocataire nous interrompt finalement pour nous résumer sa nouvelle théorie. Selon elle, la raison pour laquelle le fantôme est emprisonné dans le bâtiment est que son corps est prisonnier comme lui, comme je m’en doutais. Cependant, ce
+							genre de situation n’arrive pas dans tous les cas où un corps est coincé comme tel. Il a fallu que des gens commettent l’acte de l’emprisonner et que personne ne lui offre de rituel funéraire avant de l’enterrer. Enfin, ce qui a scellé son
+							sort, c’est l’entêtement de l’esprit à rester sur place pour protéger sa maison. Il n’a jamais été prêt à mourir et même lorsqu’il ne restait plus rien à défendre, Jean Chagnon n’a jamais fait sa paix. Malheureusement, lui faire accepter son
+							sort ne suffirait pas à le sauver maintenant. Après que la fantomisation a eu lieu, il est impossible de libérer un esprit sans d’abord libérer le corps y étant rattaché de sa prison physique et lui offrir une forme de sépulture (même une
+							crémation ou une fosse commune ferait l’affaire).
+						</p>
+						<p class="paragraphe">
+							C’est ainsi que Flora nous affirme que l’histoire se termine pour nous, car aller plus loin impliquerait de défaire les fondations du MIL, sans même savoir où exactement le corps se situe. J’ai de la misère à accepter cela, car voilà
+							maintenant des semaines que je me dédie à cette affaire sans relâche, mais il faut accepter les faits et admettre que mon enquête a touché à sa fin et que plus d’acharnement ne donnerait rien de plus. Je quitte donc mes nouveaux amis pour
+							retourner à la direction de l’électron libre, pensant à tout ce que je viens d’apprendre et aux implications (légales, entre autres) de cet article que vous lisez en ce moment, qui est le fruit de tout cet effort. J’ose au moins espérer que
+							celui-ci va changer la mentalité de mes lecteurs, qui ne blâmeront plus le fantôme pour leurs malheurs, mais plutôt les gens qui l’ont emprisonné là, sans scrupules et sans remords…
+						</p>
+						<div class="muon">
+							<img src="images/physum_reborn/muons/Muon tristounet2.png" alt="muon tristounet" width="300px" height="300px" style="max-width: 100%" />
+						</div>
+						<p class="paragraphe align-center" id="conclusion"><strong>Conclusion - Une enquête inachevée</strong></p>
+						<p class="paragraphe">
+							Je n’aurais jamais cru qu’une histoire qui m’apparaissait si anodine voilà un mois m’aurait amené si loin. En chemin, j’ai été introduit au curieux monde de l’occulte qui nous entoure plus qu’on ne le pense et j’ai découvert des secrets
+							enfouis aux répercussions encore inconnues (en date de publication, une enquête du SPVM est en cours entourant la compagnie dont il est question dans l’article, et cette affaire n’en est qu’une parmi une liste de cas de bâtiments hantés
+							construits par ces gens).
+						</p>
+						<p class="paragraphe">
+							Je ne suis pas retourné au MIL depuis la fin de mon enquête, car j’appréhende légèrement mon retour dans ce lieu qui reste toujours hanté par un fantôme que je sais maintenant être plus tourmenté que tous ces gens qui ressentent sa présence
+							triste et froide. Je ne sais pas s’il n’y aura jamais une autre issue à cette affaire, mais comme les choses se présentent à l’heure actuelle, l’esprit frappeur du MIL hantera ce lieu aussi longtemps qu’il restera debout. Il ne reste qu’à
+							espérer que l’histoire ne se répètera pas lors de l’édification du MIL 2…
+						</p>
+						<hr />
+						<p class="align-center">*Tous les noms mentionnés dans cet article sont fictifs pour protéger la vie privée des gens impliqués</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section id="anciennes_publication_archives" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<h2>Anciennes publications du journal</h2>
+				</header>
+			</div>
+		</section>
+
+		<div class="separator">
+			<header class="align-center">
+				<h2>Parcourez le journal</h2>
+			</header>
+		</div> -->
+
+		<section id="four" class="wrapper style2">
+			<button onclick="topFunction()" id="myBtn" class="topButton" title="Go to top">Tête de la page</button>
+		</section>
+
+		<div id="footer-placeholder"></div>
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function () {
+				scrollFunction();
+			};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "flex";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+</html>

@@ -65,14 +65,14 @@ https://pixabay.com
 				let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
 				let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-				document.getElementById("days").innerHTML = days + " Days ";
-				document.getElementById("hours").innerHTML = hours + " Hours ";
+				document.getElementById("days").innerHTML = days + " Jours ";
+				document.getElementById("hours").innerHTML = hours + " Heures ";
 				document.getElementById("minutes").innerHTML = minutes + " Minutes ";
-				document.getElementById("seconds").innerHTML = seconds + " Seconds ";
+				document.getElementById("seconds").innerHTML = seconds + " Secondes ";
 
 				if (timeLeft < 0) {
 					clearInterval(countdownFunction);
-					document.getElementById("countdown").innerHTML = "EXPIRED";
+					document.getElementById("countdown").innerHTML = "Sortie imminente...";
 				}
 			}, 1000);
 		</script>

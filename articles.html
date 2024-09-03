@@ -24,6 +24,8 @@
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 		<!-- Footer -->
 		<script>
@@ -310,8 +312,26 @@
 
 					<p class="paragraphe align-center">avec (voir les Figures (5) et (7)) :</p>
 
+					<p class="paragraphe align-center" style="font-size: clamp(0.6rem, 1vw, 2.5rem);">
+						\[
+						A_m(y) =
+						\left\{
+						\begin{array}{ll}
+						\left( r_{\text{al},m} \, r_{\text{re},m}\right)^{-1} & \text{si} \ y_{\text{min}} \leq y \leq y_{\text{max}} \\
+						0 & \text{autrement}
+						\end{array}
+						\right.
+						\]
+					</p>
 					<p class="paragraphe align-center">
-						<i>A<sub>m</sub>(y)</i> = \begin{cases} <sup>(r<sub>al,m</sub> & r<sub>re,m</sub>)<sup>-1</sup></sup> & <i>si</i> <i>y<sub>min</sub> ≤ y ≤ y<sub>max</sub></i> \\ 0 & <i>autrement</i> <br />
+						\[
+						T_m(y) = \frac{r_{\text{al},m}+r_{\text{re},m}}{v}
+						\]
+					</p>
+					<p class="paragraphe align-center">
+						\[
+						T_m(y) = \frac{r_{\text{al},m}+r_{\text{re},m}}{v}
+						\]
 					</p>
 
 					<p class="paragraphe align-center">
@@ -368,9 +388,11 @@
 					<p class="paragraphe">On peut définir la fonction de réponse à l'aide de l'algorithme suivant :</p>
 
 					<p class="paragraphe align-center">
-						Deux solutions <i>y<sub>m</sub><sup>(1)</sup>(t<sub>i</sub>)</i> et <i>y<sub>m</sub><sup>(2)</sup>(t<sub>i</sub>)</i> dans l'intervalle <i>y<sub>m</sub><sup>(j)</sup>(t<sub>i</sub>)</i> ∈ [<i>y<sub>min</sub></i
-						>, <i>y<sub>max</sub></i
-						>]
+						Deux solutions <i class="formula">y<sub>m</sub><sup>(1)</sup>(t<sub>i</sub>)</i> et
+						<i class="formula">y<sub>m</sub><sup>(2)</sup>(t<sub>i</sub>)</i> dans l'intervalle <br> <br> <br>
+						<i class="formula">y<sub>m</sub><sup>(j)</sup>(t<sub>i</sub>)</i> ∈ [<i class="formula">y<sub>min</sub></i>, 
+						<i class="formula">y<sub>max</sub></i>]
+						<br> <br>
 					</p>
 
 					<p class="paragraphe align-center">

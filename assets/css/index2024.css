@@ -318,7 +318,7 @@ i {
 	max-width: 100%;
 }
 
-.content {
+.contentChroniqueFred {
 	padding-left: 0!important;
 	padding-right: 0!important;
 }
@@ -334,7 +334,7 @@ i {
 }
 
 @media screen and (min-width: 980px) {
-	.content {
+	.contentChroniqueFred {
 		padding-left: 2rem!important;
 		padding-right: 2rem!important;
 	}

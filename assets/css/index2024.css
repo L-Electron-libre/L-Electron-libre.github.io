@@ -342,8 +342,8 @@ i {
 }
 
 .fredChronique {
-	height: 350px;
-	max-width: 100%;
+	align-self: center;
+	width: 100%;
 }
 
 .contentChroniqueFred {
@@ -358,7 +358,7 @@ i {
 }
 
 .fredImg2 img {
-	height: 300px;
+	width: 100%;
 }
 
 @media screen and (min-width: 980px) {
@@ -368,7 +368,6 @@ i {
 
 	.disclaimer {
 		flex-direction: row;
-
 		gap: 2rem;
 	}
 
@@ -433,10 +432,23 @@ i {
 		display: flex;
 		align-items: center;
 	}
+
+	.fredChronique {
+		width: 350px;
+	}
+
+	.fredImg2 img {
+		width: 600px;
+		height: auto;
+	}
 }
 
 @media screen and (min-width: 1400px) {
 	.imgArticles {
 		width: 800px;
+	}
+
+	.fredChronique {
+		width: 500px;
 	}
 }

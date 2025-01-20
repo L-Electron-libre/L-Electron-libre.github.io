@@ -341,6 +341,26 @@ i {
 	align-items: center;
 }
 
+.fredChronique {
+	height: 350px;
+	max-width: 100%;
+}
+
+.contentChroniqueFred {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.fredImg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.fredImg2 img {
+	height: 300px;
+}
+
 @media screen and (min-width: 980px) {
 	.gallery {
 		flex-direction: row;

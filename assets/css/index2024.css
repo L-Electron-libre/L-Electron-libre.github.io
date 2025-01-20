@@ -64,6 +64,7 @@ i {
 	align-items: center;
 	color: gray;
 	gap: 1rem;
+	width: 100%;
 }
 
 .disclaimerEntrevue {
@@ -313,10 +314,41 @@ i {
 	padding: 1rem;
 }
 
+.headCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.headCenter .box,
+.gallery .box {
+	width: 100%;
+	max-width: 40rem;
+}
+
+.headCenter img,
+.gallery img {
+	max-width: 100%;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 @media screen and (min-width: 980px) {
+	.gallery {
+		flex-direction: row;
+	}
+
 	.disclaimer {
 		flex-direction: row;
-		max-width: 50%;
+
 		gap: 2rem;
 	}
 

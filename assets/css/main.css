@@ -178,6 +178,10 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+a {
+	transition: all 0.3s ease;
+}
+
 /* Box Model */
 
 *,
@@ -2011,20 +2015,21 @@ hr {
 	border-bottom-color: rgba(144, 144, 144, 0.25);
 }
 
+.content {
+	padding: 1.5rem;
+}
+
 /* Box */
 
 .box {
-	margin-bottom: 2rem;
 	background: #fff;
 }
 
+.gallery img {
+	min-width: 100%;
+}
 .box .image.fit {
 	margin: 0;
-	border-radius: 0;
-}
-
-.box .image.fit img {
-	border-radius: 0;
 }
 
 .box header h2 {
@@ -2052,10 +2057,6 @@ hr {
 	background-color: rgba(0, 0, 0, 0.125);
 }
 
-.box .content {
-	padding: 3rem;
-}
-
 .box > :last-child,
 .box > :last-child > :last-child,
 .box > :last-child > :last-child > :last-child {
@@ -2064,14 +2065,8 @@ hr {
 
 .box.alt {
 	border: 0;
-	border-radius: 0;
-	padding: 0;
-}
 
-@media screen and (max-width: 736px) {
-	.box .content {
-		padding: 2rem;
-	}
+	padding: 0;
 }
 
 .box {
@@ -3734,7 +3729,6 @@ table.alt tbody tr td {
 
 .grid-style > * {
 	padding: 2rem;
-	width: calc(50% + 2rem);
 }
 
 .grid-style > :nth-child(-n + 2) {
@@ -3757,10 +3751,6 @@ table.alt tbody tr td {
 .grid-style > :nth-child(2n) {
 }
 
-.headInfo {
-	width: 42rem;
-}
-
 .grid-style .box {
 	margin: 0;
 }
@@ -3772,7 +3762,6 @@ table.alt tbody tr td {
 
 	.grid-style > * {
 		padding: 1rem;
-		width: calc(50% + 1rem);
 	}
 
 	.grid-style > :nth-child(-n + 2) {
@@ -4036,6 +4025,11 @@ body.subpage {
 	color: whitesmoke;
 }
 
+.wrapperPadding {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
 @media screen and (max-width: 980px) {
 	body.subpage {
 		padding-top: 0px;
@@ -4061,6 +4055,33 @@ body.subpage {
 	}
 }
 
+/* @media screen and (min-width: 600px) {
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.gallery > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 1rem;
+		width: calc(50% - 1rem);
+		max-height: 400px;
+	}
+
+	.gallery > div > div {
+		height: 100%;
+	}
+
+	.gallery > div img {
+		height: 250px;
+	}
+}
+ */
 @media screen and (min-width: 980px) {
 	.logoAccueil,
 	.accueilPhone {
@@ -4088,6 +4109,7 @@ body.subpage {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
 		gap: 4rem;
 	}
 
@@ -4613,4 +4635,10 @@ body.is-mobile .banner > article {
 
 .pMain2024 b {
 	font-size: 1.5rem;
+}
+
+@media screen and (min-width: 980px) {
+	.gallery img {
+		height: 450px;
+	}
 }

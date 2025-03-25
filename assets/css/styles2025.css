@@ -17,6 +17,10 @@
 	align-self: center;
 }
 
+.content {
+	padding: 1rem;
+}
+
 .bold {
 	font-weight: 600;
 	align-self: flex-start;
@@ -69,6 +73,7 @@
 
 .link2025 {
 	color: teal;
+	padding: 1rem;
 }
 
 .link2025:hover {

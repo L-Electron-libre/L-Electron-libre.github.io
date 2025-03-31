@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>L'Électron Libre</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Change Website Thumbnail in Facebook Post (https://www.adhesion.co.nz/blog/how-to-change-website-thumbnail-in-facebook-post)-->
+		<meta property="og:image" content="https://l-electron-libre.github.io/images/logo.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://l-electron-libre.github.io/index.html" />
+		<meta property="og:title" content="L'Électron Libre" />
+		<meta property="og:description" content="Site web du journal étudiant de la PHYSUM" />
+
+		<!-- Links -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/texte.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/index2024.css" />
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Footer -->
+		<script>
+			$.get("template/footer.html", function (data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169295343-1"></script>
+	</head>
+
+	<body>
+		<div class="sidenavbar">
+			<div class="sidenavbar">
+				<header id="header" class="alt">
+					<div class="logo">
+						<a href="index.html" class="accueilPhone">
+							<img src="images/logo_blanc_avec_nom.png" alt="Logo Électron Libre" class="logoAccueil" style="width: 150px; height: 100px" />
+						</a>
+						<a href="index.html" class="accueilText">Accueil</a>
+					</div>
+					<a href="https://l-electron-libre.github.io/texte/electron_libre.rss"><img src="images/rss_icon.png" alt="rss-feed" style="width: 20px; height: 20px" /> </a>
+					<a href="#menu"> Menu </a>
+				</header>
+
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="presentation.html">Présentation</a></li>
+						<li><a href="stages.html">Stages</a></li>
+						<li><a href="events.html">Évènements</a></li>
+						<li><a href="conseils.html">Conseils</a></li>
+						<li><a href="entrevuesAll.html">Entrevues</a></li>
+						<li><a href="articles.html">Articles</a></li>
+						<li><a href="histoires.html">Histoires</a></li>
+						<li><a href="poesiesAll.html">Poésies</a></li>
+						<li><a href="ressources.html">Ressources</a></li>
+						<li><a href="chroniques.html">Chroniques</a></li>
+						<li><a href="jeux.html">Jeux</a></li>
+						<li><a href="archive.html">Archives</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Journal étudiant de la PHYSUM</p>
+						<h2>Explorer les chroniques</h2>
+					</header>
+				</div>
+			</section>
+		</div>
+
+		<div class="headInfo headCenter wrapperPadding gallery">
+			<div class="box">
+				<p class="main pMain2024"><b>J'aime pas le MIL</b></p>
+				<p class="p2024">Un opinion sur le pavillon de la PHYSUM <strong>; par Cédric Mediavilla-Rivard </strong></p>
+				<a href="mil.html"><img src="images/physum_reborn/mil.jpg" alt="Events" class="img_opacity_transition" style="max-height: 22rem" /></a>
+			</div>
+			<div class="box">
+				<p class="main pMain2024"><b>Un stage à Hawaii</b></p>
+				<p class="p2024">Suivez l'histoire de Fred et son stage à Hawaii <strong> par Frédéric Beaudet.</strong></p>
+				<a href="chroniques.html"><img src="images/hawai.jpg" alt="Stages" class="img_opacity_transition" style="max-height: 22rem" /></a>
+			</div>
+		</div>
+
+		<section id="four" class="wrapper style2">
+			<button onclick="topFunction()" id="myBtn" class="topButton" title="Go to top">Tête de la page</button>
+		</section>
+
+		<div id="footer-placeholder"></div>
+		<script>
+			let mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function () {
+				scrollFunction();
+			};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "flex";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+</html>
